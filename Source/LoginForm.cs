@@ -16,5 +16,10 @@ namespace DiaryApp.Source
         {
             InitializeComponent();
         }
+
+        private void pClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
