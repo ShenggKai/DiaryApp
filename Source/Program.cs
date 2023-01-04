@@ -1,4 +1,4 @@
-namespace DiaryApp
+namespace DiaryApp.Source
 {
     internal static class Program
     {
