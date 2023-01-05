@@ -45,11 +45,15 @@
             this.lbForget = new Sunny.UI.UISymbolLabel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.tabpageRes = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pClose)).BeginInit();
             this.pageLogAndReg.SuspendLayout();
             this.tabpageLog.SuspendLayout();
+            this.tabpageRes.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnImage
@@ -176,7 +180,7 @@
             this.pageLogAndReg.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.pageLogAndReg.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pageLogAndReg.Frame = null;
-            this.pageLogAndReg.ItemSize = new System.Drawing.Size(0, 1);
+            this.pageLogAndReg.ItemSize = new System.Drawing.Size(150, 40);
             this.pageLogAndReg.Location = new System.Drawing.Point(426, 41);
             this.pageLogAndReg.MainPage = "";
             this.pageLogAndReg.Name = "pageLogAndReg";
@@ -185,7 +189,6 @@
             this.pageLogAndReg.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.pageLogAndReg.TabIndex = 3;
             this.pageLogAndReg.TabUnSelectedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.pageLogAndReg.TabVisible = false;
             this.pageLogAndReg.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // tabpageLog
@@ -202,9 +205,9 @@
             this.tabpageLog.Controls.Add(this.uiLine1);
             this.tabpageLog.Controls.Add(this.pUser);
             this.tabpageLog.Controls.Add(this.txtPass);
-            this.tabpageLog.Location = new System.Drawing.Point(0, -1);
+            this.tabpageLog.Location = new System.Drawing.Point(0, 0);
             this.tabpageLog.Name = "tabpageLog";
-            this.tabpageLog.Size = new System.Drawing.Size(572, 528);
+            this.tabpageLog.Size = new System.Drawing.Size(572, 488);
             this.tabpageLog.TabIndex = 0;
             this.tabpageLog.Text = "DangNhap";
             // 
@@ -214,11 +217,11 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.label1.Location = new System.Drawing.Point(333, 463);
+            this.label1.Location = new System.Drawing.Point(311, 463);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 25);
+            this.label1.Size = new System.Drawing.Size(166, 25);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Đăng ký";
+            this.label1.Text = "Tạo tài khoản mới";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbQues
@@ -226,11 +229,11 @@
             this.lbQues.AutoSize = true;
             this.lbQues.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbQues.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lbQues.Location = new System.Drawing.Point(164, 463);
+            this.lbQues.Location = new System.Drawing.Point(106, 463);
             this.lbQues.Name = "lbQues";
-            this.lbQues.Size = new System.Drawing.Size(175, 25);
+            this.lbQues.Size = new System.Drawing.Size(209, 25);
             this.lbQues.TabIndex = 8;
-            this.lbQues.Text = "Chưa có tài khoản?";
+            this.lbQues.Text = "Bạn chưa có tài khoản?";
             this.lbQues.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lbForget
@@ -271,12 +274,53 @@
             // 
             // tabpageRes
             // 
+            this.tabpageRes.Controls.Add(this.label5);
+            this.tabpageRes.Controls.Add(this.label6);
+            this.tabpageRes.Controls.Add(this.label2);
             this.tabpageRes.Location = new System.Drawing.Point(0, 0);
             this.tabpageRes.Name = "tabpageRes";
-            this.tabpageRes.Size = new System.Drawing.Size(200, 60);
+            this.tabpageRes.Size = new System.Drawing.Size(572, 488);
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
             this.tabpageRes.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Cascadia Mono", 28.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(572, 65);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "DiaryApp";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.label5.Location = new System.Drawing.Point(309, 463);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(152, 25);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Đăng nhập ngay";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label6.Location = new System.Drawing.Point(123, 463);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(189, 25);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Bạn đã có tài khoản?";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // LoginForm
             // 
@@ -296,6 +340,8 @@
             this.pageLogAndReg.ResumeLayout(false);
             this.tabpageLog.ResumeLayout(false);
             this.tabpageLog.PerformLayout();
+            this.tabpageRes.ResumeLayout(false);
+            this.tabpageRes.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -318,5 +364,8 @@
         private Sunny.UI.UISymbolLabel lbForget;
         private Label lbQues;
         private Label label1;
+        private Label label2;
+        private Label label5;
+        private Label label6;
     }
 }
