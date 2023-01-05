@@ -46,6 +46,7 @@
             this.lbForget = new Sunny.UI.UISymbolLabel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.tabpageRes = new System.Windows.Forms.TabPage();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pEye2 = new System.Windows.Forms.PictureBox();
             this.pEye = new System.Windows.Forms.PictureBox();
             this.btnRes = new System.Windows.Forms.Button();
@@ -62,6 +63,7 @@
             this.txtPass1 = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lbNavLog = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pLock)).BeginInit();
@@ -313,6 +315,7 @@
             // tabpageRes
             // 
             this.tabpageRes.BackColor = System.Drawing.SystemColors.Control;
+            this.tabpageRes.Controls.Add(this.checkBox1);
             this.tabpageRes.Controls.Add(this.pEye2);
             this.tabpageRes.Controls.Add(this.pEye);
             this.tabpageRes.Controls.Add(this.btnRes);
@@ -329,6 +332,7 @@
             this.tabpageRes.Controls.Add(this.txtPass1);
             this.tabpageRes.Controls.Add(this.txtEmail);
             this.tabpageRes.Controls.Add(this.lbNavLog);
+            this.tabpageRes.Controls.Add(this.label1);
             this.tabpageRes.Controls.Add(this.label6);
             this.tabpageRes.Controls.Add(this.label2);
             this.tabpageRes.Location = new System.Drawing.Point(0, -1);
@@ -336,6 +340,22 @@
             this.tabpageRes.Size = new System.Drawing.Size(572, 528);
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.FlatAppearance.BorderSize = 0;
+            this.checkBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.checkBox1.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.checkBox1.Location = new System.Drawing.Point(111, 358);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(151, 29);
+            this.checkBox1.TabIndex = 21;
+            this.checkBox1.Text = "Tôi đồng ý với";
+            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox1.UseVisualStyleBackColor = false;
             // 
             // pEye2
             // 
@@ -369,7 +389,7 @@
             this.btnRes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRes.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnRes.ForeColor = System.Drawing.Color.White;
-            this.btnRes.Location = new System.Drawing.Point(191, 380);
+            this.btnRes.Location = new System.Drawing.Point(191, 407);
             this.btnRes.Name = "btnRes";
             this.btnRes.Size = new System.Drawing.Size(180, 57);
             this.btnRes.TabIndex = 18;
@@ -552,6 +572,18 @@
             this.lbNavLog.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lbNavLog.Click += new System.EventHandler(this.lbNavLog_Click);
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.label1.Location = new System.Drawing.Point(257, 360);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(193, 25);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Điều khoản sử dụng";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -645,5 +677,7 @@
         private PictureBox pEye;
         private PictureBox pEye2;
         private PictureBox pEye1;
+        private CheckBox checkBox1;
+        private Label label1;
     }
 }
