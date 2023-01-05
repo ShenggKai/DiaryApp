@@ -45,6 +45,18 @@
             this.lbForget = new Sunny.UI.UISymbolLabel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.tabpageRes = new System.Windows.Forms.TabPage();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.uiLine6 = new Sunny.UI.UILine();
+            this.uiLine5 = new Sunny.UI.UILine();
+            this.uiLine3 = new Sunny.UI.UILine();
+            this.uiLine4 = new Sunny.UI.UILine();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.lbNavLog = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,6 +66,10 @@
             this.pageLogAndReg.SuspendLayout();
             this.tabpageLog.SuspendLayout();
             this.tabpageRes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnImage
@@ -275,6 +291,18 @@
             // 
             // tabpageRes
             // 
+            this.tabpageRes.Controls.Add(this.pictureBox4);
+            this.tabpageRes.Controls.Add(this.pictureBox3);
+            this.tabpageRes.Controls.Add(this.pictureBox1);
+            this.tabpageRes.Controls.Add(this.textBox1);
+            this.tabpageRes.Controls.Add(this.uiLine6);
+            this.tabpageRes.Controls.Add(this.uiLine5);
+            this.tabpageRes.Controls.Add(this.uiLine3);
+            this.tabpageRes.Controls.Add(this.uiLine4);
+            this.tabpageRes.Controls.Add(this.pictureBox2);
+            this.tabpageRes.Controls.Add(this.textBox4);
+            this.tabpageRes.Controls.Add(this.textBox3);
+            this.tabpageRes.Controls.Add(this.textBox2);
             this.tabpageRes.Controls.Add(this.lbNavLog);
             this.tabpageRes.Controls.Add(this.label6);
             this.tabpageRes.Controls.Add(this.label2);
@@ -284,6 +312,169 @@
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
             this.tabpageRes.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = global::DiaryApp.Properties.Resources._lock;
+            this.pictureBox4.Location = new System.Drawing.Point(68, 336);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 17;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::DiaryApp.Properties.Resources._lock;
+            this.pictureBox3.Location = new System.Drawing.Point(68, 262);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::DiaryApp.Properties.Resources._lock;
+            this.pictureBox1.Location = new System.Drawing.Point(68, 162);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.textBox1.Location = new System.Drawing.Point(123, 88);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.PlaceholderText = "Username hoặc email";
+            this.textBox1.Size = new System.Drawing.Size(350, 29);
+            this.textBox1.TabIndex = 15;
+            // 
+            // uiLine6
+            // 
+            this.uiLine6.FillColor = System.Drawing.Color.Transparent;
+            this.uiLine6.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.uiLine6.LineCapSize = 10;
+            this.uiLine6.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.uiLine6.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.uiLine6.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
+            this.uiLine6.LineSize = 2;
+            this.uiLine6.Location = new System.Drawing.Point(123, 376);
+            this.uiLine6.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiLine6.Name = "uiLine6";
+            this.uiLine6.Size = new System.Drawing.Size(350, 10);
+            this.uiLine6.Style = Sunny.UI.UIStyle.Custom;
+            this.uiLine6.TabIndex = 13;
+            this.uiLine6.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
+            // uiLine5
+            // 
+            this.uiLine5.FillColor = System.Drawing.Color.Transparent;
+            this.uiLine5.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.uiLine5.LineCapSize = 10;
+            this.uiLine5.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.uiLine5.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.uiLine5.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
+            this.uiLine5.LineSize = 2;
+            this.uiLine5.Location = new System.Drawing.Point(123, 302);
+            this.uiLine5.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiLine5.Name = "uiLine5";
+            this.uiLine5.Size = new System.Drawing.Size(350, 10);
+            this.uiLine5.Style = Sunny.UI.UIStyle.Custom;
+            this.uiLine5.TabIndex = 13;
+            this.uiLine5.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
+            // uiLine3
+            // 
+            this.uiLine3.FillColor = System.Drawing.Color.Transparent;
+            this.uiLine3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.uiLine3.LineCapSize = 10;
+            this.uiLine3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.uiLine3.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.uiLine3.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
+            this.uiLine3.LineSize = 2;
+            this.uiLine3.Location = new System.Drawing.Point(123, 202);
+            this.uiLine3.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiLine3.Name = "uiLine3";
+            this.uiLine3.Size = new System.Drawing.Size(350, 10);
+            this.uiLine3.Style = Sunny.UI.UIStyle.Custom;
+            this.uiLine3.TabIndex = 13;
+            this.uiLine3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
+            // uiLine4
+            // 
+            this.uiLine4.FillColor = System.Drawing.Color.Transparent;
+            this.uiLine4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.uiLine4.LineCapSize = 10;
+            this.uiLine4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.uiLine4.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.uiLine4.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
+            this.uiLine4.LineSize = 2;
+            this.uiLine4.Location = new System.Drawing.Point(123, 123);
+            this.uiLine4.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiLine4.Name = "uiLine4";
+            this.uiLine4.Size = new System.Drawing.Size(350, 10);
+            this.uiLine4.Style = Sunny.UI.UIStyle.Custom;
+            this.uiLine4.TabIndex = 14;
+            this.uiLine4.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::DiaryApp.Properties.Resources.user_green;
+            this.pictureBox2.Location = new System.Drawing.Point(68, 79);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 18;
+            this.pictureBox2.TabStop = false;
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.textBox4.Location = new System.Drawing.Point(123, 345);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.PlaceholderText = "Mật khẩu";
+            this.textBox4.Size = new System.Drawing.Size(350, 29);
+            this.textBox4.TabIndex = 16;
+            this.textBox4.UseSystemPasswordChar = true;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.textBox3.Location = new System.Drawing.Point(123, 271);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.PlaceholderText = "Mật khẩu";
+            this.textBox3.Size = new System.Drawing.Size(350, 29);
+            this.textBox3.TabIndex = 16;
+            this.textBox3.UseSystemPasswordChar = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.textBox2.Location = new System.Drawing.Point(123, 171);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.PlaceholderText = "Mật khẩu";
+            this.textBox2.Size = new System.Drawing.Size(350, 29);
+            this.textBox2.TabIndex = 16;
+            this.textBox2.UseSystemPasswordChar = true;
             // 
             // lbNavLog
             // 
@@ -344,6 +535,10 @@
             this.tabpageLog.PerformLayout();
             this.tabpageRes.ResumeLayout(false);
             this.tabpageRes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -369,5 +564,17 @@
         private Label label2;
         private Label lbNavLog;
         private Label label6;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox1;
+        private TextBox textBox1;
+        private Sunny.UI.UILine uiLine6;
+        private Sunny.UI.UILine uiLine5;
+        private Sunny.UI.UILine uiLine3;
+        private Sunny.UI.UILine uiLine4;
+        private PictureBox pictureBox2;
+        private TextBox textBox4;
+        private TextBox textBox3;
+        private TextBox textBox2;
     }
 }
