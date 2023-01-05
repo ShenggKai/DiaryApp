@@ -29,11 +29,13 @@ namespace DiaryApp.Source
             if (eyeHide1 == true)
             {
                 pEye1.Image = global::DiaryApp.Properties.Resources.eye;
+                txtPass.UseSystemPasswordChar= false;
                 eyeHide1 = false;
             }
             else
             {
                 pEye1.Image = global::DiaryApp.Properties.Resources.eye_crossed;
+                txtPass.UseSystemPasswordChar= true;
                 eyeHide1 = true;
             }
         }
@@ -56,11 +58,13 @@ namespace DiaryApp.Source
             if (eyeHide == true)
             {
                 pEye.Image = global::DiaryApp.Properties.Resources.eye;
+                txtPass1.UseSystemPasswordChar = false;
                 eyeHide = false;
             }
             else
             {
                 pEye.Image = global::DiaryApp.Properties.Resources.eye_crossed;
+                txtPass1.UseSystemPasswordChar = true;
                 eyeHide = true;
             }
         }
@@ -71,11 +75,13 @@ namespace DiaryApp.Source
             if (eyeHide2 == true)
             {
                 pEye2.Image = global::DiaryApp.Properties.Resources.eye;
+                txtPass2.UseSystemPasswordChar = false;
                 eyeHide2 = false;
             }
             else
             {
                 pEye2.Image = global::DiaryApp.Properties.Resources.eye_crossed;
+                txtPass2.UseSystemPasswordChar = true;
                 eyeHide2 = true;
             }
         }

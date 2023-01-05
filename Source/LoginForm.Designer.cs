@@ -58,8 +58,8 @@
             this.uiLine3 = new Sunny.UI.UILine();
             this.uiLine4 = new Sunny.UI.UILine();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtPass2 = new System.Windows.Forms.TextBox();
+            this.txtPass1 = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lbNavLog = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -324,15 +324,15 @@
             this.tabpageRes.Controls.Add(this.uiLine3);
             this.tabpageRes.Controls.Add(this.uiLine4);
             this.tabpageRes.Controls.Add(this.pictureBox2);
-            this.tabpageRes.Controls.Add(this.textBox4);
-            this.tabpageRes.Controls.Add(this.textBox3);
+            this.tabpageRes.Controls.Add(this.txtPass2);
+            this.tabpageRes.Controls.Add(this.txtPass1);
             this.tabpageRes.Controls.Add(this.txtEmail);
             this.tabpageRes.Controls.Add(this.lbNavLog);
             this.tabpageRes.Controls.Add(this.label6);
             this.tabpageRes.Controls.Add(this.label2);
             this.tabpageRes.Location = new System.Drawing.Point(0, 0);
             this.tabpageRes.Name = "tabpageRes";
-            this.tabpageRes.Size = new System.Drawing.Size(200, 60);
+            this.tabpageRes.Size = new System.Drawing.Size(572, 488);
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
             // 
@@ -499,31 +499,31 @@
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
             // 
-            // textBox4
+            // txtPass2
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.textBox4.Location = new System.Drawing.Point(123, 298);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.PlaceholderText = "Nhập lại mật khẩu";
-            this.textBox4.Size = new System.Drawing.Size(319, 29);
-            this.textBox4.TabIndex = 16;
-            this.textBox4.UseSystemPasswordChar = true;
+            this.txtPass2.BackColor = System.Drawing.SystemColors.Control;
+            this.txtPass2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPass2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPass2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.txtPass2.Location = new System.Drawing.Point(123, 298);
+            this.txtPass2.Name = "txtPass2";
+            this.txtPass2.PlaceholderText = "Nhập lại mật khẩu";
+            this.txtPass2.Size = new System.Drawing.Size(319, 29);
+            this.txtPass2.TabIndex = 16;
+            this.txtPass2.UseSystemPasswordChar = true;
             // 
-            // textBox3
+            // txtPass1
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.textBox3.Location = new System.Drawing.Point(123, 228);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PlaceholderText = "Mật khẩu";
-            this.textBox3.Size = new System.Drawing.Size(319, 29);
-            this.textBox3.TabIndex = 16;
-            this.textBox3.UseSystemPasswordChar = true;
+            this.txtPass1.BackColor = System.Drawing.SystemColors.Control;
+            this.txtPass1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPass1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPass1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.txtPass1.Location = new System.Drawing.Point(123, 228);
+            this.txtPass1.Name = "txtPass1";
+            this.txtPass1.PlaceholderText = "Mật khẩu";
+            this.txtPass1.Size = new System.Drawing.Size(319, 29);
+            this.txtPass1.TabIndex = 16;
+            this.txtPass1.UseSystemPasswordChar = true;
             // 
             // txtEmail
             // 
@@ -571,7 +571,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 65);
+            this.label2.Size = new System.Drawing.Size(572, 65);
             this.label2.TabIndex = 3;
             this.label2.Text = "DiaryApp";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -637,8 +637,8 @@
         private Sunny.UI.UILine uiLine3;
         private Sunny.UI.UILine uiLine4;
         private PictureBox pictureBox2;
-        private TextBox textBox4;
-        private TextBox textBox3;
+        private TextBox txtPass2;
+        private TextBox txtPass1;
         private TextBox txtEmail;
         private Button button1;
         private PictureBox pEye;
