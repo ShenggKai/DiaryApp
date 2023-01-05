@@ -311,6 +311,7 @@
             this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // tabpageRes
             // 
@@ -395,6 +396,7 @@
             this.btnRes.TabIndex = 19;
             this.btnRes.Text = "Đăng ký";
             this.btnRes.UseVisualStyleBackColor = false;
+            this.btnRes.Click += new System.EventHandler(this.btnRes_Click);
             // 
             // pictureBox4
             // 

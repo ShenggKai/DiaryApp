@@ -44,6 +44,12 @@ namespace DiaryApp.Source
         {
             pageLogAndReg.SelectTab(1);
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            new MainForm().Show();
+            this.Hide();
+        }
         #endregion
 
         #region Register Form
@@ -85,7 +91,11 @@ namespace DiaryApp.Source
                 eyeHide2 = true;
             }
         }
-        #endregion
 
+        private void btnRes_Click(object sender, EventArgs e)
+        {
+            pageLogAndReg.SelectTab(0);
+        }
+        #endregion
     }
 }
