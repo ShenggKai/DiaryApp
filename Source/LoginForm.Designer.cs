@@ -48,7 +48,7 @@
             this.tabpageRes = new System.Windows.Forms.TabPage();
             this.pEye2 = new System.Windows.Forms.PictureBox();
             this.pEye = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRes = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -93,7 +93,7 @@
             // 
             this.pLock.BackColor = System.Drawing.Color.Transparent;
             this.pLock.Image = global::DiaryApp.Properties.Resources._lock;
-            this.pLock.Location = new System.Drawing.Point(83, 216);
+            this.pLock.Location = new System.Drawing.Point(83, 232);
             this.pLock.Name = "pLock";
             this.pLock.Size = new System.Drawing.Size(40, 40);
             this.pLock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -106,7 +106,7 @@
             this.txtUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUserName.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.txtUserName.Location = new System.Drawing.Point(138, 135);
+            this.txtUserName.Location = new System.Drawing.Point(138, 151);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.PlaceholderText = "Username hoặc email";
             this.txtUserName.Size = new System.Drawing.Size(350, 29);
@@ -121,7 +121,7 @@
             this.uiLine2.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.uiLine2.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
             this.uiLine2.LineSize = 2;
-            this.uiLine2.Location = new System.Drawing.Point(138, 256);
+            this.uiLine2.Location = new System.Drawing.Point(138, 272);
             this.uiLine2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLine2.Name = "uiLine2";
             this.uiLine2.Size = new System.Drawing.Size(350, 10);
@@ -133,7 +133,7 @@
             // 
             this.pUser.BackColor = System.Drawing.Color.Transparent;
             this.pUser.Image = global::DiaryApp.Properties.Resources.user_green;
-            this.pUser.Location = new System.Drawing.Point(83, 126);
+            this.pUser.Location = new System.Drawing.Point(83, 142);
             this.pUser.Name = "pUser";
             this.pUser.Size = new System.Drawing.Size(40, 40);
             this.pUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -146,7 +146,7 @@
             this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPass.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.txtPass.Location = new System.Drawing.Point(138, 225);
+            this.txtPass.Location = new System.Drawing.Point(138, 241);
             this.txtPass.Name = "txtPass";
             this.txtPass.PlaceholderText = "Mật khẩu";
             this.txtPass.Size = new System.Drawing.Size(319, 29);
@@ -162,7 +162,7 @@
             this.uiLine1.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.uiLine1.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
             this.uiLine1.LineSize = 2;
-            this.uiLine1.Location = new System.Drawing.Point(138, 170);
+            this.uiLine1.Location = new System.Drawing.Point(138, 186);
             this.uiLine1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLine1.Name = "uiLine1";
             this.uiLine1.Size = new System.Drawing.Size(350, 10);
@@ -203,7 +203,7 @@
             this.pageLogAndReg.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.pageLogAndReg.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pageLogAndReg.Frame = null;
-            this.pageLogAndReg.ItemSize = new System.Drawing.Size(150, 40);
+            this.pageLogAndReg.ItemSize = new System.Drawing.Size(0, 1);
             this.pageLogAndReg.Location = new System.Drawing.Point(426, 41);
             this.pageLogAndReg.MainPage = "";
             this.pageLogAndReg.Name = "pageLogAndReg";
@@ -212,6 +212,7 @@
             this.pageLogAndReg.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.pageLogAndReg.TabIndex = 3;
             this.pageLogAndReg.TabUnSelectedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.pageLogAndReg.TabVisible = false;
             this.pageLogAndReg.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // tabpageLog
@@ -229,9 +230,9 @@
             this.tabpageLog.Controls.Add(this.uiLine1);
             this.tabpageLog.Controls.Add(this.pUser);
             this.tabpageLog.Controls.Add(this.txtPass);
-            this.tabpageLog.Location = new System.Drawing.Point(0, 0);
+            this.tabpageLog.Location = new System.Drawing.Point(0, -1);
             this.tabpageLog.Name = "tabpageLog";
-            this.tabpageLog.Size = new System.Drawing.Size(572, 488);
+            this.tabpageLog.Size = new System.Drawing.Size(572, 528);
             this.tabpageLog.TabIndex = 0;
             this.tabpageLog.Text = "DangNhap";
             // 
@@ -239,7 +240,7 @@
             // 
             this.pEye1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pEye1.Image = global::DiaryApp.Properties.Resources.eye_crossed;
-            this.pEye1.Location = new System.Drawing.Point(463, 231);
+            this.pEye1.Location = new System.Drawing.Point(463, 247);
             this.pEye1.Name = "pEye1";
             this.pEye1.Size = new System.Drawing.Size(25, 25);
             this.pEye1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -253,10 +254,10 @@
             this.lbNavRes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbNavRes.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbNavRes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.lbNavRes.Location = new System.Drawing.Point(311, 463);
+            this.lbNavRes.Location = new System.Drawing.Point(311, 485);
             this.lbNavRes.Name = "lbNavRes";
             this.lbNavRes.Size = new System.Drawing.Size(166, 25);
-            this.lbNavRes.TabIndex = 8;
+            this.lbNavRes.TabIndex = 9;
             this.lbNavRes.Text = "Tạo tài khoản mới";
             this.lbNavRes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lbNavRes.Click += new System.EventHandler(this.lbNavRes_Click);
@@ -266,7 +267,7 @@
             this.lbQues.AutoSize = true;
             this.lbQues.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbQues.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lbQues.Location = new System.Drawing.Point(106, 463);
+            this.lbQues.Location = new System.Drawing.Point(106, 485);
             this.lbQues.Name = "lbQues";
             this.lbQues.Size = new System.Drawing.Size(209, 25);
             this.lbQues.TabIndex = 8;
@@ -279,7 +280,7 @@
             this.lbForget.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbForget.ForeColor = System.Drawing.SystemColors.GrayText;
             this.lbForget.ImageInterval = 0;
-            this.lbForget.Location = new System.Drawing.Point(312, 272);
+            this.lbForget.Location = new System.Drawing.Point(312, 288);
             this.lbForget.MinimumSize = new System.Drawing.Size(1, 1);
             this.lbForget.Name = "lbForget";
             this.lbForget.Padding = new System.Windows.Forms.Padding(26, 0, 0, 0);
@@ -302,10 +303,10 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(196, 342);
+            this.btnLogin.Location = new System.Drawing.Point(196, 360);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(180, 57);
-            this.btnLogin.TabIndex = 6;
+            this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = false;
             // 
@@ -314,7 +315,7 @@
             this.tabpageRes.BackColor = System.Drawing.SystemColors.Control;
             this.tabpageRes.Controls.Add(this.pEye2);
             this.tabpageRes.Controls.Add(this.pEye);
-            this.tabpageRes.Controls.Add(this.button1);
+            this.tabpageRes.Controls.Add(this.btnRes);
             this.tabpageRes.Controls.Add(this.pictureBox4);
             this.tabpageRes.Controls.Add(this.pictureBox3);
             this.tabpageRes.Controls.Add(this.pictureBox1);
@@ -330,9 +331,9 @@
             this.tabpageRes.Controls.Add(this.lbNavLog);
             this.tabpageRes.Controls.Add(this.label6);
             this.tabpageRes.Controls.Add(this.label2);
-            this.tabpageRes.Location = new System.Drawing.Point(0, 0);
+            this.tabpageRes.Location = new System.Drawing.Point(0, -1);
             this.tabpageRes.Name = "tabpageRes";
-            this.tabpageRes.Size = new System.Drawing.Size(572, 488);
+            this.tabpageRes.Size = new System.Drawing.Size(572, 528);
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
             // 
@@ -360,20 +361,20 @@
             this.pEye.TabStop = false;
             this.pEye.Click += new System.EventHandler(this.pEye_Click);
             // 
-            // button1
+            // btnRes
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(191, 380);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(180, 57);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Đăng ký";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnRes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.btnRes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRes.FlatAppearance.BorderSize = 0;
+            this.btnRes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRes.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRes.ForeColor = System.Drawing.Color.White;
+            this.btnRes.Location = new System.Drawing.Point(191, 380);
+            this.btnRes.Name = "btnRes";
+            this.btnRes.Size = new System.Drawing.Size(180, 57);
+            this.btnRes.TabIndex = 18;
+            this.btnRes.Text = "Đăng ký";
+            this.btnRes.UseVisualStyleBackColor = false;
             // 
             // pictureBox4
             // 
@@ -418,7 +419,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.PlaceholderText = "Username";
             this.textBox1.Size = new System.Drawing.Size(350, 29);
-            this.textBox1.TabIndex = 15;
+            this.textBox1.TabIndex = 14;
             // 
             // uiLine6
             // 
@@ -434,7 +435,7 @@
             this.uiLine6.Name = "uiLine6";
             this.uiLine6.Size = new System.Drawing.Size(350, 10);
             this.uiLine6.Style = Sunny.UI.UIStyle.Custom;
-            this.uiLine6.TabIndex = 13;
+            this.uiLine6.TabIndex = 20;
             this.uiLine6.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiLine5
@@ -451,7 +452,7 @@
             this.uiLine5.Name = "uiLine5";
             this.uiLine5.Size = new System.Drawing.Size(350, 10);
             this.uiLine5.Style = Sunny.UI.UIStyle.Custom;
-            this.uiLine5.TabIndex = 13;
+            this.uiLine5.TabIndex = 20;
             this.uiLine5.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiLine3
@@ -468,7 +469,7 @@
             this.uiLine3.Name = "uiLine3";
             this.uiLine3.Size = new System.Drawing.Size(350, 10);
             this.uiLine3.Style = Sunny.UI.UIStyle.Custom;
-            this.uiLine3.TabIndex = 13;
+            this.uiLine3.TabIndex = 20;
             this.uiLine3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiLine4
@@ -485,7 +486,7 @@
             this.uiLine4.Name = "uiLine4";
             this.uiLine4.Size = new System.Drawing.Size(350, 10);
             this.uiLine4.Style = Sunny.UI.UIStyle.Custom;
-            this.uiLine4.TabIndex = 14;
+            this.uiLine4.TabIndex = 20;
             this.uiLine4.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // pictureBox2
@@ -509,7 +510,7 @@
             this.txtPass2.Name = "txtPass2";
             this.txtPass2.PlaceholderText = "Nhập lại mật khẩu";
             this.txtPass2.Size = new System.Drawing.Size(319, 29);
-            this.txtPass2.TabIndex = 16;
+            this.txtPass2.TabIndex = 17;
             this.txtPass2.UseSystemPasswordChar = true;
             // 
             // txtPass1
@@ -535,7 +536,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PlaceholderText = "Email";
             this.txtEmail.Size = new System.Drawing.Size(350, 29);
-            this.txtEmail.TabIndex = 16;
+            this.txtEmail.TabIndex = 15;
             // 
             // lbNavLog
             // 
@@ -543,10 +544,10 @@
             this.lbNavLog.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbNavLog.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbNavLog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.lbNavLog.Location = new System.Drawing.Point(309, 463);
+            this.lbNavLog.Location = new System.Drawing.Point(309, 485);
             this.lbNavLog.Name = "lbNavLog";
             this.lbNavLog.Size = new System.Drawing.Size(152, 25);
-            this.lbNavLog.TabIndex = 11;
+            this.lbNavLog.TabIndex = 19;
             this.lbNavLog.Text = "Đăng nhập ngay";
             this.lbNavLog.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lbNavLog.Click += new System.EventHandler(this.lbNavLog_Click);
@@ -556,10 +557,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label6.Location = new System.Drawing.Point(123, 463);
+            this.label6.Location = new System.Drawing.Point(123, 485);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(189, 25);
-            this.label6.TabIndex = 12;
+            this.label6.TabIndex = 19;
             this.label6.Text = "Bạn đã có tài khoản?";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -572,7 +573,7 @@
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(572, 65);
-            this.label2.TabIndex = 3;
+            this.label2.TabIndex = 13;
             this.label2.Text = "DiaryApp";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -640,7 +641,7 @@
         private TextBox txtPass2;
         private TextBox txtPass1;
         private TextBox txtEmail;
-        private Button button1;
+        private Button btnRes;
         private PictureBox pEye;
         private PictureBox pEye2;
         private PictureBox pEye1;
