@@ -31,5 +31,10 @@ namespace DiaryApp.Source
         {
             pageLogAndReg.SelectTab(0);
         }
+
+        private void pEye_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

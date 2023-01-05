@@ -61,7 +61,7 @@
             this.lbNavLog = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pEye = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pClose)).BeginInit();
@@ -72,7 +72,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pEye)).BeginInit();
             this.SuspendLayout();
             // 
             // pnImage
@@ -295,7 +295,7 @@
             // tabpageRes
             // 
             this.tabpageRes.BackColor = System.Drawing.SystemColors.Control;
-            this.tabpageRes.Controls.Add(this.pictureBox5);
+            this.tabpageRes.Controls.Add(this.pEye);
             this.tabpageRes.Controls.Add(this.button1);
             this.tabpageRes.Controls.Add(this.pictureBox4);
             this.tabpageRes.Controls.Add(this.pictureBox3);
@@ -534,15 +534,16 @@
             this.label2.Text = "DiaryApp";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pictureBox5
+            // pEye
             // 
-            this.pictureBox5.Image = global::DiaryApp.Properties.Resources.eye_crossed;
-            this.pictureBox5.Location = new System.Drawing.Point(448, 232);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 20;
-            this.pictureBox5.TabStop = false;
+            this.pEye.Image = global::DiaryApp.Properties.Resources.eye_crossed;
+            this.pEye.Location = new System.Drawing.Point(448, 234);
+            this.pEye.Name = "pEye";
+            this.pEye.Size = new System.Drawing.Size(25, 25);
+            this.pEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pEye.TabIndex = 20;
+            this.pEye.TabStop = false;
+            this.pEye.Click += new System.EventHandler(this.pEye_Click);
             // 
             // LoginForm
             // 
@@ -568,7 +569,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pEye)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -607,6 +608,6 @@
         private TextBox textBox3;
         private TextBox txtEmail;
         private Button button1;
-        private PictureBox pictureBox5;
+        private PictureBox pEye;
     }
 }
