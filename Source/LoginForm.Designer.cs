@@ -45,6 +45,7 @@
             this.lbForget = new Sunny.UI.UISymbolLabel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.tabpageRes = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -56,7 +57,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.lbNavLog = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -291,6 +292,8 @@
             // 
             // tabpageRes
             // 
+            this.tabpageRes.BackColor = System.Drawing.SystemColors.Control;
+            this.tabpageRes.Controls.Add(this.button1);
             this.tabpageRes.Controls.Add(this.pictureBox4);
             this.tabpageRes.Controls.Add(this.pictureBox3);
             this.tabpageRes.Controls.Add(this.pictureBox1);
@@ -302,7 +305,7 @@
             this.tabpageRes.Controls.Add(this.pictureBox2);
             this.tabpageRes.Controls.Add(this.textBox4);
             this.tabpageRes.Controls.Add(this.textBox3);
-            this.tabpageRes.Controls.Add(this.textBox2);
+            this.tabpageRes.Controls.Add(this.txtEmail);
             this.tabpageRes.Controls.Add(this.lbNavLog);
             this.tabpageRes.Controls.Add(this.label6);
             this.tabpageRes.Controls.Add(this.label2);
@@ -311,13 +314,27 @@
             this.tabpageRes.Size = new System.Drawing.Size(572, 488);
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
-            this.tabpageRes.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(191, 380);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(180, 57);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Đăng ký";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::DiaryApp.Properties.Resources._lock;
-            this.pictureBox4.Location = new System.Drawing.Point(68, 336);
+            this.pictureBox4.Location = new System.Drawing.Point(68, 289);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(40, 40);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -328,7 +345,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::DiaryApp.Properties.Resources._lock;
-            this.pictureBox3.Location = new System.Drawing.Point(68, 262);
+            this.pictureBox3.Location = new System.Drawing.Point(68, 219);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 40);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -338,8 +355,8 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::DiaryApp.Properties.Resources._lock;
-            this.pictureBox1.Location = new System.Drawing.Point(68, 162);
+            this.pictureBox1.Image = global::DiaryApp.Properties.Resources.envelope;
+            this.pictureBox1.Location = new System.Drawing.Point(68, 149);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -354,7 +371,7 @@
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
             this.textBox1.Location = new System.Drawing.Point(123, 88);
             this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "Username hoặc email";
+            this.textBox1.PlaceholderText = "Username";
             this.textBox1.Size = new System.Drawing.Size(350, 29);
             this.textBox1.TabIndex = 15;
             // 
@@ -367,7 +384,7 @@
             this.uiLine6.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.uiLine6.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
             this.uiLine6.LineSize = 2;
-            this.uiLine6.Location = new System.Drawing.Point(123, 376);
+            this.uiLine6.Location = new System.Drawing.Point(123, 329);
             this.uiLine6.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLine6.Name = "uiLine6";
             this.uiLine6.Size = new System.Drawing.Size(350, 10);
@@ -384,7 +401,7 @@
             this.uiLine5.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.uiLine5.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
             this.uiLine5.LineSize = 2;
-            this.uiLine5.Location = new System.Drawing.Point(123, 302);
+            this.uiLine5.Location = new System.Drawing.Point(123, 259);
             this.uiLine5.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLine5.Name = "uiLine5";
             this.uiLine5.Size = new System.Drawing.Size(350, 10);
@@ -401,7 +418,7 @@
             this.uiLine3.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.uiLine3.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
             this.uiLine3.LineSize = 2;
-            this.uiLine3.Location = new System.Drawing.Point(123, 202);
+            this.uiLine3.Location = new System.Drawing.Point(123, 189);
             this.uiLine3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLine3.Name = "uiLine3";
             this.uiLine3.Size = new System.Drawing.Size(350, 10);
@@ -443,9 +460,9 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.textBox4.Location = new System.Drawing.Point(123, 345);
+            this.textBox4.Location = new System.Drawing.Point(123, 298);
             this.textBox4.Name = "textBox4";
-            this.textBox4.PlaceholderText = "Mật khẩu";
+            this.textBox4.PlaceholderText = "Nhập lại mật khẩu";
             this.textBox4.Size = new System.Drawing.Size(350, 29);
             this.textBox4.TabIndex = 16;
             this.textBox4.UseSystemPasswordChar = true;
@@ -456,25 +473,24 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.textBox3.Location = new System.Drawing.Point(123, 271);
+            this.textBox3.Location = new System.Drawing.Point(123, 228);
             this.textBox3.Name = "textBox3";
             this.textBox3.PlaceholderText = "Mật khẩu";
             this.textBox3.Size = new System.Drawing.Size(350, 29);
             this.textBox3.TabIndex = 16;
             this.textBox3.UseSystemPasswordChar = true;
             // 
-            // textBox2
+            // txtEmail
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.textBox2.Location = new System.Drawing.Point(123, 171);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PlaceholderText = "Mật khẩu";
-            this.textBox2.Size = new System.Drawing.Size(350, 29);
-            this.textBox2.TabIndex = 16;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.txtEmail.BackColor = System.Drawing.SystemColors.Control;
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.txtEmail.Location = new System.Drawing.Point(123, 158);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.PlaceholderText = "Email";
+            this.txtEmail.Size = new System.Drawing.Size(350, 29);
+            this.txtEmail.TabIndex = 16;
             // 
             // lbNavLog
             // 
@@ -575,6 +591,7 @@
         private PictureBox pictureBox2;
         private TextBox textBox4;
         private TextBox textBox3;
-        private TextBox textBox2;
+        private TextBox txtEmail;
+        private Button button1;
     }
 }
