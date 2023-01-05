@@ -40,6 +40,7 @@
             this.lbDiaryApp = new System.Windows.Forms.Label();
             this.pageLogAndReg = new Sunny.UI.UITabControl();
             this.tabpageLog = new System.Windows.Forms.TabPage();
+            this.pClose1 = new System.Windows.Forms.PictureBox();
             this.pEye1 = new System.Windows.Forms.PictureBox();
             this.lbNavRes = new System.Windows.Forms.Label();
             this.lbQues = new System.Windows.Forms.Label();
@@ -66,12 +67,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pClose1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pClose)).BeginInit();
             this.pageLogAndReg.SuspendLayout();
             this.tabpageLog.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pClose1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pEye1)).BeginInit();
             this.tabpageRes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pEye2)).BeginInit();
@@ -80,7 +81,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pClose1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnImage
@@ -241,6 +241,18 @@
             this.tabpageLog.Size = new System.Drawing.Size(572, 569);
             this.tabpageLog.TabIndex = 0;
             this.tabpageLog.Text = "DangNhap";
+            // 
+            // pClose1
+            // 
+            this.pClose1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pClose1.Image = global::DiaryApp.Properties.Resources.close_green;
+            this.pClose1.Location = new System.Drawing.Point(537, 15);
+            this.pClose1.Margin = new System.Windows.Forms.Padding(15);
+            this.pClose1.Name = "pClose1";
+            this.pClose1.Size = new System.Drawing.Size(20, 20);
+            this.pClose1.TabIndex = 22;
+            this.pClose1.TabStop = false;
+            this.pClose1.Click += new System.EventHandler(this.pClose_Click);
             // 
             // pEye1
             // 
@@ -591,6 +603,7 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Điều khoản sử dụng";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label6
             // 
@@ -617,18 +630,6 @@
             this.label2.Text = "DiaryApp";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pClose1
-            // 
-            this.pClose1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pClose1.Image = global::DiaryApp.Properties.Resources.close_green;
-            this.pClose1.Location = new System.Drawing.Point(537, 15);
-            this.pClose1.Margin = new System.Windows.Forms.Padding(15);
-            this.pClose1.Name = "pClose1";
-            this.pClose1.Size = new System.Drawing.Size(20, 20);
-            this.pClose1.TabIndex = 22;
-            this.pClose1.TabStop = false;
-            this.pClose1.Click += new System.EventHandler(this.pClose_Click);
-            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -646,6 +647,7 @@
             this.pageLogAndReg.ResumeLayout(false);
             this.tabpageLog.ResumeLayout(false);
             this.tabpageLog.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pClose1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pEye1)).EndInit();
             this.tabpageRes.ResumeLayout(false);
             this.tabpageRes.PerformLayout();
@@ -655,7 +657,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pClose1)).EndInit();
             this.ResumeLayout(false);
 
         }

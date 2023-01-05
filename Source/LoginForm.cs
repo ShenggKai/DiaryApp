@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace DiaryApp.Source
 {
@@ -97,5 +99,10 @@ namespace DiaryApp.Source
             pageLogAndReg.SelectTab(0);
         }
         #endregion
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("https://www.termsfeed.com/live/789f25f3-0f9e-4416-a657-e302e36ec0f8") { UseShellExecute = true });
+        }
     }
 }
