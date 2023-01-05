@@ -21,5 +21,11 @@ namespace DiaryApp.Source
         {
             Application.Exit();
         }
+
+        private void lbNavRes_Click(object sender, EventArgs e)
+        {
+            //pageLogAndReg.page
+            pageLogAndReg.SelectedTab(1);
+        }
     }
 }

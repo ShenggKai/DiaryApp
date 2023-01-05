@@ -40,14 +40,14 @@
             this.lbDiaryApp = new System.Windows.Forms.Label();
             this.pageLogAndReg = new Sunny.UI.UITabControl();
             this.tabpageLog = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbNavRes = new System.Windows.Forms.Label();
             this.lbQues = new System.Windows.Forms.Label();
             this.lbForget = new Sunny.UI.UISymbolLabel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.tabpageRes = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbNavLog = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pClose)).BeginInit();
@@ -194,7 +194,7 @@
             // tabpageLog
             // 
             this.tabpageLog.BackColor = System.Drawing.SystemColors.Control;
-            this.tabpageLog.Controls.Add(this.label1);
+            this.tabpageLog.Controls.Add(this.lbNavRes);
             this.tabpageLog.Controls.Add(this.lbQues);
             this.tabpageLog.Controls.Add(this.lbForget);
             this.tabpageLog.Controls.Add(this.btnLogin);
@@ -211,18 +211,19 @@
             this.tabpageLog.TabIndex = 0;
             this.tabpageLog.Text = "DangNhap";
             // 
-            // label1
+            // lbNavRes
             // 
-            this.label1.AutoSize = true;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.label1.Location = new System.Drawing.Point(311, 463);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 25);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Tạo tài khoản mới";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbNavRes.AutoSize = true;
+            this.lbNavRes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbNavRes.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbNavRes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.lbNavRes.Location = new System.Drawing.Point(311, 463);
+            this.lbNavRes.Name = "lbNavRes";
+            this.lbNavRes.Size = new System.Drawing.Size(166, 25);
+            this.lbNavRes.TabIndex = 8;
+            this.lbNavRes.Text = "Tạo tài khoản mới";
+            this.lbNavRes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbNavRes.Click += new System.EventHandler(this.lbNavRes_Click);
             // 
             // lbQues
             // 
@@ -274,7 +275,7 @@
             // 
             // tabpageRes
             // 
-            this.tabpageRes.Controls.Add(this.label5);
+            this.tabpageRes.Controls.Add(this.lbNavLog);
             this.tabpageRes.Controls.Add(this.label6);
             this.tabpageRes.Controls.Add(this.label2);
             this.tabpageRes.Location = new System.Drawing.Point(0, 0);
@@ -283,6 +284,31 @@
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
             this.tabpageRes.UseVisualStyleBackColor = true;
+            // 
+            // lbNavLog
+            // 
+            this.lbNavLog.AutoSize = true;
+            this.lbNavLog.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbNavLog.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbNavLog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.lbNavLog.Location = new System.Drawing.Point(309, 463);
+            this.lbNavLog.Name = "lbNavLog";
+            this.lbNavLog.Size = new System.Drawing.Size(152, 25);
+            this.lbNavLog.TabIndex = 11;
+            this.lbNavLog.Text = "Đăng nhập ngay";
+            this.lbNavLog.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label6.Location = new System.Drawing.Point(123, 463);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(189, 25);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Bạn đã có tài khoản?";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label2
             // 
@@ -296,31 +322,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "DiaryApp";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.label5.Location = new System.Drawing.Point(309, 463);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(152, 25);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Đăng nhập ngay";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label6.Location = new System.Drawing.Point(123, 463);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(189, 25);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Bạn đã có tài khoản?";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // LoginForm
             // 
@@ -363,9 +364,9 @@
         private Button btnLogin;
         private Sunny.UI.UISymbolLabel lbForget;
         private Label lbQues;
-        private Label label1;
+        private Label lbNavRes;
         private Label label2;
-        private Label label5;
+        private Label lbNavLog;
         private Label label6;
     }
 }
