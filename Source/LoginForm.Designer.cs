@@ -40,6 +40,7 @@
             this.lbDiaryApp = new System.Windows.Forms.Label();
             this.pageLogAndReg = new Sunny.UI.UITabControl();
             this.tabpageLog = new System.Windows.Forms.TabPage();
+            this.pEye1 = new System.Windows.Forms.PictureBox();
             this.lbNavRes = new System.Windows.Forms.Label();
             this.lbQues = new System.Windows.Forms.Label();
             this.lbForget = new Sunny.UI.UISymbolLabel();
@@ -68,6 +69,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pClose)).BeginInit();
             this.pageLogAndReg.SuspendLayout();
             this.tabpageLog.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pEye1)).BeginInit();
             this.tabpageRes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pEye2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pEye)).BeginInit();
@@ -147,7 +149,7 @@
             this.txtPass.Location = new System.Drawing.Point(138, 225);
             this.txtPass.Name = "txtPass";
             this.txtPass.PlaceholderText = "Mật khẩu";
-            this.txtPass.Size = new System.Drawing.Size(350, 29);
+            this.txtPass.Size = new System.Drawing.Size(319, 29);
             this.txtPass.TabIndex = 4;
             this.txtPass.UseSystemPasswordChar = true;
             // 
@@ -215,6 +217,7 @@
             // tabpageLog
             // 
             this.tabpageLog.BackColor = System.Drawing.SystemColors.Control;
+            this.tabpageLog.Controls.Add(this.pEye1);
             this.tabpageLog.Controls.Add(this.lbNavRes);
             this.tabpageLog.Controls.Add(this.lbQues);
             this.tabpageLog.Controls.Add(this.lbForget);
@@ -231,6 +234,18 @@
             this.tabpageLog.Size = new System.Drawing.Size(572, 488);
             this.tabpageLog.TabIndex = 0;
             this.tabpageLog.Text = "DangNhap";
+            // 
+            // pEye1
+            // 
+            this.pEye1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pEye1.Image = global::DiaryApp.Properties.Resources.eye_crossed;
+            this.pEye1.Location = new System.Drawing.Point(463, 231);
+            this.pEye1.Name = "pEye1";
+            this.pEye1.Size = new System.Drawing.Size(25, 25);
+            this.pEye1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pEye1.TabIndex = 21;
+            this.pEye1.TabStop = false;
+            this.pEye1.Click += new System.EventHandler(this.pEye1_Click);
             // 
             // lbNavRes
             // 
@@ -317,7 +332,7 @@
             this.tabpageRes.Controls.Add(this.label2);
             this.tabpageRes.Location = new System.Drawing.Point(0, 0);
             this.tabpageRes.Name = "tabpageRes";
-            this.tabpageRes.Size = new System.Drawing.Size(572, 488);
+            this.tabpageRes.Size = new System.Drawing.Size(200, 60);
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
             // 
@@ -556,7 +571,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(572, 65);
+            this.label2.Size = new System.Drawing.Size(200, 65);
             this.label2.TabIndex = 3;
             this.label2.Text = "DiaryApp";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -579,6 +594,7 @@
             this.pageLogAndReg.ResumeLayout(false);
             this.tabpageLog.ResumeLayout(false);
             this.tabpageLog.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pEye1)).EndInit();
             this.tabpageRes.ResumeLayout(false);
             this.tabpageRes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pEye2)).EndInit();
@@ -627,5 +643,6 @@
         private Button button1;
         private PictureBox pEye;
         private PictureBox pEye2;
+        private PictureBox pEye1;
     }
 }

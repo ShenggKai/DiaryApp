@@ -22,11 +22,29 @@ namespace DiaryApp.Source
             Application.Exit();
         }
 
+        #region Login Form
+        private bool eyeHide1 = true;
+        private void pEye1_Click(object sender, EventArgs e)
+        {
+            if (eyeHide1 == true)
+            {
+                pEye1.Image = global::DiaryApp.Properties.Resources.eye;
+                eyeHide1 = false;
+            }
+            else
+            {
+                pEye1.Image = global::DiaryApp.Properties.Resources.eye_crossed;
+                eyeHide1 = true;
+            }
+        }
+
         private void lbNavRes_Click(object sender, EventArgs e)
         {
             pageLogAndReg.SelectTab(1);
         }
+        #endregion
 
+        #region Register Form
         private void lbNavLog_Click(object sender, EventArgs e)
         {
             pageLogAndReg.SelectTab(0);
@@ -61,5 +79,7 @@ namespace DiaryApp.Source
                 eyeHide2 = true;
             }
         }
+        #endregion
+
     }
 }
