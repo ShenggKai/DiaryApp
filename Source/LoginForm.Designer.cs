@@ -352,7 +352,7 @@
             this.checkBox1.Location = new System.Drawing.Point(111, 358);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(151, 29);
-            this.checkBox1.TabIndex = 21;
+            this.checkBox1.TabIndex = 18;
             this.checkBox1.Text = "Tôi đồng ý với";
             this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.UseVisualStyleBackColor = false;
@@ -392,7 +392,7 @@
             this.btnRes.Location = new System.Drawing.Point(191, 407);
             this.btnRes.Name = "btnRes";
             this.btnRes.Size = new System.Drawing.Size(180, 57);
-            this.btnRes.TabIndex = 18;
+            this.btnRes.TabIndex = 19;
             this.btnRes.Text = "Đăng ký";
             this.btnRes.UseVisualStyleBackColor = false;
             // 
@@ -506,7 +506,7 @@
             this.uiLine4.Name = "uiLine4";
             this.uiLine4.Size = new System.Drawing.Size(350, 10);
             this.uiLine4.Style = Sunny.UI.UIStyle.Custom;
-            this.uiLine4.TabIndex = 20;
+            this.uiLine4.TabIndex = 13;
             this.uiLine4.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // pictureBox2
@@ -580,7 +580,7 @@
             this.label1.Location = new System.Drawing.Point(257, 360);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(193, 25);
-            this.label1.TabIndex = 19;
+            this.label1.TabIndex = 18;
             this.label1.Text = "Điều khoản sử dụng";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
