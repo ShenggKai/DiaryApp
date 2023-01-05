@@ -66,6 +66,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pClose1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pClose)).BeginInit();
@@ -79,6 +80,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pClose1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnImage
@@ -95,7 +97,7 @@
             // 
             this.pLock.BackColor = System.Drawing.Color.Transparent;
             this.pLock.Image = global::DiaryApp.Properties.Resources._lock;
-            this.pLock.Location = new System.Drawing.Point(83, 232);
+            this.pLock.Location = new System.Drawing.Point(83, 254);
             this.pLock.Name = "pLock";
             this.pLock.Size = new System.Drawing.Size(40, 40);
             this.pLock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -108,7 +110,7 @@
             this.txtUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUserName.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.txtUserName.Location = new System.Drawing.Point(138, 151);
+            this.txtUserName.Location = new System.Drawing.Point(138, 173);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.PlaceholderText = "Username hoặc email";
             this.txtUserName.Size = new System.Drawing.Size(350, 29);
@@ -123,7 +125,7 @@
             this.uiLine2.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.uiLine2.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
             this.uiLine2.LineSize = 2;
-            this.uiLine2.Location = new System.Drawing.Point(138, 272);
+            this.uiLine2.Location = new System.Drawing.Point(138, 294);
             this.uiLine2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLine2.Name = "uiLine2";
             this.uiLine2.Size = new System.Drawing.Size(350, 10);
@@ -135,7 +137,7 @@
             // 
             this.pUser.BackColor = System.Drawing.Color.Transparent;
             this.pUser.Image = global::DiaryApp.Properties.Resources.user_green;
-            this.pUser.Location = new System.Drawing.Point(83, 142);
+            this.pUser.Location = new System.Drawing.Point(83, 164);
             this.pUser.Name = "pUser";
             this.pUser.Size = new System.Drawing.Size(40, 40);
             this.pUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -148,7 +150,7 @@
             this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPass.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.txtPass.Location = new System.Drawing.Point(138, 241);
+            this.txtPass.Location = new System.Drawing.Point(138, 263);
             this.txtPass.Name = "txtPass";
             this.txtPass.PlaceholderText = "Mật khẩu";
             this.txtPass.Size = new System.Drawing.Size(319, 29);
@@ -164,7 +166,7 @@
             this.uiLine1.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.uiLine1.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
             this.uiLine1.LineSize = 2;
-            this.uiLine1.Location = new System.Drawing.Point(138, 186);
+            this.uiLine1.Location = new System.Drawing.Point(138, 208);
             this.uiLine1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLine1.Name = "uiLine1";
             this.uiLine1.Size = new System.Drawing.Size(350, 10);
@@ -176,7 +178,8 @@
             // 
             this.pClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pClose.Image = global::DiaryApp.Properties.Resources.close_green;
-            this.pClose.Location = new System.Drawing.Point(963, 15);
+            this.pClose.Location = new System.Drawing.Point(537, 15);
+            this.pClose.Margin = new System.Windows.Forms.Padding(15);
             this.pClose.Name = "pClose";
             this.pClose.Size = new System.Drawing.Size(20, 20);
             this.pClose.TabIndex = 1;
@@ -201,16 +204,16 @@
             this.pageLogAndReg.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.pageLogAndReg.Controls.Add(this.tabpageLog);
             this.pageLogAndReg.Controls.Add(this.tabpageRes);
-            this.pageLogAndReg.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pageLogAndReg.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pageLogAndReg.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.pageLogAndReg.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pageLogAndReg.Frame = null;
             this.pageLogAndReg.ItemSize = new System.Drawing.Size(0, 1);
-            this.pageLogAndReg.Location = new System.Drawing.Point(426, 41);
+            this.pageLogAndReg.Location = new System.Drawing.Point(426, 0);
             this.pageLogAndReg.MainPage = "";
             this.pageLogAndReg.Name = "pageLogAndReg";
             this.pageLogAndReg.SelectedIndex = 0;
-            this.pageLogAndReg.Size = new System.Drawing.Size(572, 528);
+            this.pageLogAndReg.Size = new System.Drawing.Size(572, 569);
             this.pageLogAndReg.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.pageLogAndReg.TabIndex = 3;
             this.pageLogAndReg.TabUnSelectedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
@@ -220,6 +223,7 @@
             // tabpageLog
             // 
             this.tabpageLog.BackColor = System.Drawing.SystemColors.Control;
+            this.tabpageLog.Controls.Add(this.pClose1);
             this.tabpageLog.Controls.Add(this.pEye1);
             this.tabpageLog.Controls.Add(this.lbNavRes);
             this.tabpageLog.Controls.Add(this.lbQues);
@@ -234,7 +238,7 @@
             this.tabpageLog.Controls.Add(this.txtPass);
             this.tabpageLog.Location = new System.Drawing.Point(0, -1);
             this.tabpageLog.Name = "tabpageLog";
-            this.tabpageLog.Size = new System.Drawing.Size(572, 528);
+            this.tabpageLog.Size = new System.Drawing.Size(572, 569);
             this.tabpageLog.TabIndex = 0;
             this.tabpageLog.Text = "DangNhap";
             // 
@@ -242,7 +246,7 @@
             // 
             this.pEye1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pEye1.Image = global::DiaryApp.Properties.Resources.eye_crossed;
-            this.pEye1.Location = new System.Drawing.Point(463, 247);
+            this.pEye1.Location = new System.Drawing.Point(463, 269);
             this.pEye1.Name = "pEye1";
             this.pEye1.Size = new System.Drawing.Size(25, 25);
             this.pEye1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -256,7 +260,7 @@
             this.lbNavRes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbNavRes.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbNavRes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.lbNavRes.Location = new System.Drawing.Point(311, 485);
+            this.lbNavRes.Location = new System.Drawing.Point(311, 523);
             this.lbNavRes.Name = "lbNavRes";
             this.lbNavRes.Size = new System.Drawing.Size(166, 25);
             this.lbNavRes.TabIndex = 9;
@@ -269,7 +273,7 @@
             this.lbQues.AutoSize = true;
             this.lbQues.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbQues.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lbQues.Location = new System.Drawing.Point(106, 485);
+            this.lbQues.Location = new System.Drawing.Point(106, 523);
             this.lbQues.Name = "lbQues";
             this.lbQues.Size = new System.Drawing.Size(209, 25);
             this.lbQues.TabIndex = 8;
@@ -282,7 +286,7 @@
             this.lbForget.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbForget.ForeColor = System.Drawing.SystemColors.GrayText;
             this.lbForget.ImageInterval = 0;
-            this.lbForget.Location = new System.Drawing.Point(312, 288);
+            this.lbForget.Location = new System.Drawing.Point(312, 310);
             this.lbForget.MinimumSize = new System.Drawing.Size(1, 1);
             this.lbForget.Name = "lbForget";
             this.lbForget.Padding = new System.Windows.Forms.Padding(26, 0, 0, 0);
@@ -305,7 +309,7 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(196, 360);
+            this.btnLogin.Location = new System.Drawing.Point(196, 382);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(180, 57);
             this.btnLogin.TabIndex = 8;
@@ -317,6 +321,7 @@
             // 
             this.tabpageRes.BackColor = System.Drawing.SystemColors.Control;
             this.tabpageRes.Controls.Add(this.checkBox1);
+            this.tabpageRes.Controls.Add(this.pClose);
             this.tabpageRes.Controls.Add(this.pEye2);
             this.tabpageRes.Controls.Add(this.pEye);
             this.tabpageRes.Controls.Add(this.btnRes);
@@ -338,7 +343,7 @@
             this.tabpageRes.Controls.Add(this.label2);
             this.tabpageRes.Location = new System.Drawing.Point(0, -1);
             this.tabpageRes.Name = "tabpageRes";
-            this.tabpageRes.Size = new System.Drawing.Size(572, 528);
+            this.tabpageRes.Size = new System.Drawing.Size(572, 569);
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
             // 
@@ -350,7 +355,7 @@
             this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.checkBox1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.checkBox1.Location = new System.Drawing.Point(111, 358);
+            this.checkBox1.Location = new System.Drawing.Point(111, 388);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(151, 29);
             this.checkBox1.TabIndex = 18;
@@ -362,7 +367,7 @@
             // 
             this.pEye2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pEye2.Image = global::DiaryApp.Properties.Resources.eye_crossed;
-            this.pEye2.Location = new System.Drawing.Point(448, 304);
+            this.pEye2.Location = new System.Drawing.Point(448, 322);
             this.pEye2.Name = "pEye2";
             this.pEye2.Size = new System.Drawing.Size(25, 25);
             this.pEye2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -374,7 +379,7 @@
             // 
             this.pEye.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pEye.Image = global::DiaryApp.Properties.Resources.eye_crossed;
-            this.pEye.Location = new System.Drawing.Point(448, 234);
+            this.pEye.Location = new System.Drawing.Point(448, 252);
             this.pEye.Name = "pEye";
             this.pEye.Size = new System.Drawing.Size(25, 25);
             this.pEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -390,7 +395,7 @@
             this.btnRes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRes.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnRes.ForeColor = System.Drawing.Color.White;
-            this.btnRes.Location = new System.Drawing.Point(191, 407);
+            this.btnRes.Location = new System.Drawing.Point(191, 439);
             this.btnRes.Name = "btnRes";
             this.btnRes.Size = new System.Drawing.Size(180, 57);
             this.btnRes.TabIndex = 19;
@@ -402,7 +407,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::DiaryApp.Properties.Resources._lock;
-            this.pictureBox4.Location = new System.Drawing.Point(68, 289);
+            this.pictureBox4.Location = new System.Drawing.Point(68, 307);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(40, 40);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -413,7 +418,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::DiaryApp.Properties.Resources._lock;
-            this.pictureBox3.Location = new System.Drawing.Point(68, 219);
+            this.pictureBox3.Location = new System.Drawing.Point(68, 237);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 40);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -424,7 +429,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::DiaryApp.Properties.Resources.envelope;
-            this.pictureBox1.Location = new System.Drawing.Point(68, 149);
+            this.pictureBox1.Location = new System.Drawing.Point(68, 167);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -437,7 +442,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.textBox1.Location = new System.Drawing.Point(123, 88);
+            this.textBox1.Location = new System.Drawing.Point(123, 106);
             this.textBox1.Name = "textBox1";
             this.textBox1.PlaceholderText = "Username";
             this.textBox1.Size = new System.Drawing.Size(350, 29);
@@ -452,7 +457,7 @@
             this.uiLine6.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.uiLine6.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
             this.uiLine6.LineSize = 2;
-            this.uiLine6.Location = new System.Drawing.Point(123, 329);
+            this.uiLine6.Location = new System.Drawing.Point(123, 347);
             this.uiLine6.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLine6.Name = "uiLine6";
             this.uiLine6.Size = new System.Drawing.Size(350, 10);
@@ -469,7 +474,7 @@
             this.uiLine5.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.uiLine5.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
             this.uiLine5.LineSize = 2;
-            this.uiLine5.Location = new System.Drawing.Point(123, 259);
+            this.uiLine5.Location = new System.Drawing.Point(123, 277);
             this.uiLine5.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLine5.Name = "uiLine5";
             this.uiLine5.Size = new System.Drawing.Size(350, 10);
@@ -486,7 +491,7 @@
             this.uiLine3.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.uiLine3.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
             this.uiLine3.LineSize = 2;
-            this.uiLine3.Location = new System.Drawing.Point(123, 189);
+            this.uiLine3.Location = new System.Drawing.Point(123, 207);
             this.uiLine3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLine3.Name = "uiLine3";
             this.uiLine3.Size = new System.Drawing.Size(350, 10);
@@ -503,7 +508,7 @@
             this.uiLine4.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.uiLine4.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
             this.uiLine4.LineSize = 2;
-            this.uiLine4.Location = new System.Drawing.Point(123, 123);
+            this.uiLine4.Location = new System.Drawing.Point(123, 141);
             this.uiLine4.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLine4.Name = "uiLine4";
             this.uiLine4.Size = new System.Drawing.Size(350, 10);
@@ -515,7 +520,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::DiaryApp.Properties.Resources.user_green;
-            this.pictureBox2.Location = new System.Drawing.Point(68, 79);
+            this.pictureBox2.Location = new System.Drawing.Point(68, 97);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 40);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -528,7 +533,7 @@
             this.txtPass2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPass2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPass2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.txtPass2.Location = new System.Drawing.Point(123, 298);
+            this.txtPass2.Location = new System.Drawing.Point(123, 316);
             this.txtPass2.Name = "txtPass2";
             this.txtPass2.PlaceholderText = "Nhập lại mật khẩu";
             this.txtPass2.Size = new System.Drawing.Size(319, 29);
@@ -541,7 +546,7 @@
             this.txtPass1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPass1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPass1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.txtPass1.Location = new System.Drawing.Point(123, 228);
+            this.txtPass1.Location = new System.Drawing.Point(123, 246);
             this.txtPass1.Name = "txtPass1";
             this.txtPass1.PlaceholderText = "Mật khẩu";
             this.txtPass1.Size = new System.Drawing.Size(319, 29);
@@ -554,7 +559,7 @@
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.txtEmail.Location = new System.Drawing.Point(123, 158);
+            this.txtEmail.Location = new System.Drawing.Point(123, 176);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PlaceholderText = "Email";
             this.txtEmail.Size = new System.Drawing.Size(350, 29);
@@ -566,7 +571,7 @@
             this.lbNavLog.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbNavLog.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbNavLog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.lbNavLog.Location = new System.Drawing.Point(309, 485);
+            this.lbNavLog.Location = new System.Drawing.Point(309, 523);
             this.lbNavLog.Name = "lbNavLog";
             this.lbNavLog.Size = new System.Drawing.Size(152, 25);
             this.lbNavLog.TabIndex = 19;
@@ -580,7 +585,7 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.label1.Location = new System.Drawing.Point(257, 360);
+            this.label1.Location = new System.Drawing.Point(257, 390);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(193, 25);
             this.label1.TabIndex = 18;
@@ -592,7 +597,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label6.Location = new System.Drawing.Point(123, 485);
+            this.label6.Location = new System.Drawing.Point(123, 523);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(189, 25);
             this.label6.TabIndex = 19;
@@ -612,13 +617,24 @@
             this.label2.Text = "DiaryApp";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // pClose1
+            // 
+            this.pClose1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pClose1.Image = global::DiaryApp.Properties.Resources.close_green;
+            this.pClose1.Location = new System.Drawing.Point(537, 15);
+            this.pClose1.Margin = new System.Windows.Forms.Padding(15);
+            this.pClose1.Name = "pClose1";
+            this.pClose1.Size = new System.Drawing.Size(20, 20);
+            this.pClose1.TabIndex = 22;
+            this.pClose1.TabStop = false;
+            this.pClose1.Click += new System.EventHandler(this.pClose_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(998, 569);
             this.Controls.Add(this.pageLogAndReg);
-            this.Controls.Add(this.pClose);
             this.Controls.Add(this.pnImage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -639,6 +655,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pClose1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -682,5 +699,6 @@
         private PictureBox pEye1;
         private CheckBox checkBox1;
         private Label label1;
+        private PictureBox pClose1;
     }
 }
