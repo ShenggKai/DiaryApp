@@ -24,8 +24,12 @@ namespace DiaryApp.Source
 
         private void lbNavRes_Click(object sender, EventArgs e)
         {
-            //pageLogAndReg.page
-            pageLogAndReg.SelectedTab(1);
+            pageLogAndReg.SelectTab(1);
+        }
+
+        private void lbNavLog_Click(object sender, EventArgs e)
+        {
+            pageLogAndReg.SelectTab(0);
         }
     }
 }

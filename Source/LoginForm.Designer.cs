@@ -297,6 +297,7 @@
             this.lbNavLog.TabIndex = 11;
             this.lbNavLog.Text = "Đăng nhập ngay";
             this.lbNavLog.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbNavLog.Click += new System.EventHandler(this.lbNavLog_Click);
             // 
             // label6
             // 
