@@ -32,9 +32,34 @@ namespace DiaryApp.Source
             pageLogAndReg.SelectTab(0);
         }
 
+        private bool eyeHide = true;
         private void pEye_Click(object sender, EventArgs e)
         {
+            if (eyeHide == true)
+            {
+                pEye.Image = global::DiaryApp.Properties.Resources.eye;
+                eyeHide = false;
+            }
+            else
+            {
+                pEye.Image = global::DiaryApp.Properties.Resources.eye_crossed;
+                eyeHide = true;
+            }
+        }
 
+        private bool eyeHide2 = true;
+        private void pEye2_Click(object sender, EventArgs e)
+        {
+            if (eyeHide2 == true)
+            {
+                pEye2.Image = global::DiaryApp.Properties.Resources.eye;
+                eyeHide2 = false;
+            }
+            else
+            {
+                pEye2.Image = global::DiaryApp.Properties.Resources.eye_crossed;
+                eyeHide2 = true;
+            }
         }
     }
 }

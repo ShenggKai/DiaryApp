@@ -45,6 +45,8 @@
             this.lbForget = new Sunny.UI.UISymbolLabel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.tabpageRes = new System.Windows.Forms.TabPage();
+            this.pEye2 = new System.Windows.Forms.PictureBox();
+            this.pEye = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -61,18 +63,18 @@
             this.lbNavLog = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pEye = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pClose)).BeginInit();
             this.pageLogAndReg.SuspendLayout();
             this.tabpageLog.SuspendLayout();
             this.tabpageRes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pEye2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pEye)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pEye)).BeginInit();
             this.SuspendLayout();
             // 
             // pnImage
@@ -295,6 +297,7 @@
             // tabpageRes
             // 
             this.tabpageRes.BackColor = System.Drawing.SystemColors.Control;
+            this.tabpageRes.Controls.Add(this.pEye2);
             this.tabpageRes.Controls.Add(this.pEye);
             this.tabpageRes.Controls.Add(this.button1);
             this.tabpageRes.Controls.Add(this.pictureBox4);
@@ -317,6 +320,30 @@
             this.tabpageRes.Size = new System.Drawing.Size(572, 488);
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
+            // 
+            // pEye2
+            // 
+            this.pEye2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pEye2.Image = global::DiaryApp.Properties.Resources.eye_crossed;
+            this.pEye2.Location = new System.Drawing.Point(448, 304);
+            this.pEye2.Name = "pEye2";
+            this.pEye2.Size = new System.Drawing.Size(25, 25);
+            this.pEye2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pEye2.TabIndex = 20;
+            this.pEye2.TabStop = false;
+            this.pEye2.Click += new System.EventHandler(this.pEye2_Click);
+            // 
+            // pEye
+            // 
+            this.pEye.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pEye.Image = global::DiaryApp.Properties.Resources.eye_crossed;
+            this.pEye.Location = new System.Drawing.Point(448, 234);
+            this.pEye.Name = "pEye";
+            this.pEye.Size = new System.Drawing.Size(25, 25);
+            this.pEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pEye.TabIndex = 20;
+            this.pEye.TabStop = false;
+            this.pEye.Click += new System.EventHandler(this.pEye_Click);
             // 
             // button1
             // 
@@ -466,7 +493,7 @@
             this.textBox4.Location = new System.Drawing.Point(123, 298);
             this.textBox4.Name = "textBox4";
             this.textBox4.PlaceholderText = "Nhập lại mật khẩu";
-            this.textBox4.Size = new System.Drawing.Size(350, 29);
+            this.textBox4.Size = new System.Drawing.Size(319, 29);
             this.textBox4.TabIndex = 16;
             this.textBox4.UseSystemPasswordChar = true;
             // 
@@ -534,17 +561,6 @@
             this.label2.Text = "DiaryApp";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pEye
-            // 
-            this.pEye.Image = global::DiaryApp.Properties.Resources.eye_crossed;
-            this.pEye.Location = new System.Drawing.Point(448, 234);
-            this.pEye.Name = "pEye";
-            this.pEye.Size = new System.Drawing.Size(25, 25);
-            this.pEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pEye.TabIndex = 20;
-            this.pEye.TabStop = false;
-            this.pEye.Click += new System.EventHandler(this.pEye_Click);
-            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -565,11 +581,12 @@
             this.tabpageLog.PerformLayout();
             this.tabpageRes.ResumeLayout(false);
             this.tabpageRes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pEye2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pEye)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pEye)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -609,5 +626,6 @@
         private TextBox txtEmail;
         private Button button1;
         private PictureBox pEye;
+        private PictureBox pEye2;
     }
 }
