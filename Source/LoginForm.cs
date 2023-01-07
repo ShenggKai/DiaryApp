@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Diagnostics;
+using System.Data.SqlClient;
 
 namespace DiaryApp.Source
 {
@@ -18,6 +18,8 @@ namespace DiaryApp.Source
         {
             InitializeComponent();
         }
+
+        SqlConnection conn = new SqlConnection(@"Data Source=KAI\SQLEXPRESS;Initial Catalog=DiaryApp;Integrated Security=True");
 
         private void pClose_Click(object sender, EventArgs e)
         {
