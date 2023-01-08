@@ -66,8 +66,9 @@
             this.lbNavLog = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.lbDiaryApp2 = new System.Windows.Forms.Label();
+            this.tabpageForget = new System.Windows.Forms.TabPage();
+            this.lbDiaryApp3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pClose)).BeginInit();
@@ -82,6 +83,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tabpageForget.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnImage
@@ -205,7 +207,7 @@
             this.pageLogAndReg.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.pageLogAndReg.Controls.Add(this.tabpageLog);
             this.pageLogAndReg.Controls.Add(this.tabpageRes);
-            this.pageLogAndReg.Controls.Add(this.tabPage1);
+            this.pageLogAndReg.Controls.Add(this.tabpageForget);
             this.pageLogAndReg.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pageLogAndReg.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.pageLogAndReg.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -353,10 +355,10 @@
             this.tabpageRes.Controls.Add(this.lbNavLog);
             this.tabpageRes.Controls.Add(this.label1);
             this.tabpageRes.Controls.Add(this.label6);
-            this.tabpageRes.Controls.Add(this.label2);
+            this.tabpageRes.Controls.Add(this.lbDiaryApp2);
             this.tabpageRes.Location = new System.Drawing.Point(0, 0);
             this.tabpageRes.Name = "tabpageRes";
-            this.tabpageRes.Size = new System.Drawing.Size(200, 60);
+            this.tabpageRes.Size = new System.Drawing.Size(572, 529);
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
             // 
@@ -618,27 +620,41 @@
             this.label6.Text = "Bạn đã có tài khoản?";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label2
+            // lbDiaryApp2
             // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Cascadia Mono", 28.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 65);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "DiaryApp";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbDiaryApp2.BackColor = System.Drawing.Color.Transparent;
+            this.lbDiaryApp2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbDiaryApp2.Font = new System.Drawing.Font("Cascadia Mono", 28.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lbDiaryApp2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.lbDiaryApp2.Location = new System.Drawing.Point(0, 0);
+            this.lbDiaryApp2.Name = "lbDiaryApp2";
+            this.lbDiaryApp2.Size = new System.Drawing.Size(572, 65);
+            this.lbDiaryApp2.TabIndex = 13;
+            this.lbDiaryApp2.Text = "DiaryApp";
+            this.lbDiaryApp2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // tabPage1
+            // tabpageForget
             // 
-            this.tabPage1.Location = new System.Drawing.Point(0, 0);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(572, 529);
-            this.tabPage1.TabIndex = 2;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabpageForget.Controls.Add(this.lbDiaryApp3);
+            this.tabpageForget.Location = new System.Drawing.Point(0, 0);
+            this.tabpageForget.Name = "tabpageForget";
+            this.tabpageForget.Size = new System.Drawing.Size(572, 529);
+            this.tabpageForget.TabIndex = 2;
+            this.tabpageForget.Text = "QuenMK";
+            this.tabpageForget.UseVisualStyleBackColor = true;
+            // 
+            // lbDiaryApp3
+            // 
+            this.lbDiaryApp3.BackColor = System.Drawing.Color.Transparent;
+            this.lbDiaryApp3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbDiaryApp3.Font = new System.Drawing.Font("Cascadia Mono", 28.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lbDiaryApp3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.lbDiaryApp3.Location = new System.Drawing.Point(0, 0);
+            this.lbDiaryApp3.Name = "lbDiaryApp3";
+            this.lbDiaryApp3.Size = new System.Drawing.Size(572, 65);
+            this.lbDiaryApp3.TabIndex = 14;
+            this.lbDiaryApp3.Text = "DiaryApp";
+            this.lbDiaryApp3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // LoginForm
             // 
@@ -667,6 +683,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tabpageForget.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -689,7 +706,7 @@
         private Sunny.UI.UISymbolLabel lbForget;
         private Label lbQues;
         private Label lbNavRes;
-        private Label label2;
+        private Label lbDiaryApp2;
         private Label lbNavLog;
         private Label label6;
         private PictureBox pictureBox4;
@@ -711,6 +728,7 @@
         private CheckBox checkBox1;
         private Label label1;
         private PictureBox pClose1;
-        private TabPage tabPage1;
+        private TabPage tabpageForget;
+        private Label lbDiaryApp3;
     }
 }
