@@ -68,7 +68,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lbDiaryApp2 = new System.Windows.Forms.Label();
             this.tabpageForget = new System.Windows.Forms.TabPage();
-            this.lbDiaryApp3 = new System.Windows.Forms.Label();
+            this.btnOTP = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -76,6 +76,8 @@
             this.uiLine8 = new Sunny.UI.UILine();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.lbDiaryApp3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pClose)).BeginInit();
@@ -368,7 +370,7 @@
             this.tabpageRes.Controls.Add(this.lbDiaryApp2);
             this.tabpageRes.Location = new System.Drawing.Point(0, 0);
             this.tabpageRes.Name = "tabpageRes";
-            this.tabpageRes.Size = new System.Drawing.Size(572, 529);
+            this.tabpageRes.Size = new System.Drawing.Size(200, 60);
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
             // 
@@ -638,7 +640,7 @@
             this.lbDiaryApp2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.lbDiaryApp2.Location = new System.Drawing.Point(0, 0);
             this.lbDiaryApp2.Name = "lbDiaryApp2";
-            this.lbDiaryApp2.Size = new System.Drawing.Size(572, 65);
+            this.lbDiaryApp2.Size = new System.Drawing.Size(200, 65);
             this.lbDiaryApp2.TabIndex = 13;
             this.lbDiaryApp2.Text = "DiaryApp";
             this.lbDiaryApp2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -646,6 +648,8 @@
             // tabpageForget
             // 
             this.tabpageForget.BackColor = System.Drawing.SystemColors.Control;
+            this.tabpageForget.Controls.Add(this.button1);
+            this.tabpageForget.Controls.Add(this.btnOTP);
             this.tabpageForget.Controls.Add(this.pictureBox5);
             this.tabpageForget.Controls.Add(this.pictureBox6);
             this.tabpageForget.Controls.Add(this.textBox2);
@@ -660,24 +664,26 @@
             this.tabpageForget.TabIndex = 2;
             this.tabpageForget.Text = "QuenMK";
             // 
-            // lbDiaryApp3
+            // btnOTP
             // 
-            this.lbDiaryApp3.BackColor = System.Drawing.Color.Transparent;
-            this.lbDiaryApp3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbDiaryApp3.Font = new System.Drawing.Font("Cascadia Mono", 28.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.lbDiaryApp3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.lbDiaryApp3.Location = new System.Drawing.Point(0, 0);
-            this.lbDiaryApp3.Name = "lbDiaryApp3";
-            this.lbDiaryApp3.Size = new System.Drawing.Size(572, 65);
-            this.lbDiaryApp3.TabIndex = 14;
-            this.lbDiaryApp3.Text = "DiaryApp";
-            this.lbDiaryApp3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnOTP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.btnOTP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOTP.FlatAppearance.BorderSize = 0;
+            this.btnOTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOTP.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnOTP.ForeColor = System.Drawing.Color.White;
+            this.btnOTP.Location = new System.Drawing.Point(185, 215);
+            this.btnOTP.Name = "btnOTP";
+            this.btnOTP.Size = new System.Drawing.Size(202, 57);
+            this.btnOTP.TabIndex = 29;
+            this.btnOTP.Text = "Gửi mã xác nhận";
+            this.btnOTP.UseVisualStyleBackColor = false;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = global::DiaryApp.Properties.Resources.eye_crossed;
-            this.pictureBox5.Location = new System.Drawing.Point(464, 299);
+            this.pictureBox5.Location = new System.Drawing.Point(461, 330);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(25, 25);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -687,8 +693,8 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::DiaryApp.Properties.Resources._lock;
-            this.pictureBox6.Location = new System.Drawing.Point(84, 284);
+            this.pictureBox6.Image = global::DiaryApp.Properties.Resources.key;
+            this.pictureBox6.Location = new System.Drawing.Point(84, 315);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(40, 40);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -701,9 +707,9 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.textBox2.Location = new System.Drawing.Point(139, 203);
+            this.textBox2.Location = new System.Drawing.Point(136, 148);
             this.textBox2.Name = "textBox2";
-            this.textBox2.PlaceholderText = "Username hoặc email";
+            this.textBox2.PlaceholderText = "Email khôi phục tài khoản";
             this.textBox2.Size = new System.Drawing.Size(350, 29);
             this.textBox2.TabIndex = 24;
             // 
@@ -716,7 +722,7 @@
             this.uiLine7.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.uiLine7.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
             this.uiLine7.LineSize = 2;
-            this.uiLine7.Location = new System.Drawing.Point(139, 324);
+            this.uiLine7.Location = new System.Drawing.Point(136, 355);
             this.uiLine7.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLine7.Name = "uiLine7";
             this.uiLine7.Size = new System.Drawing.Size(350, 10);
@@ -733,7 +739,7 @@
             this.uiLine8.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.uiLine8.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
             this.uiLine8.LineSize = 2;
-            this.uiLine8.Location = new System.Drawing.Point(139, 238);
+            this.uiLine8.Location = new System.Drawing.Point(136, 179);
             this.uiLine8.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLine8.Name = "uiLine8";
             this.uiLine8.Size = new System.Drawing.Size(350, 10);
@@ -744,8 +750,8 @@
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = global::DiaryApp.Properties.Resources.user_green;
-            this.pictureBox7.Location = new System.Drawing.Point(84, 194);
+            this.pictureBox7.Image = global::DiaryApp.Properties.Resources.envelope;
+            this.pictureBox7.Location = new System.Drawing.Point(84, 139);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(40, 40);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -758,12 +764,40 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.textBox3.Location = new System.Drawing.Point(139, 293);
+            this.textBox3.Location = new System.Drawing.Point(136, 324);
             this.textBox3.Name = "textBox3";
             this.textBox3.PlaceholderText = "Mật khẩu";
             this.textBox3.Size = new System.Drawing.Size(319, 29);
             this.textBox3.TabIndex = 25;
             this.textBox3.UseSystemPasswordChar = true;
+            // 
+            // lbDiaryApp3
+            // 
+            this.lbDiaryApp3.BackColor = System.Drawing.Color.Transparent;
+            this.lbDiaryApp3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbDiaryApp3.Font = new System.Drawing.Font("Cascadia Mono", 28.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lbDiaryApp3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.lbDiaryApp3.Location = new System.Drawing.Point(0, 0);
+            this.lbDiaryApp3.Name = "lbDiaryApp3";
+            this.lbDiaryApp3.Size = new System.Drawing.Size(572, 65);
+            this.lbDiaryApp3.TabIndex = 14;
+            this.lbDiaryApp3.Text = "DiaryApp";
+            this.lbDiaryApp3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(175, 391);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(222, 57);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Khôi phục tài khoản";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // LoginForm
             // 
@@ -850,5 +884,7 @@
         private Sunny.UI.UILine uiLine8;
         private PictureBox pictureBox7;
         private TextBox textBox3;
+        private Button btnOTP;
+        private Button button1;
     }
 }
