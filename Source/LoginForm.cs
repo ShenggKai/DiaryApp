@@ -95,8 +95,11 @@ namespace DiaryApp.Source
             {
                 conn.Close();
             }
-            
-            
+        }
+
+        private void lbForget_Click(object sender, EventArgs e)
+        {
+            pageLogAndReg.SelectTab(2);
         }
         #endregion
 
@@ -144,11 +147,12 @@ namespace DiaryApp.Source
         {
             pageLogAndReg.SelectTab(0);
         }
-        #endregion
 
         private void label1_Click(object sender, EventArgs e)
         {
             Process.Start(new ProcessStartInfo("https://www.termsfeed.com/live/789f25f3-0f9e-4416-a657-e302e36ec0f8") { UseShellExecute = true });
         }
+        #endregion
+
     }
 }
