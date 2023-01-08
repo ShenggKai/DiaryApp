@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Microsoft.VisualBasic;
 
 namespace DiaryApp.Source
 {
@@ -51,8 +52,49 @@ namespace DiaryApp.Source
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            new MainForm().Show();
-            this.Hide();
+            String username, user_pass;
+
+            username = txtUserName.Text;
+            user_pass = txtPass.Text;
+
+            try
+            {
+                String querry = "SELECT * FROM Account WHERE username = '"+txtUserName.Text+"' AND user_pass = '"+txtPass.Text+"'";
+                SqlDataAdapter sda = new SqlDataAdapter(querry, conn);
+
+                DataTable dtable = new DataTable();
+                sda.Fill(dtable);
+
+                if (dtable.Rows.Count > 0)
+                {
+                    username = txtUserName.Text;
+                    user_pass = txtPass.Text;
+
+                    //form that need to be load next
+                    new MainForm().Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Sai tài khoản hoặc mật khẩu! Vui lòng kiểm tra lại", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    txtUserName.Clear();
+                    txtPass.Clear();
+
+                    txtUserName.Focus();
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error");
+            }
+            finally
+            {
+                conn.Close();
+            }
+            
+            
         }
         #endregion
 
