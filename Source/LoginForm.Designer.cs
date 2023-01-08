@@ -67,6 +67,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.pLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pClose)).BeginInit();
@@ -204,11 +205,12 @@
             this.pageLogAndReg.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.pageLogAndReg.Controls.Add(this.tabpageLog);
             this.pageLogAndReg.Controls.Add(this.tabpageRes);
+            this.pageLogAndReg.Controls.Add(this.tabPage1);
             this.pageLogAndReg.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pageLogAndReg.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.pageLogAndReg.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pageLogAndReg.Frame = null;
-            this.pageLogAndReg.ItemSize = new System.Drawing.Size(0, 1);
+            this.pageLogAndReg.ItemSize = new System.Drawing.Size(150, 40);
             this.pageLogAndReg.Location = new System.Drawing.Point(426, 0);
             this.pageLogAndReg.MainPage = "";
             this.pageLogAndReg.Name = "pageLogAndReg";
@@ -217,7 +219,6 @@
             this.pageLogAndReg.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.pageLogAndReg.TabIndex = 3;
             this.pageLogAndReg.TabUnSelectedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.pageLogAndReg.TabVisible = false;
             this.pageLogAndReg.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // tabpageLog
@@ -236,9 +237,9 @@
             this.tabpageLog.Controls.Add(this.uiLine1);
             this.tabpageLog.Controls.Add(this.pUser);
             this.tabpageLog.Controls.Add(this.txtPass);
-            this.tabpageLog.Location = new System.Drawing.Point(0, -1);
+            this.tabpageLog.Location = new System.Drawing.Point(0, 0);
             this.tabpageLog.Name = "tabpageLog";
-            this.tabpageLog.Size = new System.Drawing.Size(572, 569);
+            this.tabpageLog.Size = new System.Drawing.Size(572, 529);
             this.tabpageLog.TabIndex = 0;
             this.tabpageLog.Text = "DangNhap";
             // 
@@ -353,9 +354,9 @@
             this.tabpageRes.Controls.Add(this.label1);
             this.tabpageRes.Controls.Add(this.label6);
             this.tabpageRes.Controls.Add(this.label2);
-            this.tabpageRes.Location = new System.Drawing.Point(0, -1);
+            this.tabpageRes.Location = new System.Drawing.Point(0, 0);
             this.tabpageRes.Name = "tabpageRes";
-            this.tabpageRes.Size = new System.Drawing.Size(572, 569);
+            this.tabpageRes.Size = new System.Drawing.Size(200, 60);
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
             // 
@@ -625,10 +626,19 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(572, 65);
+            this.label2.Size = new System.Drawing.Size(200, 65);
             this.label2.TabIndex = 13;
             this.label2.Text = "DiaryApp";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(0, 0);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Size = new System.Drawing.Size(572, 529);
+            this.tabPage1.TabIndex = 2;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // LoginForm
             // 
@@ -701,5 +711,6 @@
         private CheckBox checkBox1;
         private Label label1;
         private PictureBox pClose1;
+        private TabPage tabPage1;
     }
 }
