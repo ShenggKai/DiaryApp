@@ -69,6 +69,13 @@
             this.lbDiaryApp2 = new System.Windows.Forms.Label();
             this.tabpageForget = new System.Windows.Forms.TabPage();
             this.lbDiaryApp3 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.uiLine7 = new Sunny.UI.UILine();
+            this.uiLine8 = new Sunny.UI.UILine();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pClose)).BeginInit();
@@ -84,6 +91,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabpageForget.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // pnImage
@@ -635,13 +645,20 @@
             // 
             // tabpageForget
             // 
+            this.tabpageForget.BackColor = System.Drawing.SystemColors.Control;
+            this.tabpageForget.Controls.Add(this.pictureBox5);
+            this.tabpageForget.Controls.Add(this.pictureBox6);
+            this.tabpageForget.Controls.Add(this.textBox2);
+            this.tabpageForget.Controls.Add(this.uiLine7);
+            this.tabpageForget.Controls.Add(this.uiLine8);
+            this.tabpageForget.Controls.Add(this.pictureBox7);
+            this.tabpageForget.Controls.Add(this.textBox3);
             this.tabpageForget.Controls.Add(this.lbDiaryApp3);
             this.tabpageForget.Location = new System.Drawing.Point(0, 0);
             this.tabpageForget.Name = "tabpageForget";
             this.tabpageForget.Size = new System.Drawing.Size(572, 529);
             this.tabpageForget.TabIndex = 2;
             this.tabpageForget.Text = "QuenMK";
-            this.tabpageForget.UseVisualStyleBackColor = true;
             // 
             // lbDiaryApp3
             // 
@@ -655,6 +672,98 @@
             this.lbDiaryApp3.TabIndex = 14;
             this.lbDiaryApp3.Text = "DiaryApp";
             this.lbDiaryApp3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox5.Image = global::DiaryApp.Properties.Resources.eye_crossed;
+            this.pictureBox5.Location = new System.Drawing.Point(464, 299);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 28;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::DiaryApp.Properties.Resources._lock;
+            this.pictureBox6.Location = new System.Drawing.Point(84, 284);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 26;
+            this.pictureBox6.TabStop = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.textBox2.Location = new System.Drawing.Point(139, 203);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.PlaceholderText = "Username hoặc email";
+            this.textBox2.Size = new System.Drawing.Size(350, 29);
+            this.textBox2.TabIndex = 24;
+            // 
+            // uiLine7
+            // 
+            this.uiLine7.FillColor = System.Drawing.Color.Transparent;
+            this.uiLine7.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.uiLine7.LineCapSize = 10;
+            this.uiLine7.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.uiLine7.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.uiLine7.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
+            this.uiLine7.LineSize = 2;
+            this.uiLine7.Location = new System.Drawing.Point(139, 324);
+            this.uiLine7.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiLine7.Name = "uiLine7";
+            this.uiLine7.Size = new System.Drawing.Size(350, 10);
+            this.uiLine7.Style = Sunny.UI.UIStyle.Custom;
+            this.uiLine7.TabIndex = 22;
+            this.uiLine7.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
+            // uiLine8
+            // 
+            this.uiLine8.FillColor = System.Drawing.Color.Transparent;
+            this.uiLine8.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.uiLine8.LineCapSize = 10;
+            this.uiLine8.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.uiLine8.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.uiLine8.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
+            this.uiLine8.LineSize = 2;
+            this.uiLine8.Location = new System.Drawing.Point(139, 238);
+            this.uiLine8.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiLine8.Name = "uiLine8";
+            this.uiLine8.Size = new System.Drawing.Size(350, 10);
+            this.uiLine8.Style = Sunny.UI.UIStyle.Custom;
+            this.uiLine8.TabIndex = 23;
+            this.uiLine8.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Image = global::DiaryApp.Properties.Resources.user_green;
+            this.pictureBox7.Location = new System.Drawing.Point(84, 194);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 27;
+            this.pictureBox7.TabStop = false;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.textBox3.Location = new System.Drawing.Point(139, 293);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.PlaceholderText = "Mật khẩu";
+            this.textBox3.Size = new System.Drawing.Size(319, 29);
+            this.textBox3.TabIndex = 25;
+            this.textBox3.UseSystemPasswordChar = true;
             // 
             // LoginForm
             // 
@@ -684,6 +793,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabpageForget.ResumeLayout(false);
+            this.tabpageForget.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -730,5 +843,12 @@
         private PictureBox pClose1;
         private TabPage tabpageForget;
         private Label lbDiaryApp3;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
+        private TextBox textBox2;
+        private Sunny.UI.UILine uiLine7;
+        private Sunny.UI.UILine uiLine8;
+        private PictureBox pictureBox7;
+        private TextBox textBox3;
     }
 }
