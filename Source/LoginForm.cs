@@ -52,14 +52,15 @@ namespace DiaryApp.Source
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            String username, user_pass;
+            String username, user_pass, email;
 
             username = txtUserName.Text;
+            email = txtUserName.Text;
             user_pass = txtPass.Text;
 
             try
             {
-                String querry = "SELECT * FROM Account WHERE username = '"+txtUserName.Text+"' AND user_pass = '"+txtPass.Text+"'";
+                String querry = "SELECT * FROM Account WHERE (username = '"+txtUserName.Text+"' OR email = '"+ txtUserName.Text +"') AND user_pass = '"+txtPass.Text+"'";
                 SqlDataAdapter sda = new SqlDataAdapter(querry, conn);
 
                 DataTable dtable = new DataTable();
@@ -68,6 +69,7 @@ namespace DiaryApp.Source
                 if (dtable.Rows.Count > 0)
                 {
                     username = txtUserName.Text;
+                    email = txtUserName.Text;
                     user_pass = txtPass.Text;
 
                     //form that need to be load next
