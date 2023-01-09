@@ -154,8 +154,54 @@ namespace DiaryApp.Source
         }
         #endregion
 
-        #region OTP form
+        #region OTP Form
+        private void btnRepass_Click(object sender, EventArgs e)
+        {
+            pageLogAndReg.SelectTab(3);
+        }
+
         private void lbNavLog2_Click(object sender, EventArgs e)
+        {
+            pageLogAndReg.SelectTab(0);
+        }
+        #endregion
+
+        #region Restore password Form
+        private bool eyeHide3 = true;
+        private void pEye3_Click(object sender, EventArgs e)
+        {
+            if (eyeHide3 == true)
+            {
+                pEye3.Image = global::DiaryApp.Properties.Resources.eye;
+                txtPass3.UseSystemPasswordChar = false;
+                eyeHide3 = false;
+            }
+            else
+            {
+                pEye3.Image = global::DiaryApp.Properties.Resources.eye_crossed;
+                txtPass3.UseSystemPasswordChar = true;
+                eyeHide3 = true;
+            }
+        }
+
+        private bool eyeHide4 = true;
+        private void pEye4_Click(object sender, EventArgs e)
+        {
+            if (eyeHide4 == true)
+            {
+                pEye4.Image = global::DiaryApp.Properties.Resources.eye;
+                txtPass4.UseSystemPasswordChar = false;
+                eyeHide4 = false;
+            }
+            else
+            {
+                pEye4.Image = global::DiaryApp.Properties.Resources.eye_crossed;
+                txtPass4.UseSystemPasswordChar = true;
+                eyeHide4 = true;
+            }
+        }
+
+        private void btnRestore_Click(object sender, EventArgs e)
         {
             pageLogAndReg.SelectTab(0);
         }

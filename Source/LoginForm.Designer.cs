@@ -68,10 +68,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lbDiaryApp2 = new System.Windows.Forms.Label();
             this.tabpageForget = new System.Windows.Forms.TabPage();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pClose2 = new System.Windows.Forms.PictureBox();
             this.lbNavLog2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnRestore = new System.Windows.Forms.Button();
+            this.btnRepass = new System.Windows.Forms.Button();
             this.btnOTP = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.txtEmail2 = new System.Windows.Forms.TextBox();
@@ -81,17 +81,17 @@
             this.txtOTP = new System.Windows.Forms.TextBox();
             this.lbDiaryApp3 = new System.Windows.Forms.Label();
             this.tabpageRepass = new System.Windows.Forms.TabPage();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.pEye3 = new System.Windows.Forms.PictureBox();
             this.pEye4 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRestore = new System.Windows.Forms.Button();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.txtPass3 = new System.Windows.Forms.TextBox();
             this.uiLine9 = new Sunny.UI.UILine();
             this.uiLine10 = new Sunny.UI.UILine();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.txtPass4 = new System.Windows.Forms.TextBox();
-            this.pEye3 = new System.Windows.Forms.PictureBox();
+            this.pClose3 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pClose)).BeginInit();
@@ -107,15 +107,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabpageForget.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pClose2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.tabpageRepass.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pEye3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pEye4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pEye3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pClose3)).BeginInit();
             this.SuspendLayout();
             // 
             // pnImage
@@ -245,7 +245,7 @@
             this.pageLogAndReg.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.pageLogAndReg.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pageLogAndReg.Frame = null;
-            this.pageLogAndReg.ItemSize = new System.Drawing.Size(150, 40);
+            this.pageLogAndReg.ItemSize = new System.Drawing.Size(0, 1);
             this.pageLogAndReg.Location = new System.Drawing.Point(426, 0);
             this.pageLogAndReg.MainPage = "";
             this.pageLogAndReg.Name = "pageLogAndReg";
@@ -254,6 +254,7 @@
             this.pageLogAndReg.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.pageLogAndReg.TabIndex = 3;
             this.pageLogAndReg.TabUnSelectedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.pageLogAndReg.TabVisible = false;
             this.pageLogAndReg.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // tabpageLog
@@ -272,9 +273,9 @@
             this.tabpageLog.Controls.Add(this.uiLine1);
             this.tabpageLog.Controls.Add(this.pUser);
             this.tabpageLog.Controls.Add(this.txtPass);
-            this.tabpageLog.Location = new System.Drawing.Point(0, 0);
+            this.tabpageLog.Location = new System.Drawing.Point(0, -1);
             this.tabpageLog.Name = "tabpageLog";
-            this.tabpageLog.Size = new System.Drawing.Size(572, 529);
+            this.tabpageLog.Size = new System.Drawing.Size(572, 569);
             this.tabpageLog.TabIndex = 0;
             this.tabpageLog.Text = "DangNhap";
             // 
@@ -392,7 +393,7 @@
             this.tabpageRes.Controls.Add(this.lbDiaryApp2);
             this.tabpageRes.Location = new System.Drawing.Point(0, 0);
             this.tabpageRes.Name = "tabpageRes";
-            this.tabpageRes.Size = new System.Drawing.Size(572, 529);
+            this.tabpageRes.Size = new System.Drawing.Size(200, 60);
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
             // 
@@ -662,7 +663,7 @@
             this.lbDiaryApp2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.lbDiaryApp2.Location = new System.Drawing.Point(0, 0);
             this.lbDiaryApp2.Name = "lbDiaryApp2";
-            this.lbDiaryApp2.Size = new System.Drawing.Size(572, 65);
+            this.lbDiaryApp2.Size = new System.Drawing.Size(200, 65);
             this.lbDiaryApp2.TabIndex = 13;
             this.lbDiaryApp2.Text = "DiaryApp";
             this.lbDiaryApp2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -670,10 +671,10 @@
             // tabpageForget
             // 
             this.tabpageForget.BackColor = System.Drawing.SystemColors.Control;
-            this.tabpageForget.Controls.Add(this.pictureBox8);
+            this.tabpageForget.Controls.Add(this.pClose2);
             this.tabpageForget.Controls.Add(this.lbNavLog2);
             this.tabpageForget.Controls.Add(this.label3);
-            this.tabpageForget.Controls.Add(this.btnRestore);
+            this.tabpageForget.Controls.Add(this.btnRepass);
             this.tabpageForget.Controls.Add(this.btnOTP);
             this.tabpageForget.Controls.Add(this.pictureBox6);
             this.tabpageForget.Controls.Add(this.txtEmail2);
@@ -688,17 +689,17 @@
             this.tabpageForget.TabIndex = 2;
             this.tabpageForget.Text = "QuenMK";
             // 
-            // pictureBox8
+            // pClose2
             // 
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = global::DiaryApp.Properties.Resources.close_green;
-            this.pictureBox8.Location = new System.Drawing.Point(537, 15);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(15);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox8.TabIndex = 32;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pClose_Click);
+            this.pClose2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pClose2.Image = global::DiaryApp.Properties.Resources.close_green;
+            this.pClose2.Location = new System.Drawing.Point(537, 15);
+            this.pClose2.Margin = new System.Windows.Forms.Padding(15);
+            this.pClose2.Name = "pClose2";
+            this.pClose2.Size = new System.Drawing.Size(20, 20);
+            this.pClose2.TabIndex = 32;
+            this.pClose2.TabStop = false;
+            this.pClose2.Click += new System.EventHandler(this.pClose_Click);
             // 
             // lbNavLog2
             // 
@@ -726,20 +727,21 @@
             this.label3.Text = "Quay lại";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // btnRestore
+            // btnRepass
             // 
-            this.btnRestore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.btnRestore.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRestore.FlatAppearance.BorderSize = 0;
-            this.btnRestore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRestore.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRestore.ForeColor = System.Drawing.Color.White;
-            this.btnRestore.Location = new System.Drawing.Point(175, 391);
-            this.btnRestore.Name = "btnRestore";
-            this.btnRestore.Size = new System.Drawing.Size(222, 57);
-            this.btnRestore.TabIndex = 29;
-            this.btnRestore.Text = "Khôi phục tài khoản";
-            this.btnRestore.UseVisualStyleBackColor = false;
+            this.btnRepass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.btnRepass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRepass.FlatAppearance.BorderSize = 0;
+            this.btnRepass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRepass.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRepass.ForeColor = System.Drawing.Color.White;
+            this.btnRepass.Location = new System.Drawing.Point(185, 391);
+            this.btnRepass.Name = "btnRepass";
+            this.btnRepass.Size = new System.Drawing.Size(202, 57);
+            this.btnRepass.TabIndex = 29;
+            this.btnRepass.Text = "Đặt lại mật khẩu";
+            this.btnRepass.UseVisualStyleBackColor = false;
+            this.btnRepass.Click += new System.EventHandler(this.btnRepass_Click);
             // 
             // btnOTP
             // 
@@ -854,44 +856,32 @@
             this.tabpageRepass.BackColor = System.Drawing.SystemColors.Control;
             this.tabpageRepass.Controls.Add(this.pEye3);
             this.tabpageRepass.Controls.Add(this.pEye4);
-            this.tabpageRepass.Controls.Add(this.button1);
+            this.tabpageRepass.Controls.Add(this.btnRestore);
             this.tabpageRepass.Controls.Add(this.pictureBox10);
             this.tabpageRepass.Controls.Add(this.txtPass3);
             this.tabpageRepass.Controls.Add(this.uiLine9);
             this.tabpageRepass.Controls.Add(this.uiLine10);
             this.tabpageRepass.Controls.Add(this.pictureBox11);
             this.tabpageRepass.Controls.Add(this.txtPass4);
-            this.tabpageRepass.Controls.Add(this.pictureBox5);
+            this.tabpageRepass.Controls.Add(this.pClose3);
             this.tabpageRepass.Controls.Add(this.label2);
             this.tabpageRepass.Location = new System.Drawing.Point(0, 0);
             this.tabpageRepass.Name = "tabpageRepass";
-            this.tabpageRepass.Size = new System.Drawing.Size(572, 529);
+            this.tabpageRepass.Size = new System.Drawing.Size(200, 60);
             this.tabpageRepass.TabIndex = 3;
             this.tabpageRepass.Text = "DatLaiMK";
             // 
-            // pictureBox5
+            // pEye3
             // 
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Image = global::DiaryApp.Properties.Resources.close_green;
-            this.pictureBox5.Location = new System.Drawing.Point(537, 15);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(15);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox5.TabIndex = 24;
-            this.pictureBox5.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Cascadia Mono", 28.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(572, 65);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "DiaryApp";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.pEye3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pEye3.Image = global::DiaryApp.Properties.Resources.eye_crossed;
+            this.pEye3.Location = new System.Drawing.Point(463, 179);
+            this.pEye3.Name = "pEye3";
+            this.pEye3.Size = new System.Drawing.Size(25, 25);
+            this.pEye3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pEye3.TabIndex = 33;
+            this.pEye3.TabStop = false;
+            this.pEye3.Click += new System.EventHandler(this.pEye3_Click);
             // 
             // pEye4
             // 
@@ -903,21 +893,23 @@
             this.pEye4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pEye4.TabIndex = 33;
             this.pEye4.TabStop = false;
+            this.pEye4.Click += new System.EventHandler(this.pEye4_Click);
             // 
-            // button1
+            // btnRestore
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(196, 360);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(180, 57);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "Khôi phục";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnRestore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.btnRestore.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRestore.FlatAppearance.BorderSize = 0;
+            this.btnRestore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestore.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRestore.ForeColor = System.Drawing.Color.White;
+            this.btnRestore.Location = new System.Drawing.Point(196, 360);
+            this.btnRestore.Name = "btnRestore";
+            this.btnRestore.Size = new System.Drawing.Size(180, 57);
+            this.btnRestore.TabIndex = 32;
+            this.btnRestore.Text = "Khôi phục";
+            this.btnRestore.UseVisualStyleBackColor = false;
+            this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click);
             // 
             // pictureBox10
             // 
@@ -1000,16 +992,29 @@
             this.txtPass4.TabIndex = 28;
             this.txtPass4.UseSystemPasswordChar = true;
             // 
-            // pEye3
+            // pClose3
             // 
-            this.pEye3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pEye3.Image = global::DiaryApp.Properties.Resources.eye_crossed;
-            this.pEye3.Location = new System.Drawing.Point(463, 179);
-            this.pEye3.Name = "pEye3";
-            this.pEye3.Size = new System.Drawing.Size(25, 25);
-            this.pEye3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pEye3.TabIndex = 33;
-            this.pEye3.TabStop = false;
+            this.pClose3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pClose3.Image = global::DiaryApp.Properties.Resources.close_green;
+            this.pClose3.Location = new System.Drawing.Point(537, 15);
+            this.pClose3.Margin = new System.Windows.Forms.Padding(15);
+            this.pClose3.Name = "pClose3";
+            this.pClose3.Size = new System.Drawing.Size(20, 20);
+            this.pClose3.TabIndex = 24;
+            this.pClose3.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Cascadia Mono", 28.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(200, 65);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "DiaryApp";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // LoginForm
             // 
@@ -1040,16 +1045,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabpageForget.ResumeLayout(false);
             this.tabpageForget.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pClose2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.tabpageRepass.ResumeLayout(false);
             this.tabpageRepass.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pEye3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pEye4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pEye3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pClose3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1103,20 +1108,20 @@
         private PictureBox pictureBox7;
         private TextBox txtOTP;
         private Button btnOTP;
-        private Button btnRestore;
+        private Button btnRepass;
         private Label lbNavLog2;
         private Label label3;
-        private PictureBox pictureBox8;
+        private PictureBox pClose2;
         private TabPage tabpageRepass;
         private PictureBox pEye4;
-        private Button button1;
+        private Button btnRestore;
         private PictureBox pictureBox10;
         private TextBox txtPass3;
         private Sunny.UI.UILine uiLine9;
         private Sunny.UI.UILine uiLine10;
         private PictureBox pictureBox11;
         private TextBox txtPass4;
-        private PictureBox pictureBox5;
+        private PictureBox pClose3;
         private Label label2;
         private PictureBox pEye3;
     }
