@@ -54,7 +54,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUserName1 = new System.Windows.Forms.TextBox();
             this.uiLine6 = new Sunny.UI.UILine();
             this.uiLine5 = new Sunny.UI.UILine();
             this.uiLine3 = new Sunny.UI.UILine();
@@ -248,7 +248,9 @@
             this.pageLogAndReg.ItemSize = new System.Drawing.Size(0, 1);
             this.pageLogAndReg.Location = new System.Drawing.Point(426, 0);
             this.pageLogAndReg.MainPage = "";
+            this.pageLogAndReg.Multiline = true;
             this.pageLogAndReg.Name = "pageLogAndReg";
+            this.pageLogAndReg.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.pageLogAndReg.SelectedIndex = 0;
             this.pageLogAndReg.Size = new System.Drawing.Size(572, 569);
             this.pageLogAndReg.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
@@ -378,7 +380,7 @@
             this.tabpageRes.Controls.Add(this.pictureBox4);
             this.tabpageRes.Controls.Add(this.pictureBox3);
             this.tabpageRes.Controls.Add(this.pictureBox1);
-            this.tabpageRes.Controls.Add(this.textBox1);
+            this.tabpageRes.Controls.Add(this.txtUserName1);
             this.tabpageRes.Controls.Add(this.uiLine6);
             this.tabpageRes.Controls.Add(this.uiLine5);
             this.tabpageRes.Controls.Add(this.uiLine3);
@@ -393,7 +395,7 @@
             this.tabpageRes.Controls.Add(this.lbDiaryApp2);
             this.tabpageRes.Location = new System.Drawing.Point(0, 0);
             this.tabpageRes.Name = "tabpageRes";
-            this.tabpageRes.Size = new System.Drawing.Size(200, 60);
+            this.tabpageRes.Size = new System.Drawing.Size(200, 99);
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
             // 
@@ -486,17 +488,17 @@
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // txtUserName1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.textBox1.Location = new System.Drawing.Point(123, 106);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "Username";
-            this.textBox1.Size = new System.Drawing.Size(350, 29);
-            this.textBox1.TabIndex = 14;
+            this.txtUserName1.BackColor = System.Drawing.SystemColors.Control;
+            this.txtUserName1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUserName1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtUserName1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.txtUserName1.Location = new System.Drawing.Point(123, 106);
+            this.txtUserName1.Name = "txtUserName1";
+            this.txtUserName1.PlaceholderText = "Username";
+            this.txtUserName1.Size = new System.Drawing.Size(350, 29);
+            this.txtUserName1.TabIndex = 14;
             // 
             // uiLine6
             // 
@@ -683,9 +685,9 @@
             this.tabpageForget.Controls.Add(this.pictureBox7);
             this.tabpageForget.Controls.Add(this.txtOTP);
             this.tabpageForget.Controls.Add(this.lbDiaryApp3);
-            this.tabpageForget.Location = new System.Drawing.Point(0, -1);
+            this.tabpageForget.Location = new System.Drawing.Point(0, 0);
             this.tabpageForget.Name = "tabpageForget";
-            this.tabpageForget.Size = new System.Drawing.Size(572, 569);
+            this.tabpageForget.Size = new System.Drawing.Size(200, 99);
             this.tabpageForget.TabIndex = 2;
             this.tabpageForget.Text = "QuenMK";
             // 
@@ -846,7 +848,7 @@
             this.lbDiaryApp3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.lbDiaryApp3.Location = new System.Drawing.Point(0, 0);
             this.lbDiaryApp3.Name = "lbDiaryApp3";
-            this.lbDiaryApp3.Size = new System.Drawing.Size(572, 65);
+            this.lbDiaryApp3.Size = new System.Drawing.Size(200, 65);
             this.lbDiaryApp3.TabIndex = 14;
             this.lbDiaryApp3.Text = "DiaryApp";
             this.lbDiaryApp3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -865,9 +867,9 @@
             this.tabpageRepass.Controls.Add(this.txtPass4);
             this.tabpageRepass.Controls.Add(this.pClose3);
             this.tabpageRepass.Controls.Add(this.label2);
-            this.tabpageRepass.Location = new System.Drawing.Point(0, 0);
+            this.tabpageRepass.Location = new System.Drawing.Point(0, -1);
             this.tabpageRepass.Name = "tabpageRepass";
-            this.tabpageRepass.Size = new System.Drawing.Size(200, 60);
+            this.tabpageRepass.Size = new System.Drawing.Size(572, 569);
             this.tabpageRepass.TabIndex = 3;
             this.tabpageRepass.Text = "DatLaiMK";
             // 
@@ -1002,6 +1004,7 @@
             this.pClose3.Size = new System.Drawing.Size(20, 20);
             this.pClose3.TabIndex = 24;
             this.pClose3.TabStop = false;
+            this.pClose3.Click += new System.EventHandler(this.pClose_Click);
             // 
             // label2
             // 
@@ -1011,7 +1014,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 65);
+            this.label2.Size = new System.Drawing.Size(572, 65);
             this.label2.TabIndex = 23;
             this.label2.Text = "DiaryApp";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1083,7 +1086,7 @@
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
         private PictureBox pictureBox1;
-        private TextBox textBox1;
+        private TextBox txtUserName1;
         private Sunny.UI.UILine uiLine6;
         private Sunny.UI.UILine uiLine5;
         private Sunny.UI.UILine uiLine3;

@@ -47,6 +47,8 @@ namespace DiaryApp.Source
 
         private void lbNavRes_Click(object sender, EventArgs e)
         {
+            txtUserName.Clear();
+            txtPass.Clear();
             pageLogAndReg.SelectTab(1);
         }
 
@@ -99,6 +101,8 @@ namespace DiaryApp.Source
 
         private void lbForget_Click(object sender, EventArgs e)
         {
+            txtUserName.Clear();
+            txtPass.Clear();
             pageLogAndReg.SelectTab(2);
         }
         #endregion
@@ -106,6 +110,10 @@ namespace DiaryApp.Source
         #region Register Form
         private void lbNavLog_Click(object sender, EventArgs e)
         {
+            txtUserName1.Clear();
+            txtEmail.Clear();
+            txtPass1.Clear();
+            txtPass2.Clear();
             pageLogAndReg.SelectTab(0);
         }
 
@@ -145,6 +153,10 @@ namespace DiaryApp.Source
 
         private void btnRes_Click(object sender, EventArgs e)
         {
+            txtUserName1.Clear();
+            txtEmail.Clear();
+            txtPass1.Clear();
+            txtPass2.Clear();
             pageLogAndReg.SelectTab(0);
         }
 
@@ -157,11 +169,15 @@ namespace DiaryApp.Source
         #region OTP Form
         private void btnRepass_Click(object sender, EventArgs e)
         {
+            txtEmail2.Clear();
+            txtOTP.Clear();
             pageLogAndReg.SelectTab(3);
         }
 
         private void lbNavLog2_Click(object sender, EventArgs e)
         {
+            txtEmail2.Clear();
+            txtOTP.Clear();
             pageLogAndReg.SelectTab(0);
         }
         #endregion
@@ -203,6 +219,8 @@ namespace DiaryApp.Source
 
         private void btnRestore_Click(object sender, EventArgs e)
         {
+            txtPass3.Clear();
+            txtPass4.Clear();
             pageLogAndReg.SelectTab(0);
         }
         #endregion
