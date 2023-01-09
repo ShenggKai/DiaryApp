@@ -176,7 +176,7 @@ namespace DiaryApp.Source
             catch (Exception)
             {
 
-                MessageBox.Show("Error");
+                MessageBox.Show("Error", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
@@ -375,24 +375,34 @@ namespace DiaryApp.Source
             }
             else
             {
-                conn.Open();
-                string query = "INSERT INTO Account VALUES('"+txtUserName1.Text+"', '"+txtEmail.Text+"', '"+txtPass1.Text+"')";
+                try
+                {
+                    conn.Open();
+                    string query = "INSERT INTO Account VALUES('" + txtUserName1.Text + "', '" + txtEmail.Text + "', '" + txtPass1.Text + "')";
 
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.ExecuteNonQuery();
-                conn.Close();
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.ExecuteNonQuery();
 
-                MessageBox.Show("Tạo tài khoản thành công", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Tạo tài khoản thành công!", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                //clear info
-                txtUserName1.Clear();
-                txtEmail.Clear();
-                txtPass1.Clear();
-                txtPass2.Clear();
-                cbAgree.Checked = false;
+                    //clear info
+                    txtUserName1.Clear();
+                    txtEmail.Clear();
+                    txtPass1.Clear();
+                    txtPass2.Clear();
+                    cbAgree.Checked = false;
 
-                // navigation to login form
-                pageLogAndReg.SelectTab(0);
+                    // navigation to login form
+                    pageLogAndReg.SelectTab(0);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Error", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    conn.Close();
+                }
             }
             #endregion check invalid user input
         }
