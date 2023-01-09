@@ -335,7 +335,7 @@ namespace DiaryApp.Source
         #endregion show or hide password
 
         // Check invalid email
-        bool IsValidEmail1(string email)
+        bool IsValidEmail(string email)
         {
             var trimmedEmail = email.Trim();
 
@@ -357,14 +357,35 @@ namespace DiaryApp.Source
         // button dang ky
         private void btnRes_Click(object sender, EventArgs e)
         {
-            //clear info
-            txtUserName1.Clear();
-            txtEmail.Clear();
-            txtPass1.Clear();
-            txtPass2.Clear();
-            cbAgree.Checked= false;
+            #region check invalid user input
+            // email
+            if (IsValidEmail(txtEmail.Text) == false)
+            {
+                MessageBox.Show("Email không hợp lệ!", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            pageLogAndReg.SelectTab(0);
+                txtEmail.Clear();
+            }
+            // password
+            else if (txtPass1.Text != txtPass2.Text)
+            {
+                MessageBox.Show("Mật khẩu không khớp!", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                txtPass1.Clear();
+                txtPass2.Clear();
+            }
+            else
+            {
+                //clear info
+                txtUserName1.Clear();
+                txtEmail.Clear();
+                txtPass1.Clear();
+                txtPass2.Clear();
+                cbAgree.Checked = false;
+
+                // navigation to login form
+                pageLogAndReg.SelectTab(0);
+            }
+            #endregion check invalid user input
         }
 
         private void label1_Click(object sender, EventArgs e)
