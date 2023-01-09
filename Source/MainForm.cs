@@ -12,12 +12,12 @@ namespace DiaryApp
         private void btnLogout_Click(object sender, EventArgs e)
         {
             var result = MessageBox.Show("Are you sure you want to Logout?", "DiaryApp",
-                MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if (result == DialogResult.OK)
+            if (result == DialogResult.Yes)
             {
                 new LoginForm().Show();
-                this.Hide();
+                this.Close();
             }
         }
     }
