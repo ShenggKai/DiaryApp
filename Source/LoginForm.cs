@@ -154,5 +154,11 @@ namespace DiaryApp.Source
         }
         #endregion
 
+        #region OTP form
+        private void lbNavLog2_Click(object sender, EventArgs e)
+        {
+            pageLogAndReg.SelectTab(0);
+        }
+        #endregion
     }
 }
