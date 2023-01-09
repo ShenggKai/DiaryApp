@@ -877,9 +877,9 @@
             this.tabpageRepass.Controls.Add(this.txtPass4);
             this.tabpageRepass.Controls.Add(this.pClose3);
             this.tabpageRepass.Controls.Add(this.label2);
-            this.tabpageRepass.Location = new System.Drawing.Point(0, 0);
+            this.tabpageRepass.Location = new System.Drawing.Point(0, -1);
             this.tabpageRepass.Name = "tabpageRepass";
-            this.tabpageRepass.Size = new System.Drawing.Size(200, 99);
+            this.tabpageRepass.Size = new System.Drawing.Size(572, 569);
             this.tabpageRepass.TabIndex = 3;
             this.tabpageRepass.Text = "DatLaiMK";
             // 
@@ -945,6 +945,7 @@
             this.txtPass3.PlaceholderText = "Mật khẩu mới";
             this.txtPass3.Size = new System.Drawing.Size(350, 29);
             this.txtPass3.TabIndex = 27;
+            this.txtPass3.UseSystemPasswordChar = true;
             this.txtPass3.TextChanged += new System.EventHandler(this.txtPass3_TextChanged);
             // 
             // uiLine9
@@ -1026,7 +1027,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 65);
+            this.label2.Size = new System.Drawing.Size(572, 65);
             this.label2.TabIndex = 23;
             this.label2.Text = "DiaryApp";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;

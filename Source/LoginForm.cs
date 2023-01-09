@@ -284,8 +284,11 @@ namespace DiaryApp.Source
         #endregion Enable or unable button dang ky
 
         #region click event
+
+        // button chuyen den dang nhap
         private void lbNavLog_Click(object sender, EventArgs e)
         {
+            //clear info
             txtUserName1.Clear();
             txtEmail.Clear();
             txtPass1.Clear();
@@ -295,6 +298,7 @@ namespace DiaryApp.Source
             pageLogAndReg.SelectTab(0);
         }
 
+        #region show or hide password
         private bool eyeHide = true;
         private void pEye_Click(object sender, EventArgs e)
         {
@@ -328,9 +332,32 @@ namespace DiaryApp.Source
                 eyeHide2 = true;
             }
         }
+        #endregion show or hide password
 
+        // Check invalid email
+        bool IsValidEmail1(string email)
+        {
+            var trimmedEmail = email.Trim();
+
+            if (trimmedEmail.EndsWith("."))
+            {
+                return false;
+            }
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == trimmedEmail;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        // button dang ky
         private void btnRes_Click(object sender, EventArgs e)
         {
+            //clear info
             txtUserName1.Clear();
             txtEmail.Clear();
             txtPass1.Clear();
