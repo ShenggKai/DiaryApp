@@ -150,6 +150,7 @@
             this.txtUserName.PlaceholderText = "Username hoặc email";
             this.txtUserName.Size = new System.Drawing.Size(350, 29);
             this.txtUserName.TabIndex = 4;
+            this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
             // 
             // uiLine2
             // 
@@ -191,6 +192,7 @@
             this.txtPass.Size = new System.Drawing.Size(319, 29);
             this.txtPass.TabIndex = 4;
             this.txtPass.UseSystemPasswordChar = true;
+            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
             // 
             // uiLine1
             // 
@@ -867,9 +869,9 @@
             this.tabpageRepass.Controls.Add(this.txtPass4);
             this.tabpageRepass.Controls.Add(this.pClose3);
             this.tabpageRepass.Controls.Add(this.label2);
-            this.tabpageRepass.Location = new System.Drawing.Point(0, -1);
+            this.tabpageRepass.Location = new System.Drawing.Point(0, 0);
             this.tabpageRepass.Name = "tabpageRepass";
-            this.tabpageRepass.Size = new System.Drawing.Size(572, 569);
+            this.tabpageRepass.Size = new System.Drawing.Size(200, 99);
             this.tabpageRepass.TabIndex = 3;
             this.tabpageRepass.Text = "DatLaiMK";
             // 
@@ -1014,7 +1016,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(572, 65);
+            this.label2.Size = new System.Drawing.Size(200, 65);
             this.label2.TabIndex = 23;
             this.label2.Text = "DiaryApp";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1030,6 +1032,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pLock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pClose)).EndInit();

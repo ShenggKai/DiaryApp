@@ -28,6 +28,58 @@ namespace DiaryApp.Source
         }
 
         #region Login Form
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+            btnLogin.BackColor = Color.FromArgb(217, 217, 217);
+            btnLogin.ForeColor = Color.FromArgb(70, 70, 70);
+            btnLogin.Enabled = false;
+        }
+
+        private bool txtuserChanged = false;
+        private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+            if (txtUserName.Text == "")
+            {
+                txtuserChanged = false;
+                btnLogin.BackColor = Color.FromArgb(217, 217, 217);
+                btnLogin.ForeColor = Color.FromArgb(70, 70, 70);
+                btnLogin.Enabled = false;
+            }
+            else
+            {
+                txtuserChanged = true;
+                if (txtPassChnaged == true)
+                {
+                    btnLogin.Enabled = true;
+                    btnLogin.BackColor = Color.FromArgb(90, 130, 95);
+                    btnLogin.ForeColor = Color.White;
+                }
+            }
+        }
+
+        private bool txtPassChnaged = false;
+        private void txtPass_TextChanged(object sender, EventArgs e)
+        {
+            if (txtPass.Text == "")
+            {
+                txtPassChnaged = false;
+                btnLogin.BackColor = Color.FromArgb(217, 217, 217);
+                btnLogin.ForeColor = Color.FromArgb(70, 70, 70);
+                btnLogin.Enabled = false;
+            }
+            else
+            {
+                txtPassChnaged = true;
+                if (txtuserChanged == true)
+                {
+                    btnLogin.Enabled = true;
+                    btnLogin.BackColor = Color.FromArgb(90, 130, 95);
+                    btnLogin.ForeColor = Color.White;
+                }
+            }
+        }
+
         private bool eyeHide1 = true;
         private void pEye1_Click(object sender, EventArgs e)
         {
@@ -60,42 +112,50 @@ namespace DiaryApp.Source
             email = txtUserName.Text;
             user_pass = txtPass.Text;
 
-            try
+            if (txtUserName.Text == "" || txtPass.Text == "")
             {
-                String querry = "SELECT * FROM Account WHERE (username = '"+txtUserName.Text+"' OR email = '"+ txtUserName.Text +"') AND user_pass = '"+txtPass.Text+"'";
-                SqlDataAdapter sda = new SqlDataAdapter(querry, conn);
 
-                DataTable dtable = new DataTable();
-                sda.Fill(dtable);
-
-                if (dtable.Rows.Count > 0)
-                {
-                    username = txtUserName.Text;
-                    email = txtUserName.Text;
-                    user_pass = txtPass.Text;
-
-                    //form that need to be load next
-                    new MainForm().Show();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Sai tài khoản hoặc mật khẩu! Vui lòng kiểm tra lại", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                    txtUserName.Clear();
-                    txtPass.Clear();
-
-                    txtUserName.Focus();
-                }
             }
-            catch (Exception)
+            else
             {
+                btnLogin.Enabled= true;
+                try
+                {
+                    String querry = "SELECT * FROM Account WHERE (username = '" + txtUserName.Text + "' OR email = '" + txtUserName.Text + "') AND user_pass = '" + txtPass.Text + "'";
+                    SqlDataAdapter sda = new SqlDataAdapter(querry, conn);
 
-                MessageBox.Show("Error");
-            }
-            finally
-            {
-                conn.Close();
+                    DataTable dtable = new DataTable();
+                    sda.Fill(dtable);
+
+                    if (dtable.Rows.Count > 0)
+                    {
+                        username = txtUserName.Text;
+                        email = txtUserName.Text;
+                        user_pass = txtPass.Text;
+
+                        //form that need to be load next
+                        new MainForm().Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sai tài khoản hoặc mật khẩu! Vui lòng kiểm tra lại", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                        txtUserName.Clear();
+                        txtPass.Clear();
+
+                        txtUserName.Focus();
+                    }
+                }
+                catch (Exception)
+                {
+
+                    MessageBox.Show("Error");
+                }
+                finally
+                {
+                    conn.Close();
+                }
             }
         }
 
