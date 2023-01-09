@@ -483,7 +483,6 @@ namespace DiaryApp.Source
             }
         }
         #endregion unable or enable button khoi phuc
-
         #endregion Restore password Form
     }
 }
