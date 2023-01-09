@@ -47,7 +47,7 @@
             this.lbForget = new Sunny.UI.UISymbolLabel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.tabpageRes = new System.Windows.Forms.TabPage();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cbAgree = new System.Windows.Forms.CheckBox();
             this.pEye2 = new System.Windows.Forms.PictureBox();
             this.pEye = new System.Windows.Forms.PictureBox();
             this.btnRes = new System.Windows.Forms.Button();
@@ -374,7 +374,7 @@
             // tabpageRes
             // 
             this.tabpageRes.BackColor = System.Drawing.SystemColors.Control;
-            this.tabpageRes.Controls.Add(this.checkBox1);
+            this.tabpageRes.Controls.Add(this.cbAgree);
             this.tabpageRes.Controls.Add(this.pClose);
             this.tabpageRes.Controls.Add(this.pEye2);
             this.tabpageRes.Controls.Add(this.pEye);
@@ -401,21 +401,22 @@
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
             // 
-            // checkBox1
+            // cbAgree
             // 
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.FlatAppearance.BorderSize = 0;
-            this.checkBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.checkBox1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.checkBox1.Location = new System.Drawing.Point(111, 388);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(151, 29);
-            this.checkBox1.TabIndex = 18;
-            this.checkBox1.Text = "Tôi đồng ý với";
-            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.cbAgree.BackColor = System.Drawing.Color.Transparent;
+            this.cbAgree.FlatAppearance.BorderSize = 0;
+            this.cbAgree.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.cbAgree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbAgree.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cbAgree.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.cbAgree.Location = new System.Drawing.Point(111, 388);
+            this.cbAgree.Name = "cbAgree";
+            this.cbAgree.Size = new System.Drawing.Size(151, 29);
+            this.cbAgree.TabIndex = 18;
+            this.cbAgree.Text = "Tôi đồng ý với";
+            this.cbAgree.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbAgree.UseVisualStyleBackColor = false;
+            this.cbAgree.CheckedChanged += new System.EventHandler(this.cbAgree_CheckedChanged);
             // 
             // pEye2
             // 
@@ -1106,7 +1107,7 @@
         private PictureBox pEye;
         private PictureBox pEye2;
         private PictureBox pEye1;
-        private CheckBox checkBox1;
+        private CheckBox cbAgree;
         private Label label1;
         private PictureBox pClose1;
         private TabPage tabpageForget;

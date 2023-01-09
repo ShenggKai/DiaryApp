@@ -21,8 +21,10 @@ namespace DiaryApp.Source
             InitializeComponent();
         }
 
+        // SQL server connection
         SqlConnection conn = new SqlConnection(@"Data Source=KAI\SQLEXPRESS;Initial Catalog=DiaryApp;Integrated Security=True");
 
+        // Close button
         private void pClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -55,49 +57,61 @@ namespace DiaryApp.Source
             btnRestore.ForeColor = Color.FromArgb(70, 70, 70);
             btnRestore.Enabled = false;
         }
+
+        // Enable button function
+        private void btnEnable(Button btn, bool txt1, bool txt2, bool txt3, bool txt4)
+        {
+            if (txt1 == true && txt2 == true && txt3 == true && txt4 == true)
+            {
+                btn.Enabled = true;
+                btn.BackColor = Color.FromArgb(90, 130, 95);
+                btn.ForeColor = Color.White;
+            }
+        }
+
+        // Unable button function
+        private void btnUnable(Button btn)
+        {
+            btn.BackColor = Color.FromArgb(217, 217, 217);
+            btn.ForeColor = Color.FromArgb(70, 70, 70);
+            btn.Enabled = false;
+        }
         #endregion
 
         #region Login Form
         private bool txtuserChanged = false;
+        private bool txtPassChnaged = false;
+
         private void txtUserName_TextChanged(object sender, EventArgs e)
         {
             if (txtUserName.Text == "")
             {
                 txtuserChanged = false;
-                btnLogin.BackColor = Color.FromArgb(217, 217, 217);
-                btnLogin.ForeColor = Color.FromArgb(70, 70, 70);
-                btnLogin.Enabled = false;
+                btnUnable(btnLogin);
             }
             else
             {
                 txtuserChanged = true;
                 if (txtPassChnaged == true)
                 {
-                    btnLogin.Enabled = true;
-                    btnLogin.BackColor = Color.FromArgb(90, 130, 95);
-                    btnLogin.ForeColor = Color.White;
+                    btnEnable(btnLogin, txtuserChanged, txtPassChnaged, true, true);
                 }
             }
         }
 
-        private bool txtPassChnaged = false;
         private void txtPass_TextChanged(object sender, EventArgs e)
         {
             if (txtPass.Text == "")
             {
                 txtPassChnaged = false;
-                btnLogin.BackColor = Color.FromArgb(217, 217, 217);
-                btnLogin.ForeColor = Color.FromArgb(70, 70, 70);
-                btnLogin.Enabled = false;
+                btnUnable(btnLogin);
             }
             else
             {
                 txtPassChnaged = true;
                 if (txtuserChanged == true)
                 {
-                    btnLogin.Enabled = true;
-                    btnLogin.BackColor = Color.FromArgb(90, 130, 95);
-                    btnLogin.ForeColor = Color.White;
+                    btnEnable(btnLogin, txtuserChanged, txtPassChnaged, true, true);
                 }
             }
         }
@@ -195,12 +209,15 @@ namespace DiaryApp.Source
             if (txtUserName1.Text == "")
             {
                 txtUserName1Changed = false;
-                btnResUnable();
+                btnUnable(btnRes);
             }
             else
             {
                 txtUserName1Changed = true;
-                btnResEnable();
+                if (cbAgree.Checked)
+                {
+                    btnEnable(btnRes, txtUserName1Changed, txtEmailChanged, txtPass1Changed, txtPass2Changed);
+                }
             }
         }
 
@@ -209,12 +226,15 @@ namespace DiaryApp.Source
             if (txtEmail.Text == "")
             {
                 txtEmailChanged = false;
-                btnResUnable();
+                btnUnable(btnRes);
             }
             else
             {
                 txtEmailChanged = true;
-                btnResEnable();
+                if (cbAgree.Checked)
+                {
+                    btnEnable(btnRes, txtUserName1Changed, txtEmailChanged, txtPass1Changed, txtPass2Changed);
+                }
             }
         }
 
@@ -223,12 +243,15 @@ namespace DiaryApp.Source
             if (txtPass1.Text == "")
             {
                 txtPass1Changed = false;
-                btnResUnable();
+                btnUnable(btnRes);
             }
             else
             {
                 txtPass1Changed = true;
-                btnResEnable();
+                if (cbAgree.Checked)
+                {
+                    btnEnable(btnRes, txtUserName1Changed, txtEmailChanged, txtPass1Changed, txtPass2Changed);
+                }
             }
         }
 
@@ -237,30 +260,29 @@ namespace DiaryApp.Source
             if (txtPass2.Text == "")
             {
                 txtPass2Changed = false;
-                btnResUnable();
+                btnUnable(btnRes);
             }
             else
             {
                 txtPass2Changed = true;
-                btnResEnable();
+                if (cbAgree.Checked)
+                {
+                    btnEnable(btnRes, txtUserName1Changed, txtEmailChanged, txtPass1Changed, txtPass2Changed);
+                }
             }
         }
 
-        private void btnResEnable()
+        //check box dong y dieu khoan
+        private void cbAgree_CheckedChanged(object sender, EventArgs e)
         {
-            if (txtUserName1Changed == true && txtEmailChanged == true && txtPass1Changed == true && txtPass2Changed == true)
+            if (cbAgree.Checked)
             {
-                btnRes.Enabled = true;
-                btnRes.BackColor = Color.FromArgb(90, 130, 95);
-                btnRes.ForeColor = Color.White;
+                btnEnable(btnRes, txtUserName1Changed, txtEmailChanged, txtPass1Changed, txtPass2Changed);
             }
-        }
-
-        private void btnResUnable()
-        {
-            btnRes.BackColor = Color.FromArgb(217, 217, 217);
-            btnRes.ForeColor = Color.FromArgb(70, 70, 70);
-            btnRes.Enabled = false;
+            else
+            {
+                btnUnable(btnRes);
+            }
         }
         #endregion
 
@@ -270,6 +292,8 @@ namespace DiaryApp.Source
             txtEmail.Clear();
             txtPass1.Clear();
             txtPass2.Clear();
+            cbAgree.Checked = false;
+
             pageLogAndReg.SelectTab(0);
         }
 
@@ -313,6 +337,8 @@ namespace DiaryApp.Source
             txtEmail.Clear();
             txtPass1.Clear();
             txtPass2.Clear();
+            cbAgree.Checked= false;
+
             pageLogAndReg.SelectTab(0);
         }
 
