@@ -73,7 +73,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnRestore = new System.Windows.Forms.Button();
             this.btnOTP = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.txtEmail2 = new System.Windows.Forms.TextBox();
             this.uiLine7 = new Sunny.UI.UILine();
@@ -81,6 +80,18 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.txtOTP = new System.Windows.Forms.TextBox();
             this.lbDiaryApp3 = new System.Windows.Forms.Label();
+            this.tabpageRepass = new System.Windows.Forms.TabPage();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pEye4 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.txtPass3 = new System.Windows.Forms.TextBox();
+            this.uiLine9 = new Sunny.UI.UILine();
+            this.uiLine10 = new Sunny.UI.UILine();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.txtPass4 = new System.Windows.Forms.TextBox();
+            this.pEye3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pClose)).BeginInit();
@@ -97,9 +108,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabpageForget.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.tabpageRepass.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pEye4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pEye3)).BeginInit();
             this.SuspendLayout();
             // 
             // pnImage
@@ -224,11 +240,12 @@
             this.pageLogAndReg.Controls.Add(this.tabpageLog);
             this.pageLogAndReg.Controls.Add(this.tabpageRes);
             this.pageLogAndReg.Controls.Add(this.tabpageForget);
+            this.pageLogAndReg.Controls.Add(this.tabpageRepass);
             this.pageLogAndReg.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pageLogAndReg.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.pageLogAndReg.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pageLogAndReg.Frame = null;
-            this.pageLogAndReg.ItemSize = new System.Drawing.Size(0, 1);
+            this.pageLogAndReg.ItemSize = new System.Drawing.Size(150, 40);
             this.pageLogAndReg.Location = new System.Drawing.Point(426, 0);
             this.pageLogAndReg.MainPage = "";
             this.pageLogAndReg.Name = "pageLogAndReg";
@@ -237,7 +254,6 @@
             this.pageLogAndReg.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.pageLogAndReg.TabIndex = 3;
             this.pageLogAndReg.TabUnSelectedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.pageLogAndReg.TabVisible = false;
             this.pageLogAndReg.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // tabpageLog
@@ -256,9 +272,9 @@
             this.tabpageLog.Controls.Add(this.uiLine1);
             this.tabpageLog.Controls.Add(this.pUser);
             this.tabpageLog.Controls.Add(this.txtPass);
-            this.tabpageLog.Location = new System.Drawing.Point(0, -1);
+            this.tabpageLog.Location = new System.Drawing.Point(0, 0);
             this.tabpageLog.Name = "tabpageLog";
-            this.tabpageLog.Size = new System.Drawing.Size(572, 569);
+            this.tabpageLog.Size = new System.Drawing.Size(572, 529);
             this.tabpageLog.TabIndex = 0;
             this.tabpageLog.Text = "DangNhap";
             // 
@@ -376,7 +392,7 @@
             this.tabpageRes.Controls.Add(this.lbDiaryApp2);
             this.tabpageRes.Location = new System.Drawing.Point(0, 0);
             this.tabpageRes.Name = "tabpageRes";
-            this.tabpageRes.Size = new System.Drawing.Size(200, 60);
+            this.tabpageRes.Size = new System.Drawing.Size(572, 529);
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
             // 
@@ -646,7 +662,7 @@
             this.lbDiaryApp2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.lbDiaryApp2.Location = new System.Drawing.Point(0, 0);
             this.lbDiaryApp2.Name = "lbDiaryApp2";
-            this.lbDiaryApp2.Size = new System.Drawing.Size(200, 65);
+            this.lbDiaryApp2.Size = new System.Drawing.Size(572, 65);
             this.lbDiaryApp2.TabIndex = 13;
             this.lbDiaryApp2.Text = "DiaryApp";
             this.lbDiaryApp2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -659,7 +675,6 @@
             this.tabpageForget.Controls.Add(this.label3);
             this.tabpageForget.Controls.Add(this.btnRestore);
             this.tabpageForget.Controls.Add(this.btnOTP);
-            this.tabpageForget.Controls.Add(this.pictureBox5);
             this.tabpageForget.Controls.Add(this.pictureBox6);
             this.tabpageForget.Controls.Add(this.txtEmail2);
             this.tabpageForget.Controls.Add(this.uiLine7);
@@ -741,17 +756,6 @@
             this.btnOTP.Text = "Gửi mã xác nhận";
             this.btnOTP.UseVisualStyleBackColor = false;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Image = global::DiaryApp.Properties.Resources.eye_crossed;
-            this.pictureBox5.Location = new System.Drawing.Point(461, 330);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 28;
-            this.pictureBox5.TabStop = false;
-            // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
@@ -829,9 +833,8 @@
             this.txtOTP.Location = new System.Drawing.Point(136, 324);
             this.txtOTP.Name = "txtOTP";
             this.txtOTP.PlaceholderText = "Mã xác nhận OTP";
-            this.txtOTP.Size = new System.Drawing.Size(319, 29);
+            this.txtOTP.Size = new System.Drawing.Size(350, 29);
             this.txtOTP.TabIndex = 25;
-            this.txtOTP.UseSystemPasswordChar = true;
             // 
             // lbDiaryApp3
             // 
@@ -845,6 +848,168 @@
             this.lbDiaryApp3.TabIndex = 14;
             this.lbDiaryApp3.Text = "DiaryApp";
             this.lbDiaryApp3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // tabpageRepass
+            // 
+            this.tabpageRepass.BackColor = System.Drawing.SystemColors.Control;
+            this.tabpageRepass.Controls.Add(this.pEye3);
+            this.tabpageRepass.Controls.Add(this.pEye4);
+            this.tabpageRepass.Controls.Add(this.button1);
+            this.tabpageRepass.Controls.Add(this.pictureBox10);
+            this.tabpageRepass.Controls.Add(this.txtPass3);
+            this.tabpageRepass.Controls.Add(this.uiLine9);
+            this.tabpageRepass.Controls.Add(this.uiLine10);
+            this.tabpageRepass.Controls.Add(this.pictureBox11);
+            this.tabpageRepass.Controls.Add(this.txtPass4);
+            this.tabpageRepass.Controls.Add(this.pictureBox5);
+            this.tabpageRepass.Controls.Add(this.label2);
+            this.tabpageRepass.Location = new System.Drawing.Point(0, 0);
+            this.tabpageRepass.Name = "tabpageRepass";
+            this.tabpageRepass.Size = new System.Drawing.Size(572, 529);
+            this.tabpageRepass.TabIndex = 3;
+            this.tabpageRepass.Text = "DatLaiMK";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox5.Image = global::DiaryApp.Properties.Resources.close_green;
+            this.pictureBox5.Location = new System.Drawing.Point(537, 15);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(15);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox5.TabIndex = 24;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Cascadia Mono", 28.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(572, 65);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "DiaryApp";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pEye4
+            // 
+            this.pEye4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pEye4.Image = global::DiaryApp.Properties.Resources.eye_crossed;
+            this.pEye4.Location = new System.Drawing.Point(463, 269);
+            this.pEye4.Name = "pEye4";
+            this.pEye4.Size = new System.Drawing.Size(25, 25);
+            this.pEye4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pEye4.TabIndex = 33;
+            this.pEye4.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(196, 360);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(180, 57);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "Khôi phục";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox10.Image = global::DiaryApp.Properties.Resources._lock;
+            this.pictureBox10.Location = new System.Drawing.Point(83, 254);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 29;
+            this.pictureBox10.TabStop = false;
+            // 
+            // txtPass3
+            // 
+            this.txtPass3.BackColor = System.Drawing.SystemColors.Control;
+            this.txtPass3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPass3.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPass3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.txtPass3.Location = new System.Drawing.Point(138, 173);
+            this.txtPass3.Name = "txtPass3";
+            this.txtPass3.PlaceholderText = "Mật khẩu mới";
+            this.txtPass3.Size = new System.Drawing.Size(350, 29);
+            this.txtPass3.TabIndex = 27;
+            // 
+            // uiLine9
+            // 
+            this.uiLine9.FillColor = System.Drawing.Color.Transparent;
+            this.uiLine9.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.uiLine9.LineCapSize = 10;
+            this.uiLine9.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.uiLine9.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.uiLine9.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
+            this.uiLine9.LineSize = 2;
+            this.uiLine9.Location = new System.Drawing.Point(138, 294);
+            this.uiLine9.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiLine9.Name = "uiLine9";
+            this.uiLine9.Size = new System.Drawing.Size(350, 10);
+            this.uiLine9.Style = Sunny.UI.UIStyle.Custom;
+            this.uiLine9.TabIndex = 25;
+            this.uiLine9.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
+            // uiLine10
+            // 
+            this.uiLine10.FillColor = System.Drawing.Color.Transparent;
+            this.uiLine10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.uiLine10.LineCapSize = 10;
+            this.uiLine10.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.uiLine10.LineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.uiLine10.LineDashStyle = Sunny.UI.UILineDashStyle.Solid;
+            this.uiLine10.LineSize = 2;
+            this.uiLine10.Location = new System.Drawing.Point(138, 208);
+            this.uiLine10.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiLine10.Name = "uiLine10";
+            this.uiLine10.Size = new System.Drawing.Size(350, 10);
+            this.uiLine10.Style = Sunny.UI.UIStyle.Custom;
+            this.uiLine10.TabIndex = 26;
+            this.uiLine10.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox11.Image = global::DiaryApp.Properties.Resources._lock;
+            this.pictureBox11.Location = new System.Drawing.Point(83, 164);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 30;
+            this.pictureBox11.TabStop = false;
+            // 
+            // txtPass4
+            // 
+            this.txtPass4.BackColor = System.Drawing.SystemColors.Control;
+            this.txtPass4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPass4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPass4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.txtPass4.Location = new System.Drawing.Point(138, 263);
+            this.txtPass4.Name = "txtPass4";
+            this.txtPass4.PlaceholderText = "Nhập lại mật khẩu";
+            this.txtPass4.Size = new System.Drawing.Size(319, 29);
+            this.txtPass4.TabIndex = 28;
+            this.txtPass4.UseSystemPasswordChar = true;
+            // 
+            // pEye3
+            // 
+            this.pEye3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pEye3.Image = global::DiaryApp.Properties.Resources.eye_crossed;
+            this.pEye3.Location = new System.Drawing.Point(463, 179);
+            this.pEye3.Name = "pEye3";
+            this.pEye3.Size = new System.Drawing.Size(25, 25);
+            this.pEye3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pEye3.TabIndex = 33;
+            this.pEye3.TabStop = false;
             // 
             // LoginForm
             // 
@@ -876,9 +1041,15 @@
             this.tabpageForget.ResumeLayout(false);
             this.tabpageForget.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.tabpageRepass.ResumeLayout(false);
+            this.tabpageRepass.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pEye4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pEye3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -925,7 +1096,6 @@
         private PictureBox pClose1;
         private TabPage tabpageForget;
         private Label lbDiaryApp3;
-        private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private TextBox txtEmail2;
         private Sunny.UI.UILine uiLine7;
@@ -937,5 +1107,17 @@
         private Label lbNavLog2;
         private Label label3;
         private PictureBox pictureBox8;
+        private TabPage tabpageRepass;
+        private PictureBox pEye4;
+        private Button button1;
+        private PictureBox pictureBox10;
+        private TextBox txtPass3;
+        private Sunny.UI.UILine uiLine9;
+        private Sunny.UI.UILine uiLine10;
+        private PictureBox pictureBox11;
+        private TextBox txtPass4;
+        private PictureBox pictureBox5;
+        private Label label2;
+        private PictureBox pEye3;
     }
 }
