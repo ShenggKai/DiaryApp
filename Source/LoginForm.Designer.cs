@@ -395,9 +395,9 @@
             this.tabpageRes.Controls.Add(this.label1);
             this.tabpageRes.Controls.Add(this.label6);
             this.tabpageRes.Controls.Add(this.lbDiaryApp2);
-            this.tabpageRes.Location = new System.Drawing.Point(0, 0);
+            this.tabpageRes.Location = new System.Drawing.Point(0, -1);
             this.tabpageRes.Name = "tabpageRes";
-            this.tabpageRes.Size = new System.Drawing.Size(200, 99);
+            this.tabpageRes.Size = new System.Drawing.Size(572, 569);
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
             // 
@@ -501,6 +501,7 @@
             this.txtUserName1.PlaceholderText = "Username";
             this.txtUserName1.Size = new System.Drawing.Size(350, 29);
             this.txtUserName1.TabIndex = 14;
+            this.txtUserName1.TextChanged += new System.EventHandler(this.txtUserName1_TextChanged);
             // 
             // uiLine6
             // 
@@ -593,6 +594,7 @@
             this.txtPass2.Size = new System.Drawing.Size(319, 29);
             this.txtPass2.TabIndex = 17;
             this.txtPass2.UseSystemPasswordChar = true;
+            this.txtPass2.TextChanged += new System.EventHandler(this.txtPass2_TextChanged);
             // 
             // txtPass1
             // 
@@ -606,6 +608,7 @@
             this.txtPass1.Size = new System.Drawing.Size(319, 29);
             this.txtPass1.TabIndex = 16;
             this.txtPass1.UseSystemPasswordChar = true;
+            this.txtPass1.TextChanged += new System.EventHandler(this.txtPass1_TextChanged);
             // 
             // txtEmail
             // 
@@ -618,6 +621,7 @@
             this.txtEmail.PlaceholderText = "Email";
             this.txtEmail.Size = new System.Drawing.Size(350, 29);
             this.txtEmail.TabIndex = 15;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // lbNavLog
             // 
@@ -667,7 +671,7 @@
             this.lbDiaryApp2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.lbDiaryApp2.Location = new System.Drawing.Point(0, 0);
             this.lbDiaryApp2.Name = "lbDiaryApp2";
-            this.lbDiaryApp2.Size = new System.Drawing.Size(200, 65);
+            this.lbDiaryApp2.Size = new System.Drawing.Size(572, 65);
             this.lbDiaryApp2.TabIndex = 13;
             this.lbDiaryApp2.Text = "DiaryApp";
             this.lbDiaryApp2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
