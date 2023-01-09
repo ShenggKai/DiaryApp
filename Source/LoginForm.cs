@@ -182,6 +182,88 @@ namespace DiaryApp.Source
         #endregion
 
         #region Register Form
+
+        #region Enable or Unable button dang ky
+
+        private bool txtUserName1Changed = false;
+        private bool txtEmailChanged = false;
+        private bool txtPass1Changed = false;
+        private bool txtPass2Changed = false;
+
+        private void txtUserName1_TextChanged(object sender, EventArgs e)
+        {
+            if (txtUserName1.Text == "")
+            {
+                txtUserName1Changed = false;
+                btnResUnable();
+            }
+            else
+            {
+                txtUserName1Changed = true;
+                btnResEnable();
+            }
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+            if (txtEmail.Text == "")
+            {
+                txtEmailChanged = false;
+                btnResUnable();
+            }
+            else
+            {
+                txtEmailChanged = true;
+                btnResEnable();
+            }
+        }
+
+        private void txtPass1_TextChanged(object sender, EventArgs e)
+        {
+            if (txtPass1.Text == "")
+            {
+                txtPass1Changed = false;
+                btnResUnable();
+            }
+            else
+            {
+                txtPass1Changed = true;
+                btnResEnable();
+            }
+        }
+
+        private void txtPass2_TextChanged(object sender, EventArgs e)
+        {
+            if (txtPass2.Text == "")
+            {
+                txtPass2Changed = false;
+                btnResUnable();
+            }
+            else
+            {
+                txtPass2Changed = true;
+                btnResEnable();
+            }
+        }
+
+        private void btnResEnable()
+        {
+            if (txtUserName1Changed == true && txtEmailChanged == true && txtPass1Changed == true && txtPass2Changed == true)
+            {
+                btnRes.Enabled = true;
+                btnRes.BackColor = Color.FromArgb(90, 130, 95);
+                btnRes.ForeColor = Color.White;
+            }
+        }
+
+        private void btnResUnable()
+        {
+            btnRes.BackColor = Color.FromArgb(217, 217, 217);
+            btnRes.ForeColor = Color.FromArgb(70, 70, 70);
+            btnRes.Enabled = false;
+        }
+        #endregion
+
         private void lbNavLog_Click(object sender, EventArgs e)
         {
             txtUserName1.Clear();
@@ -298,85 +380,5 @@ namespace DiaryApp.Source
             pageLogAndReg.SelectTab(0);
         }
         #endregion
-
-        #region Enable or Unable button dang ky
-
-        private bool txtUserName1Changed = false; 
-        private bool txtEmailChanged = false;
-        private bool txtPass1Changed = false;
-        private bool txtPass2Changed = false;
-
-        private void txtUserName1_TextChanged(object sender, EventArgs e)
-        {
-            if (txtUserName1.Text == "")
-            {
-                txtUserName1Changed = false;
-                btnResUnable();
-            }
-            else
-            {
-                txtUserName1Changed = true;
-                btnResEnable();
-            }
-        }
-
-        private void txtEmail_TextChanged(object sender, EventArgs e)
-        {
-            if (txtEmail.Text == "")
-            {
-                txtEmailChanged = false;
-                btnResUnable();
-            }
-            else
-            {
-                txtEmailChanged = true;
-                btnResEnable();
-            }
-        }
-
-        private void txtPass1_TextChanged(object sender, EventArgs e)
-        {
-            if (txtPass1.Text == "")
-            {
-                txtPass1Changed = false;
-                btnResUnable();
-            }
-            else
-            {
-                txtPass1Changed = true;
-                btnResEnable();
-            }
-        }
-
-        private void txtPass2_TextChanged(object sender, EventArgs e)
-        {
-            if (txtPass2.Text == "")
-            {
-                txtPass2Changed = false;
-                btnResUnable();
-            }
-            else
-            {
-                txtPass2Changed = true;
-                btnResEnable();
-            }
-        }
-
-        private void btnResEnable()
-        {
-            if (txtUserName1Changed == true && txtEmailChanged == true && txtPass1Changed == true && txtPass2Changed == true)
-            {
-                btnRes.Enabled = true;
-                btnRes.BackColor = Color.FromArgb(90, 130, 95);
-                btnRes.ForeColor = Color.White;
-            }
-        }
-
-        private void btnResUnable()
-        {
-            btnRes.BackColor = Color.FromArgb(217, 217, 217);
-            btnRes.ForeColor = Color.FromArgb(70, 70, 70);
-            btnRes.Enabled = false;
-        }
     }
 }
