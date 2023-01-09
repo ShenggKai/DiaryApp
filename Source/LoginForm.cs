@@ -94,10 +94,7 @@ namespace DiaryApp.Source
             else
             {
                 txtuserChanged = true;
-                if (txtPassChnaged == true)
-                {
-                    btnEnable(btnLogin, txtuserChanged, txtPassChnaged, true, true);
-                }
+                btnEnable(btnLogin, txtuserChanged, txtPassChnaged, true, true);
             }
         }
 
@@ -111,14 +108,12 @@ namespace DiaryApp.Source
             else
             {
                 txtPassChnaged = true;
-                if (txtuserChanged == true)
-                {
-                    btnEnable(btnLogin, txtuserChanged, txtPassChnaged, true, true);
-                }
+                btnEnable(btnLogin, txtuserChanged, txtPassChnaged, true, true);
             }
         }
-        #endregion
+        #endregion Enable or unable button dang nhap
 
+        #region button click event
         private bool eyeHide1 = true;
         private void pEye1_Click(object sender, EventArgs e)
         {
@@ -196,11 +191,13 @@ namespace DiaryApp.Source
             txtPass.Clear();
             pageLogAndReg.SelectTab(2);
         }
-        #endregion
+        #endregion button click event
+
+        #endregion Login Form
 
         #region Register Form
 
-        #region Enable or Unable button dang ky
+        #region Enable or unable button dang ky
 
         private bool txtUserName1Changed = false;
         private bool txtEmailChanged = false;
@@ -287,8 +284,9 @@ namespace DiaryApp.Source
                 btnUnable(btnRes);
             }
         }
-        #endregion
+        #endregion Enable or unable button dang ky
 
+        #region click event
         private void lbNavLog_Click(object sender, EventArgs e)
         {
             txtUserName1.Clear();
@@ -349,7 +347,9 @@ namespace DiaryApp.Source
         {
             Process.Start(new ProcessStartInfo("https://www.termsfeed.com/live/789f25f3-0f9e-4416-a657-e302e36ec0f8") { UseShellExecute = true });
         }
-        #endregion
+        #endregion click event
+
+        #endregion Register Form
 
         #region OTP Form
         #region button click event
@@ -403,12 +403,14 @@ namespace DiaryApp.Source
                 btnEnable(btnRepass, btnOTPCliked, true, true, true);
             }
         }
-        #endregion
-
-        #endregion
+        #endregion Enable or unable button in OTP form
+        #endregion OTP Form
 
         #region Restore password Form
+        #region button click event
         private bool eyeHide3 = true;
+        private bool eyeHide4 = true;
+
         private void pEye3_Click(object sender, EventArgs e)
         {
             if (eyeHide3 == true)
@@ -425,7 +427,6 @@ namespace DiaryApp.Source
             }
         }
 
-        private bool eyeHide4 = true;
         private void pEye4_Click(object sender, EventArgs e)
         {
             if (eyeHide4 == true)
@@ -448,7 +449,41 @@ namespace DiaryApp.Source
             txtPass4.Clear();
             pageLogAndReg.SelectTab(0);
         }
-
         #endregion
+
+        #region unable or enable button khoi phuc
+        private bool txtPass3Changed = false;
+        private bool txtPass4Changed = false;
+
+        private void txtPass3_TextChanged(object sender, EventArgs e)
+        {
+            if (txtPass3.Text == "")
+            {
+                txtPass3Changed = false;
+                btnUnable(btnRestore);
+            }
+            else
+            {
+                txtPass3Changed = true;
+                btnEnable(btnRestore, txtPass3Changed, txtPass4Changed, true, true);
+            }
+        }
+
+        private void txtPass4_TextChanged(object sender, EventArgs e)
+        {
+            if (txtPass4.Text == "")
+            {
+                txtPass4Changed = false;
+                btnUnable(btnRestore);
+            }
+            else
+            {
+                txtPass4Changed = true;
+                btnEnable(btnRestore, txtPass3Changed, txtPass4Changed, true, true);
+            }
+        }
+        #endregion unable or enable button khoi phuc
+
+        #endregion Restore password Form
     }
 }
