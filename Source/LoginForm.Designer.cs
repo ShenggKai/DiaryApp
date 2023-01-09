@@ -766,6 +766,7 @@
             this.btnOTP.TabIndex = 29;
             this.btnOTP.Text = "Gửi mã xác nhận";
             this.btnOTP.UseVisualStyleBackColor = false;
+            this.btnOTP.Click += new System.EventHandler(this.btnOTP_Click);
             // 
             // pictureBox6
             // 

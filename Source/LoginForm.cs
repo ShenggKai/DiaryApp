@@ -353,10 +353,19 @@ namespace DiaryApp.Source
 
         #region OTP Form
         #region button click event
+        private bool btnOTPCliked = false;
+
+        private void btnOTP_Click(object sender, EventArgs e)
+        {
+            btnOTPCliked = true;
+        }
+
         private void btnRepass_Click(object sender, EventArgs e)
         {
             txtEmail2.Clear();
             txtOTP.Clear();
+            btnOTPCliked = false;
+
             pageLogAndReg.SelectTab(3);
         }
 
@@ -364,6 +373,8 @@ namespace DiaryApp.Source
         {
             txtEmail2.Clear();
             txtOTP.Clear();
+            btnOTPCliked = false;
+
             pageLogAndReg.SelectTab(0);
         }
         #endregion
@@ -389,7 +400,7 @@ namespace DiaryApp.Source
             }
             else
             {
-                btnEnable(btnRepass, true, true, true, true);
+                btnEnable(btnRepass, btnOTPCliked, true, true, true);
             }
         }
         #endregion
@@ -437,8 +448,7 @@ namespace DiaryApp.Source
             txtPass4.Clear();
             pageLogAndReg.SelectTab(0);
         }
+
         #endregion
-
-
     }
 }
