@@ -79,6 +79,8 @@ namespace DiaryApp.Source
         #endregion
 
         #region Login Form
+
+        #region Enable or unable button dang nhap
         private bool txtuserChanged = false;
         private bool txtPassChnaged = false;
 
@@ -115,6 +117,7 @@ namespace DiaryApp.Source
                 }
             }
         }
+        #endregion
 
         private bool eyeHide1 = true;
         private void pEye1_Click(object sender, EventArgs e)
@@ -349,6 +352,7 @@ namespace DiaryApp.Source
         #endregion
 
         #region OTP Form
+        #region button click event
         private void btnRepass_Click(object sender, EventArgs e)
         {
             txtEmail2.Clear();
@@ -362,6 +366,34 @@ namespace DiaryApp.Source
             txtOTP.Clear();
             pageLogAndReg.SelectTab(0);
         }
+        #endregion
+
+        #region Enable or unable button in OTP form
+        private void txtEmail2_TextChanged(object sender, EventArgs e)
+        {
+            if (txtEmail2.Text == "")
+            {
+                btnUnable(btnOTP);
+            }
+            else
+            {
+                btnEnable(btnOTP, true, true, true, true);
+            }
+        }
+
+        private void txtOTP_TextChanged(object sender, EventArgs e)
+        {
+            if (txtOTP.Text == "")
+            {
+                btnUnable(btnRepass);
+            }
+            else
+            {
+                btnEnable(btnRepass, true, true, true, true);
+            }
+        }
+        #endregion
+
         #endregion
 
         #region Restore password Form
@@ -406,5 +438,7 @@ namespace DiaryApp.Source
             pageLogAndReg.SelectTab(0);
         }
         #endregion
+
+
     }
 }
