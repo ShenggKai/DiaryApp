@@ -146,6 +146,7 @@
             this.txtUserName.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
             this.txtUserName.Location = new System.Drawing.Point(138, 173);
+            this.txtUserName.MaxLength = 40;
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.PlaceholderText = "Username hoặc email";
             this.txtUserName.Size = new System.Drawing.Size(350, 29);
@@ -187,6 +188,7 @@
             this.txtPass.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
             this.txtPass.Location = new System.Drawing.Point(138, 263);
+            this.txtPass.MaxLength = 50;
             this.txtPass.Name = "txtPass";
             this.txtPass.PlaceholderText = "Mật khẩu";
             this.txtPass.Size = new System.Drawing.Size(319, 29);
@@ -498,6 +500,7 @@
             this.txtUserName1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtUserName1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
             this.txtUserName1.Location = new System.Drawing.Point(123, 106);
+            this.txtUserName1.MaxLength = 20;
             this.txtUserName1.Name = "txtUserName1";
             this.txtUserName1.PlaceholderText = "Username";
             this.txtUserName1.Size = new System.Drawing.Size(350, 29);
@@ -590,6 +593,7 @@
             this.txtPass2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPass2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
             this.txtPass2.Location = new System.Drawing.Point(123, 316);
+            this.txtPass2.MaxLength = 50;
             this.txtPass2.Name = "txtPass2";
             this.txtPass2.PlaceholderText = "Nhập lại mật khẩu";
             this.txtPass2.Size = new System.Drawing.Size(319, 29);
@@ -604,6 +608,7 @@
             this.txtPass1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPass1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
             this.txtPass1.Location = new System.Drawing.Point(123, 246);
+            this.txtPass1.MaxLength = 50;
             this.txtPass1.Name = "txtPass1";
             this.txtPass1.PlaceholderText = "Mật khẩu";
             this.txtPass1.Size = new System.Drawing.Size(319, 29);
@@ -618,6 +623,7 @@
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
             this.txtEmail.Location = new System.Drawing.Point(123, 176);
+            this.txtEmail.MaxLength = 40;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PlaceholderText = "Email";
             this.txtEmail.Size = new System.Drawing.Size(350, 29);
@@ -786,6 +792,7 @@
             this.txtEmail2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtEmail2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
             this.txtEmail2.Location = new System.Drawing.Point(136, 148);
+            this.txtEmail2.MaxLength = 40;
             this.txtEmail2.Name = "txtEmail2";
             this.txtEmail2.PlaceholderText = "Email khôi phục tài khoản";
             this.txtEmail2.Size = new System.Drawing.Size(350, 29);
@@ -844,6 +851,7 @@
             this.txtOTP.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtOTP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
             this.txtOTP.Location = new System.Drawing.Point(136, 324);
+            this.txtOTP.MaxLength = 6;
             this.txtOTP.Name = "txtOTP";
             this.txtOTP.PlaceholderText = "Mã xác nhận OTP";
             this.txtOTP.Size = new System.Drawing.Size(350, 29);
@@ -941,6 +949,7 @@
             this.txtPass3.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPass3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
             this.txtPass3.Location = new System.Drawing.Point(138, 173);
+            this.txtPass3.MaxLength = 50;
             this.txtPass3.Name = "txtPass3";
             this.txtPass3.PlaceholderText = "Mật khẩu mới";
             this.txtPass3.Size = new System.Drawing.Size(350, 29);
@@ -1000,6 +1009,7 @@
             this.txtPass4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPass4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
             this.txtPass4.Location = new System.Drawing.Point(138, 263);
+            this.txtPass4.MaxLength = 50;
             this.txtPass4.Name = "txtPass4";
             this.txtPass4.PlaceholderText = "Nhập lại mật khẩu";
             this.txtPass4.Size = new System.Drawing.Size(319, 29);
