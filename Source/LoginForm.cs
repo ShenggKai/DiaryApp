@@ -79,7 +79,6 @@ namespace DiaryApp.Source
         #endregion
 
         #region Login Form
-
         #region Enable or unable button dang nhap
         private bool txtuserChanged = false;
         private bool txtPassChnaged = false;
@@ -192,11 +191,9 @@ namespace DiaryApp.Source
             pageLogAndReg.SelectTab(2);
         }
         #endregion button click event
-
         #endregion Login Form
 
         #region Register Form
-
         #region Enable or unable button dang ky
 
         private bool txtUserName1Changed = false;
@@ -348,7 +345,6 @@ namespace DiaryApp.Source
             Process.Start(new ProcessStartInfo("https://www.termsfeed.com/live/789f25f3-0f9e-4416-a657-e302e36ec0f8") { UseShellExecute = true });
         }
         #endregion click event
-
         #endregion Register Form
 
         #region OTP Form
