@@ -147,8 +147,8 @@ namespace DiaryApp.Source
 
             try
             {
-                String querry = "SELECT * FROM Account WHERE (username = '" + txtUserName.Text + "' OR email = '" + txtUserName.Text + "') AND user_pass = '" + txtPass.Text + "'";
-                SqlDataAdapter sda = new SqlDataAdapter(querry, conn);
+                string query = "SELECT * FROM Account WHERE (username = '" + txtUserName.Text + "' OR email = '" + txtUserName.Text + "') AND user_pass = '" + txtPass.Text + "'";
+                SqlDataAdapter sda = new SqlDataAdapter(query, conn);
 
                 DataTable dtable = new DataTable();
                 sda.Fill(dtable);
@@ -375,6 +375,15 @@ namespace DiaryApp.Source
             }
             else
             {
+                conn.Open();
+                string query = "INSERT INTO Account VALUES('"+txtUserName1.Text+"', '"+txtEmail.Text+"', '"+txtPass1.Text+"')";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+
+                MessageBox.Show("Tạo tài khoản thành công", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 //clear info
                 txtUserName1.Clear();
                 txtEmail.Clear();
