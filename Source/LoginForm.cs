@@ -25,6 +25,36 @@ namespace DiaryApp.Source
             InitializeComponent();
         }
 
+        // check whether already have same account
+        private bool isContainAcc(string txtUser, string txtEmail)
+        {
+            try
+            {
+                conn.Open();
+                string query = "SELECT * FROM Account WHERE username = '" + txtUser + "' COLLATE Latin1_General_CS_AS OR email = '" + txtEmail + "' COLLATE Latin1_General_CS_AS;";
+
+                SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+                DataTable dtable = new DataTable();
+                sda.Fill(dtable);
+
+                if (dtable.Rows.Count > 0)
+                {
+                    return true;
+                }
+                else return false;
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
         // SQL server connection
         SqlConnection conn = new SqlConnection(@"Data Source=KAI\SQLEXPRESS;Initial Catalog=DiaryApp;Integrated Security=True");
 
@@ -34,6 +64,7 @@ namespace DiaryApp.Source
             Application.Exit();
         }
 
+        #region Enable or unable button region
         private void LoginForm_Load(object sender, EventArgs e)
         {
             // button login
@@ -80,7 +111,9 @@ namespace DiaryApp.Source
             btn.ForeColor = Color.FromArgb(70, 70, 70);
             btn.Enabled = false;
         }
-        #endregion
+        #endregion Enable or unable button region
+
+        #endregion Main
 
         #region Login Form
         #region Enable or unable button dang nhap
@@ -361,38 +394,7 @@ namespace DiaryApp.Source
         // button dang ky
         private void btnRes_Click(object sender, EventArgs e)
         {
-            // check whether already have same account
-            bool isContainAcc(string txtUser, string txtEmail)
-            {
-                try
-                {
-                    conn.Open();
-                    string query = "SELECT * FROM Account WHERE username = '"+txtUser+"' COLLATE Latin1_General_CS_AS OR email = '"+txtEmail+"' COLLATE Latin1_General_CS_AS;";
-
-                    SqlDataAdapter sda = new SqlDataAdapter(query, conn);
-                    DataTable dtable = new DataTable();
-                    sda.Fill(dtable);
-
-                    if (dtable.Rows.Count > 0)
-                    {
-                        return true;
-                    }
-                    else return false;
-                    
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Error", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return false;
-                }
-                finally
-                {
-                    conn.Close();
-                }
-            }
-
             #region check invalid user input
-
             string username, email;
             // email
             if (IsValidEmail(txtEmail.Text) == false)
