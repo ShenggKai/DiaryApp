@@ -491,7 +491,8 @@ namespace DiaryApp.Source
                 //send email
                 MailMessage mm = new MailMessage("diaryappdev@gmail.com", txtEmail2.Text);
                 mm.Subject = "Đặt lại mật khẩu DiaryApp";
-                mm.Body = "Đây là mã OTP của bạn: " + otp + ".";
+                mm.IsBodyHtml = true;
+                mm.Body = "<p style=\"color: black;\">Xin chào,</p><p style=\"color: black;\"><span style=\"color: black;\">Bạn vừa yêu cầu đặt lại mật khẩu.</span><br><span style=\"color: black;\">Đây là mã OTP của bạn:</span><center><h2 style=\"text-align: center; color: darkgreen; border: 2px solid;width: 200px;\">"+otp+"</h2></center><span style=\"color: black;\">Nếu bạn không muốn đặt lại mật khẩu của mình, bạn có thể yên tâm bỏ qua email này.</span></p><p style=\"color: black;\">Xin cảm ơn, <br>DiaryApp.</p>";
                 SmtpClient smtp = new SmtpClient();
                 smtp.Host = "smtp.gmail.com";
                 smtp.Port = 587;
