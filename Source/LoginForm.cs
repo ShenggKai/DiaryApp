@@ -46,7 +46,7 @@ namespace DiaryApp.Source
             }
             catch (Exception)
             {
-                MessageBox.Show("Error", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error!", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             finally
@@ -202,7 +202,7 @@ namespace DiaryApp.Source
                 }
                 else
                 {
-                    MessageBox.Show("Sai tài khoản hoặc mật khẩu! Vui lòng kiểm tra lại", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Sai tài khoản hoặc mật khẩu! Vui lòng kiểm tra lại.", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                     txtUserName.Clear();
                     txtPass.Clear();
@@ -213,7 +213,7 @@ namespace DiaryApp.Source
             catch (Exception)
             {
 
-                MessageBox.Show("Error", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error!", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
@@ -442,7 +442,7 @@ namespace DiaryApp.Source
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Error", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error!", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 finally
                 {
@@ -472,7 +472,7 @@ namespace DiaryApp.Source
             }
             else
             {
-                MessageBox.Show("Email khôi phục tài khoản đã được gửi! Vui lòng kiểm tra hộp thư và nhập mã OTP ở bên dưới", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Email đã được gửi! Vui lòng kiểm tra hộp thư và nhập mã OTP ở bên dưới.", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 btnOTPCliked = true;
             }
