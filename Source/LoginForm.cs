@@ -29,7 +29,10 @@ namespace DiaryApp.Source
         }
 
         // to paste OTP string
-        private string tempOTP;
+        private string tempOTP = "000000";
+
+        // to paste email to change password
+        private string tempEmail = "email";
 
         // check whether already have same account
         private bool isContainAcc(string txtUser, string txtEmail)
@@ -516,6 +519,7 @@ namespace DiaryApp.Source
 
         private bool btnOTPCliked = false;
 
+        // button gui ma xac nhan
         private void btnOTP_Click(object sender, EventArgs e)
         {
             // don't have account in database
@@ -541,6 +545,9 @@ namespace DiaryApp.Source
         {
             if (txtOTP.Text == tempOTP)
             {
+                // paste before clear
+                tempEmail = txtEmail2.Text;
+
                 txtEmail2.Clear();
                 txtOTP.Clear();
                 btnOTPCliked = false;
@@ -629,9 +636,38 @@ namespace DiaryApp.Source
 
         private void btnRestore_Click(object sender, EventArgs e)
         {
-            txtPass3.Clear();
-            txtPass4.Clear();
-            pageLogAndReg.SelectTab(0);
+            if (txtPass3.Text != txtPass4.Text)
+            {
+                MessageBox.Show("Mật khẩu không khớp!", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                txtPass3.Clear();
+                txtPass4.Clear();
+            }
+            else
+            {
+                //update password
+                try
+                {
+                    conn.Open();
+                    string query = "UPDATE Account SET user_pass = '"+txtPass3.Text+"' WHERE email = '"+tempEmail+"';";
+
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Khôi phục tài khoản thành công!", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // navigation to login form
+                    pageLogAndReg.SelectTab(0);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("SQL Error!", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
         }
         #endregion
 
