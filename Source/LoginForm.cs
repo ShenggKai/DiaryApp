@@ -473,6 +473,43 @@ namespace DiaryApp.Source
 
         #region OTP Form
         #region button click event
+        #region show or hide gif icon
+        private void ShowProgressGifDelegate()
+        {
+            pLoading.Visible = true;
+        }
+
+        private void HideProgressGifDelegate()
+        {
+            pLoading.Visible = false;
+        }
+
+        private void MyThreadRoutine()
+        {
+            this.Invoke(this.ShowProgressGifDelegate);
+
+            //get OTP code
+            string otp = generatorOTP();
+
+            //send email
+            MailMessage mm = new MailMessage("diaryappdev@gmail.com", txtEmail2.Text);
+            mm.Subject = "Đặt lại mật khẩu DiaryApp";
+            mm.IsBodyHtml = true;
+            mm.Body = "<p style=\"color: black;\">Xin chào,</p><p style=\"color: black;\"><span style=\"color: black;\">Bạn vừa yêu cầu đặt lại mật khẩu.</span><br><span style=\"color: black;\">Đây là mã OTP của bạn:</span><center><h2 style=\"text-align: center; color: darkgreen; border: 2px solid;width: 200px;\">" + otp + "</h2></center><span style=\"color: black;\">Nếu bạn không muốn đặt lại mật khẩu của mình, bạn có thể yên tâm bỏ qua email này.</span></p><p style=\"color: black;\">Xin cảm ơn, <br>DiaryApp.</p>";
+            SmtpClient smtp = new SmtpClient();
+            smtp.Host = "smtp.gmail.com";
+            smtp.Port = 587;
+            System.Net.NetworkCredential nc = new NetworkCredential("diaryappdev@gmail.com", "joqphfdgznfsfkdl");
+            smtp.Credentials = nc;
+            smtp.EnableSsl = true;
+            smtp.Send(mm);
+
+            //System.Threading.Thread.Sleep(5000);
+            this.Invoke(this.HideProgressGifDelegate);
+        }
+
+        #endregion show or hide gif icon
+
         private bool btnOTPCliked = false;
 
         private void btnOTP_Click(object sender, EventArgs e)
@@ -620,39 +657,5 @@ namespace DiaryApp.Source
         #endregion unable or enable button khoi phuc
 
         #endregion Restore password Form
-
-        private void ShowProgressGifDelegate()
-        {
-            pLoading.Visible = true;
-        }
-
-        private void HideProgressGifDelegate()
-        {
-            pLoading.Visible = false;
-        }
-
-        private void MyThreadRoutine()
-        {
-            this.Invoke(this.ShowProgressGifDelegate);
-
-            //get OTP code
-            string otp = generatorOTP();
-
-            //send email
-            MailMessage mm = new MailMessage("diaryappdev@gmail.com", txtEmail2.Text);
-            mm.Subject = "Đặt lại mật khẩu DiaryApp";
-            mm.IsBodyHtml = true;
-            mm.Body = "<p style=\"color: black;\">Xin chào,</p><p style=\"color: black;\"><span style=\"color: black;\">Bạn vừa yêu cầu đặt lại mật khẩu.</span><br><span style=\"color: black;\">Đây là mã OTP của bạn:</span><center><h2 style=\"text-align: center; color: darkgreen; border: 2px solid;width: 200px;\">" + otp + "</h2></center><span style=\"color: black;\">Nếu bạn không muốn đặt lại mật khẩu của mình, bạn có thể yên tâm bỏ qua email này.</span></p><p style=\"color: black;\">Xin cảm ơn, <br>DiaryApp.</p>";
-            SmtpClient smtp = new SmtpClient();
-            smtp.Host = "smtp.gmail.com";
-            smtp.Port = 587;
-            System.Net.NetworkCredential nc = new NetworkCredential("diaryappdev@gmail.com", "joqphfdgznfsfkdl");
-            smtp.Credentials = nc;
-            smtp.EnableSsl = true;
-            smtp.Send(mm);
-
-            //System.Threading.Thread.Sleep(5000);
-            this.Invoke(this.HideProgressGifDelegate);
-        }
     }
 }
