@@ -395,7 +395,6 @@ namespace DiaryApp.Source
         private void btnRes_Click(object sender, EventArgs e)
         {
             #region check invalid user input
-            string username, email;
             // email
             if (IsValidEmail(txtEmail.Text) == false)
             {
@@ -466,7 +465,17 @@ namespace DiaryApp.Source
 
         private void btnOTP_Click(object sender, EventArgs e)
         {
-            btnOTPCliked = true;
+            // don't have account in database
+            if (isContainAcc("foreverlove", txtEmail2.Text) == false)
+            {
+                MessageBox.Show("Không tìm thấy tài khoản!", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Email khôi phục tài khoản đã được gửi! Vui lòng kiểm tra hộp thư và nhập mã OTP ở bên dưới", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                btnOTPCliked = true;
+            }
         }
 
         private void btnRepass_Click(object sender, EventArgs e)
