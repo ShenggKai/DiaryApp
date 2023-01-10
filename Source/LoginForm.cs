@@ -373,6 +373,11 @@ namespace DiaryApp.Source
                 txtPass1.Clear();
                 txtPass2.Clear();
             }
+            // check already have same account
+            else if (false)
+            {
+                
+            }
             else
             {
                 try
