@@ -68,7 +68,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lbDiaryApp2 = new System.Windows.Forms.Label();
             this.tabpageForget = new System.Windows.Forms.TabPage();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pLoading = new System.Windows.Forms.PictureBox();
             this.pClose2 = new System.Windows.Forms.PictureBox();
             this.lbNavLog2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -108,7 +108,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabpageForget.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pLoading)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pClose2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -688,7 +688,7 @@
             // tabpageForget
             // 
             this.tabpageForget.BackColor = System.Drawing.SystemColors.Control;
-            this.tabpageForget.Controls.Add(this.pictureBox5);
+            this.tabpageForget.Controls.Add(this.pLoading);
             this.tabpageForget.Controls.Add(this.pClose2);
             this.tabpageForget.Controls.Add(this.lbNavLog2);
             this.tabpageForget.Controls.Add(this.label3);
@@ -707,15 +707,16 @@
             this.tabpageForget.TabIndex = 2;
             this.tabpageForget.Text = "QuenMK";
             // 
-            // pictureBox5
+            // pLoading
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(397, 222);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 33;
-            this.pictureBox5.TabStop = false;
+            this.pLoading.Image = global::DiaryApp.Properties.Resources.loading;
+            this.pLoading.Location = new System.Drawing.Point(397, 222);
+            this.pLoading.Name = "pLoading";
+            this.pLoading.Size = new System.Drawing.Size(42, 42);
+            this.pLoading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pLoading.TabIndex = 33;
+            this.pLoading.TabStop = false;
+            this.pLoading.Visible = false;
             // 
             // pClose2
             // 
@@ -1085,7 +1086,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabpageForget.ResumeLayout(false);
             this.tabpageForget.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pLoading)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pClose2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -1165,6 +1166,6 @@
         private PictureBox pClose3;
         private Label label2;
         private PictureBox pEye3;
-        private PictureBox pictureBox5;
+        private PictureBox pLoading;
     }
 }
