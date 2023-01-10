@@ -82,6 +82,8 @@
             this.txtOTP = new System.Windows.Forms.TextBox();
             this.lbDiaryApp3 = new System.Windows.Forms.Label();
             this.tabpageRepass = new System.Windows.Forms.TabPage();
+            this.lbNavLog3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.pEye3 = new System.Windows.Forms.PictureBox();
             this.pEye4 = new System.Windows.Forms.PictureBox();
             this.btnRestore = new System.Windows.Forms.Button();
@@ -888,6 +890,8 @@
             // tabpageRepass
             // 
             this.tabpageRepass.BackColor = System.Drawing.SystemColors.Control;
+            this.tabpageRepass.Controls.Add(this.lbNavLog3);
+            this.tabpageRepass.Controls.Add(this.label5);
             this.tabpageRepass.Controls.Add(this.pEye3);
             this.tabpageRepass.Controls.Add(this.pEye4);
             this.tabpageRepass.Controls.Add(this.btnRestore);
@@ -904,6 +908,32 @@
             this.tabpageRepass.Size = new System.Drawing.Size(572, 569);
             this.tabpageRepass.TabIndex = 3;
             this.tabpageRepass.Text = "DatLaiMK";
+            // 
+            // lbNavLog3
+            // 
+            this.lbNavLog3.AutoSize = true;
+            this.lbNavLog3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbNavLog3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbNavLog3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.lbNavLog3.Location = new System.Drawing.Point(279, 523);
+            this.lbNavLog3.Name = "lbNavLog3";
+            this.lbNavLog3.Size = new System.Drawing.Size(105, 25);
+            this.lbNavLog3.TabIndex = 35;
+            this.lbNavLog3.Text = "Đăng nhập";
+            this.lbNavLog3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbNavLog3.Click += new System.EventHandler(this.lbNavLog_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label5.Location = new System.Drawing.Point(202, 523);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(82, 25);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "Quay lại";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pEye3
             // 
@@ -1167,5 +1197,7 @@
         private Label label2;
         private PictureBox pEye3;
         private PictureBox pLoading;
+        private Label lbNavLog3;
+        private Label label5;
     }
 }
