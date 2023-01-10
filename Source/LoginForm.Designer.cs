@@ -93,7 +93,6 @@
             this.txtPass4 = new System.Windows.Forms.TextBox();
             this.pClose3 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.pLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pClose)).BeginInit();
@@ -702,9 +701,9 @@
             this.tabpageForget.Controls.Add(this.pictureBox7);
             this.tabpageForget.Controls.Add(this.txtOTP);
             this.tabpageForget.Controls.Add(this.lbDiaryApp3);
-            this.tabpageForget.Location = new System.Drawing.Point(0, -1);
+            this.tabpageForget.Location = new System.Drawing.Point(0, 0);
             this.tabpageForget.Name = "tabpageForget";
-            this.tabpageForget.Size = new System.Drawing.Size(572, 569);
+            this.tabpageForget.Size = new System.Drawing.Size(200, 99);
             this.tabpageForget.TabIndex = 2;
             this.tabpageForget.Text = "QuenMK";
             // 
@@ -880,7 +879,7 @@
             this.lbDiaryApp3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.lbDiaryApp3.Location = new System.Drawing.Point(0, 0);
             this.lbDiaryApp3.Name = "lbDiaryApp3";
-            this.lbDiaryApp3.Size = new System.Drawing.Size(572, 65);
+            this.lbDiaryApp3.Size = new System.Drawing.Size(200, 65);
             this.lbDiaryApp3.TabIndex = 14;
             this.lbDiaryApp3.Text = "DiaryApp";
             this.lbDiaryApp3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1056,14 +1055,6 @@
             this.label2.Text = "DiaryApp";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // backgroundWorker1
-            // 
-            this.backgroundWorker1.WorkerReportsProgress = true;
-            this.backgroundWorker1.WorkerSupportsCancellation = true;
-            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
-            this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
-            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
-            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -1175,6 +1166,5 @@
         private Label label2;
         private PictureBox pEye3;
         private PictureBox pictureBox5;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
