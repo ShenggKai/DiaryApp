@@ -362,12 +362,12 @@ namespace DiaryApp.Source
         private void btnRes_Click(object sender, EventArgs e)
         {
             // check whether already have same account
-            bool isContainAcc(string find, string txt)
+            bool isContainAcc(string txtUser, string txtEmail)
             {
                 try
                 {
                     conn.Open();
-                    string query = "SELECT '"+find+"' FROM Account WHERE '"+find+"' = '"+txt+"' COLLATE Latin1_General_CS_AS;";
+                    string query = "SELECT * FROM Account WHERE username = '"+txtUser+"' COLLATE Latin1_General_CS_AS OR email = '"+txtEmail+"' COLLATE Latin1_General_CS_AS;";
 
                     SqlDataAdapter sda = new SqlDataAdapter(query, conn);
                     DataTable dtable = new DataTable();
@@ -392,6 +392,8 @@ namespace DiaryApp.Source
             }
 
             #region check invalid user input
+
+            string username, email;
             // email
             if (IsValidEmail(txtEmail.Text) == false)
             {
@@ -408,9 +410,12 @@ namespace DiaryApp.Source
                 txtPass2.Clear();
             }
             // check already have same account
-            else if (txtPass1.Text == "_")
+            else if (isContainAcc(txtUserName1.Text, txtEmail.Text))
             {
-                //dsfsdfdsfdsf
+                MessageBox.Show("Thông tin đăng nhập đã tồn tại!", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                txtUserName1.Clear();
+                txtEmail.Clear();
             }
             else
             {
