@@ -14,6 +14,9 @@ using System.Drawing.Text;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using System.Security.Cryptography;
+using System.Net;
+using System.Net.Mail;
+
 
 namespace DiaryApp.Source
 {
@@ -62,6 +65,15 @@ namespace DiaryApp.Source
         private void pClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        // generate OTP 
+        private string generatorOTP()
+        {
+            Random rnd = new Random();
+            int OTP = rnd.Next(100000, 999999);
+
+            return OTP.ToString();
         }
 
         #region Enable or unable button region
@@ -469,9 +481,13 @@ namespace DiaryApp.Source
             if (isContainAcc("foreverlove", txtEmail2.Text) == false)
             {
                 MessageBox.Show("Không tìm thấy tài khoản!", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
             else
             {
+                //send email
+
+
                 MessageBox.Show("Email đã được gửi! Vui lòng kiểm tra hộp thư và nhập mã OTP ở bên dưới.", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 btnOTPCliked = true;
