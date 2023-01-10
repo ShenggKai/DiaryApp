@@ -28,6 +28,9 @@ namespace DiaryApp.Source
             InitializeComponent();
         }
 
+        // to paste OTP string
+        private string tempOTP;
+
         // check whether already have same account
         private bool isContainAcc(string txtUser, string txtEmail)
         {
@@ -490,6 +493,7 @@ namespace DiaryApp.Source
 
             //get OTP code
             string otp = generatorOTP();
+            tempOTP = otp;
 
             //send email
             MailMessage mm = new MailMessage("diaryappdev@gmail.com", txtEmail2.Text);
@@ -532,13 +536,21 @@ namespace DiaryApp.Source
             }
         }
 
+        // button dat lai mat khau
         private void btnRepass_Click(object sender, EventArgs e)
         {
-            txtEmail2.Clear();
-            txtOTP.Clear();
-            btnOTPCliked = false;
+            if (txtOTP.Text == tempOTP)
+            {
+                txtEmail2.Clear();
+                txtOTP.Clear();
+                btnOTPCliked = false;
 
-            pageLogAndReg.SelectTab(3);
+                pageLogAndReg.SelectTab(3);
+            }
+            else
+            {
+                MessageBox.Show("Mã xác nhận không hợp lệ", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void lbNavLog2_Click(object sender, EventArgs e)
