@@ -10,6 +10,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Microsoft.VisualBasic;
+using System.Drawing.Text;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Security.Cryptography;
 
 namespace DiaryApp.Source
 {
@@ -357,6 +361,36 @@ namespace DiaryApp.Source
         // button dang ky
         private void btnRes_Click(object sender, EventArgs e)
         {
+            // check whether already have same account
+            bool isContainAcc(string find, string txt)
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT '"+find+"' FROM Account WHERE '"+find+"' = '"+txt+"' COLLATE Latin1_General_CS_AS;";
+
+                    SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+                    DataTable dtable = new DataTable();
+                    sda.Fill(dtable);
+
+                    if (dtable.Rows.Count > 0)
+                    {
+                        return true;
+                    }
+                    else return false;
+                    
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Error", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
+
             #region check invalid user input
             // email
             if (IsValidEmail(txtEmail.Text) == false)
@@ -374,9 +408,9 @@ namespace DiaryApp.Source
                 txtPass2.Clear();
             }
             // check already have same account
-            else if (false)
+            else if (txtPass1.Text == "_")
             {
-                
+                //dsfsdfdsfdsf
             }
             else
             {
