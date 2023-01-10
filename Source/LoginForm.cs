@@ -489,13 +489,13 @@ namespace DiaryApp.Source
                 string otp = generatorOTP();
 
                 //send email
-                MailMessage mm = new MailMessage("maimemdada@gmail.com", txtEmail2.Text);
-                mm.Subject = "Đặt lại mật khẩu tài khoản DiaryApp";
-                mm.Body = "Đây là mã của bạn: " + otp + " .";
+                MailMessage mm = new MailMessage("diaryappdev@gmail.com", txtEmail2.Text);
+                mm.Subject = "Đặt lại mật khẩu DiaryApp";
+                mm.Body = "Đây là mã OTP của bạn: " + otp + ".";
                 SmtpClient smtp = new SmtpClient();
                 smtp.Host = "smtp.gmail.com";
                 smtp.Port = 587;
-                System.Net.NetworkCredential nc = new NetworkCredential("maimemdada@gmail.com", "password");
+                System.Net.NetworkCredential nc = new NetworkCredential("diaryappdev@gmail.com", "joqphfdgznfsfkdl");
                 smtp.Credentials = nc;
                 smtp.EnableSsl = true;
                 smtp.Send(mm);
