@@ -168,13 +168,13 @@ namespace DiaryApp.Source
             if (eyeHide1 == true)
             {
                 pEye1.Image = global::DiaryApp.Properties.Resources.eye;
-                txtPass.UseSystemPasswordChar= false;
+                txtPass.UseSystemPasswordChar = false;
                 eyeHide1 = false;
             }
             else
             {
                 pEye1.Image = global::DiaryApp.Properties.Resources.eye_crossed;
-                txtPass.UseSystemPasswordChar= true;
+                txtPass.UseSystemPasswordChar = true;
                 eyeHide1 = true;
             }
         }
@@ -485,8 +485,20 @@ namespace DiaryApp.Source
             }
             else
             {
-                //send email
+                //get OTP code
+                string otp = generatorOTP();
 
+                //send email
+                MailMessage mm = new MailMessage("maimemdada@gmail.com", txtEmail2.Text);
+                mm.Subject = "Đặt lại mật khẩu tài khoản DiaryApp";
+                mm.Body = "Đây là mã của bạn: " + otp + " .";
+                SmtpClient smtp = new SmtpClient();
+                smtp.Host = "smtp.gmail.com";
+                smtp.Port = 587;
+                System.Net.NetworkCredential nc = new NetworkCredential("maimemdada@gmail.com", "password");
+                smtp.Credentials = nc;
+                smtp.EnableSsl = true;
+                smtp.Send(mm);
 
                 MessageBox.Show("Email đã được gửi! Vui lòng kiểm tra hộp thư và nhập mã OTP ở bên dưới.", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
