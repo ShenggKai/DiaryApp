@@ -46,6 +46,7 @@
             this.tabpageCalendar = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
             this.tabpageUser = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
             this.pEditPass = new System.Windows.Forms.PictureBox();
             this.pEditUser = new System.Windows.Forms.PictureBox();
             this.pEditEmail = new System.Windows.Forms.PictureBox();
@@ -210,7 +211,6 @@
             this.tabpageHome.Name = "tabpageHome";
             this.tabpageHome.Size = new System.Drawing.Size(1622, 1000);
             this.tabpageHome.TabIndex = 0;
-            this.tabpageHome.Text = "TrangChu";
             // 
             // pBanner
             // 
@@ -239,18 +239,18 @@
             this.lbDate.AutoSize = true;
             this.lbDate.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.lbDate.Location = new System.Drawing.Point(655, 274);
+            this.lbDate.Location = new System.Drawing.Point(708, 274);
             this.lbDate.Name = "lbDate";
-            this.lbDate.Size = new System.Drawing.Size(436, 45);
+            this.lbDate.Size = new System.Drawing.Size(341, 45);
             this.lbDate.TabIndex = 0;
-            this.lbDate.Text = "thứ 5, ngày 12 tháng 1, 2023";
+            this.lbDate.Text = "thứ 5, 11 tháng 1 2023";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.label1.Location = new System.Drawing.Point(505, 274);
+            this.label1.Location = new System.Drawing.Point(558, 274);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 45);
             this.label1.TabIndex = 0;
@@ -276,7 +276,6 @@
             this.tabpageCalendar.Padding = new System.Windows.Forms.Padding(3);
             this.tabpageCalendar.Size = new System.Drawing.Size(1622, 1000);
             this.tabpageCalendar.TabIndex = 1;
-            this.tabpageCalendar.Text = "Lich";
             // 
             // label2
             // 
@@ -291,6 +290,7 @@
             // tabpageUser
             // 
             this.tabpageUser.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabpageUser.Controls.Add(this.label3);
             this.tabpageUser.Controls.Add(this.pEditPass);
             this.tabpageUser.Controls.Add(this.pEditUser);
             this.tabpageUser.Controls.Add(this.pEditEmail);
@@ -306,13 +306,23 @@
             this.tabpageUser.Padding = new System.Windows.Forms.Padding(3);
             this.tabpageUser.Size = new System.Drawing.Size(1622, 1000);
             this.tabpageUser.TabIndex = 2;
-            this.tabpageUser.Text = "TaiKhoan";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.label3.Location = new System.Drawing.Point(25, 296);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(159, 45);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Thống kê";
             // 
             // pEditPass
             // 
             this.pEditPass.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pEditPass.Image = global::DiaryApp.Properties.Resources.edit;
-            this.pEditPass.Location = new System.Drawing.Point(1118, 200);
+            this.pEditPass.Location = new System.Drawing.Point(1184, 200);
             this.pEditPass.Name = "pEditPass";
             this.pEditPass.Size = new System.Drawing.Size(40, 40);
             this.pEditPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -324,7 +334,7 @@
             // 
             this.pEditUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pEditUser.Image = global::DiaryApp.Properties.Resources.edit;
-            this.pEditUser.Location = new System.Drawing.Point(1118, 48);
+            this.pEditUser.Location = new System.Drawing.Point(1184, 48);
             this.pEditUser.Name = "pEditUser";
             this.pEditUser.Size = new System.Drawing.Size(40, 40);
             this.pEditUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -336,7 +346,7 @@
             // 
             this.pEditEmail.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pEditEmail.Image = global::DiaryApp.Properties.Resources.edit;
-            this.pEditEmail.Location = new System.Drawing.Point(1118, 125);
+            this.pEditEmail.Location = new System.Drawing.Point(1184, 125);
             this.pEditEmail.Name = "pEditEmail";
             this.pEditEmail.Size = new System.Drawing.Size(40, 40);
             this.pEditEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -348,7 +358,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(370, 202);
+            this.label6.Location = new System.Drawing.Point(512, 202);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(133, 38);
             this.label6.TabIndex = 3;
@@ -359,7 +369,7 @@
             // 
             this.lb2.AutoSize = true;
             this.lb2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb2.Location = new System.Drawing.Point(370, 127);
+            this.lb2.Location = new System.Drawing.Point(512, 127);
             this.lb2.Name = "lb2";
             this.lb2.Size = new System.Drawing.Size(229, 38);
             this.lb2.TabIndex = 3;
@@ -370,7 +380,7 @@
             // 
             this.pUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pUser.Image = global::DiaryApp.Properties.Resources.avt;
-            this.pUser.Location = new System.Drawing.Point(120, 48);
+            this.pUser.Location = new System.Drawing.Point(262, 48);
             this.pUser.Name = "pUser";
             this.pUser.Size = new System.Drawing.Size(200, 200);
             this.pUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -382,7 +392,7 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(628, 202);
+            this.label5.Location = new System.Drawing.Point(770, 202);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(155, 38);
             this.label5.TabIndex = 1;
@@ -392,7 +402,7 @@
             // lbEmail
             // 
             this.lbEmail.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbEmail.Location = new System.Drawing.Point(628, 127);
+            this.lbEmail.Location = new System.Drawing.Point(770, 127);
             this.lbEmail.Name = "lbEmail";
             this.lbEmail.Size = new System.Drawing.Size(484, 38);
             this.lbEmail.TabIndex = 1;
@@ -402,7 +412,7 @@
             // lbUsername1
             // 
             this.lbUsername1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbUsername1.Location = new System.Drawing.Point(628, 44);
+            this.lbUsername1.Location = new System.Drawing.Point(770, 44);
             this.lbUsername1.Name = "lbUsername1";
             this.lbUsername1.Size = new System.Drawing.Size(484, 38);
             this.lbUsername1.TabIndex = 1;
@@ -413,7 +423,7 @@
             // 
             this.lb1.AutoSize = true;
             this.lb1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb1.Location = new System.Drawing.Point(370, 48);
+            this.lb1.Location = new System.Drawing.Point(512, 48);
             this.lb1.Name = "lb1";
             this.lb1.Size = new System.Drawing.Size(148, 38);
             this.lb1.TabIndex = 1;
@@ -499,5 +509,6 @@
         private OpenFileDialog openFileDialog1;
         private ToolTip toolTip1;
         private ToolTip toolTip2;
+        private Label label3;
     }
 }

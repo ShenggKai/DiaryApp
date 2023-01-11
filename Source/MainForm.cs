@@ -47,8 +47,9 @@ namespace DiaryApp
         // when main form load
         private void MainForm_Load(object sender, EventArgs e)
         {
-            //demo
-            //lbUsername.Text = LoginForm.instance.tbUserName.Text;
+            //update current date
+            string temp = DateTime.Now.ToString("dddd");
+            lbDate.Text = temp + ", " + DateTime.Now.ToString("D");
 
             #region load user information
             try
