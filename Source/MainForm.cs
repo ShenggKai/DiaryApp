@@ -27,6 +27,7 @@ namespace DiaryApp
         // button trang chu
         private void btnHome_Click(object sender, EventArgs e)
         {
+            #region change color
             //change
             btnHome.BackColor = Color.Gainsboro;
             btnHome.ForeColor = Color.FromArgb(90, 130, 95);
@@ -40,11 +41,15 @@ namespace DiaryApp
             btnUser.BackColor = Color.FromArgb(90, 130, 95);
             btnUser.ForeColor = Color.White;
             btnUser.Image = global::DiaryApp.Properties.Resources.user;
+            #endregion change color
+
+            pageMain.SelectTab(0);
         }
 
         // button lich
         private void btnCalendar_Click(object sender, EventArgs e)
         {
+            #region change color
             //change
             btnCalendar.BackColor = Color.Gainsboro;
             btnCalendar.ForeColor = Color.FromArgb(90, 130, 95);
@@ -58,12 +63,15 @@ namespace DiaryApp
             btnUser.BackColor = Color.FromArgb(90, 130, 95);
             btnUser.ForeColor = Color.White;
             btnUser.Image = global::DiaryApp.Properties.Resources.user;
+            #endregion change color
 
+            pageMain.SelectTab(1);
         }
 
         // button tai khoan
         private void btnUser_Click(object sender, EventArgs e)
         {
+            #region change color
             //change
             btnUser.BackColor = Color.Gainsboro;
             btnUser.ForeColor = Color.FromArgb(90, 130, 95);
@@ -77,10 +85,11 @@ namespace DiaryApp
             btnCalendar.BackColor = Color.FromArgb(90, 130, 95);
             btnCalendar.ForeColor = Color.White;
             btnCalendar.Image = global::DiaryApp.Properties.Resources.calendar;
+            #endregion change color
+
+            pageMain.SelectTab(2);
         }
 
         #endregion MENU
-
-
     }
 }
