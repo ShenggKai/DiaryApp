@@ -60,6 +60,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
+            this.uiButton1 = new Sunny.UI.UIButton();
             this.pnMenu.SuspendLayout();
             this.pageMain.SuspendLayout();
             this.tabpageHome.SuspendLayout();
@@ -200,6 +201,7 @@
             // tabpageHome
             // 
             this.tabpageHome.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabpageHome.Controls.Add(this.uiButton1);
             this.tabpageHome.Controls.Add(this.pBanner);
             this.tabpageHome.Controls.Add(this.lbUsername);
             this.tabpageHome.Controls.Add(this.lbDate);
@@ -449,6 +451,23 @@
             this.toolTip2.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip2.ToolTipTitle = "Thay đổi tài khoản";
             // 
+            // uiButton1
+            // 
+            this.uiButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.uiButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.uiButton1.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(160)))), ((int)(((byte)(103)))));
+            this.uiButton1.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.uiButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.uiButton1.Location = new System.Drawing.Point(1290, 274);
+            this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton1.Name = "uiButton1";
+            this.uiButton1.Radius = 30;
+            this.uiButton1.Size = new System.Drawing.Size(189, 55);
+            this.uiButton1.Style = Sunny.UI.UIStyle.Custom;
+            this.uiButton1.TabIndex = 2;
+            this.uiButton1.Text = "Thêm nhật ký";
+            this.uiButton1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -510,5 +529,6 @@
         private ToolTip toolTip1;
         private ToolTip toolTip2;
         private Label label3;
+        private Sunny.UI.UIButton uiButton1;
     }
 }
