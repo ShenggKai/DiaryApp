@@ -91,6 +91,7 @@
             this.btnChangeUsername.TabIndex = 9;
             this.btnChangeUsername.Text = "Đổi username";
             this.btnChangeUsername.UseVisualStyleBackColor = false;
+            this.btnChangeUsername.Click += new System.EventHandler(this.btnChangeUsername_Click);
             // 
             // changeUsername
             // 
