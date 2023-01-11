@@ -38,6 +38,7 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.pageMain = new System.Windows.Forms.TabControl();
             this.tabpageHome = new System.Windows.Forms.TabPage();
+            this.btnAdd = new Sunny.UI.UIButton();
             this.pBanner = new System.Windows.Forms.PictureBox();
             this.lbUsername = new System.Windows.Forms.Label();
             this.lbDate = new System.Windows.Forms.Label();
@@ -60,7 +61,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
-            this.uiButton1 = new Sunny.UI.UIButton();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pnMenu.SuspendLayout();
             this.pageMain.SuspendLayout();
             this.tabpageHome.SuspendLayout();
@@ -201,7 +202,8 @@
             // tabpageHome
             // 
             this.tabpageHome.BackColor = System.Drawing.Color.Gainsboro;
-            this.tabpageHome.Controls.Add(this.uiButton1);
+            this.tabpageHome.Controls.Add(this.flowLayoutPanel1);
+            this.tabpageHome.Controls.Add(this.btnAdd);
             this.tabpageHome.Controls.Add(this.pBanner);
             this.tabpageHome.Controls.Add(this.lbUsername);
             this.tabpageHome.Controls.Add(this.lbDate);
@@ -213,6 +215,23 @@
             this.tabpageHome.Name = "tabpageHome";
             this.tabpageHome.Size = new System.Drawing.Size(1622, 1000);
             this.tabpageHome.TabIndex = 0;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.btnAdd.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.btnAdd.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(160)))), ((int)(((byte)(103)))));
+            this.btnAdd.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAdd.Location = new System.Drawing.Point(1326, 264);
+            this.btnAdd.MinimumSize = new System.Drawing.Size(1, 1);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Radius = 30;
+            this.btnAdd.Size = new System.Drawing.Size(189, 55);
+            this.btnAdd.Style = Sunny.UI.UIStyle.Custom;
+            this.btnAdd.TabIndex = 2;
+            this.btnAdd.Text = "Thêm nhật ký";
+            this.btnAdd.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // pBanner
             // 
@@ -451,22 +470,13 @@
             this.toolTip2.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip2.ToolTipTitle = "Thay đổi tài khoản";
             // 
-            // uiButton1
+            // flowLayoutPanel1
             // 
-            this.uiButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.uiButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.uiButton1.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(160)))), ((int)(((byte)(103)))));
-            this.uiButton1.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.uiButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.uiButton1.Location = new System.Drawing.Point(1290, 274);
-            this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton1.Name = "uiButton1";
-            this.uiButton1.Radius = 30;
-            this.uiButton1.Size = new System.Drawing.Size(189, 55);
-            this.uiButton1.Style = Sunny.UI.UIStyle.Custom;
-            this.uiButton1.TabIndex = 2;
-            this.uiButton1.Text = "Thêm nhật ký";
-            this.uiButton1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 366);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1622, 634);
+            this.flowLayoutPanel1.TabIndex = 3;
             // 
             // MainForm
             // 
@@ -529,6 +539,7 @@
         private ToolTip toolTip1;
         private ToolTip toolTip2;
         private Label label3;
-        private Sunny.UI.UIButton uiButton1;
+        private Sunny.UI.UIButton btnAdd;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }
