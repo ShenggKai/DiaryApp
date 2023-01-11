@@ -403,9 +403,9 @@
             this.tabpageRes.Controls.Add(this.label1);
             this.tabpageRes.Controls.Add(this.label6);
             this.tabpageRes.Controls.Add(this.lbDiaryApp2);
-            this.tabpageRes.Location = new System.Drawing.Point(0, 0);
+            this.tabpageRes.Location = new System.Drawing.Point(0, -1);
             this.tabpageRes.Name = "tabpageRes";
-            this.tabpageRes.Size = new System.Drawing.Size(200, 99);
+            this.tabpageRes.Size = new System.Drawing.Size(572, 569);
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
             // 
@@ -684,7 +684,7 @@
             this.lbDiaryApp2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.lbDiaryApp2.Location = new System.Drawing.Point(0, 0);
             this.lbDiaryApp2.Name = "lbDiaryApp2";
-            this.lbDiaryApp2.Size = new System.Drawing.Size(200, 65);
+            this.lbDiaryApp2.Size = new System.Drawing.Size(572, 65);
             this.lbDiaryApp2.TabIndex = 13;
             this.lbDiaryApp2.Text = "DiaryApp";
             this.lbDiaryApp2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
