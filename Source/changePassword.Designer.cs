@@ -37,7 +37,7 @@
             this.uiLine5 = new Sunny.UI.UILine();
             this.txtPass2 = new System.Windows.Forms.TextBox();
             this.txtPass1 = new System.Windows.Forms.TextBox();
-            this.btnChangeUsername = new System.Windows.Forms.Button();
+            this.btnChangePass = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pEye2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pEye)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -150,27 +150,27 @@
             this.txtPass1.TabIndex = 21;
             this.txtPass1.UseSystemPasswordChar = true;
             // 
-            // btnChangeUsername
+            // btnChangePass
             // 
-            this.btnChangeUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.btnChangeUsername.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnChangeUsername.FlatAppearance.BorderSize = 0;
-            this.btnChangeUsername.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChangeUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnChangeUsername.ForeColor = System.Drawing.Color.White;
-            this.btnChangeUsername.Location = new System.Drawing.Point(148, 201);
-            this.btnChangeUsername.Name = "btnChangeUsername";
-            this.btnChangeUsername.Size = new System.Drawing.Size(180, 57);
-            this.btnChangeUsername.TabIndex = 29;
-            this.btnChangeUsername.Text = "Đổi mật khẩu";
-            this.btnChangeUsername.UseVisualStyleBackColor = false;
+            this.btnChangePass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.btnChangePass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnChangePass.FlatAppearance.BorderSize = 0;
+            this.btnChangePass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChangePass.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnChangePass.ForeColor = System.Drawing.Color.White;
+            this.btnChangePass.Location = new System.Drawing.Point(148, 201);
+            this.btnChangePass.Name = "btnChangePass";
+            this.btnChangePass.Size = new System.Drawing.Size(180, 57);
+            this.btnChangePass.TabIndex = 29;
+            this.btnChangePass.Text = "Đổi mật khẩu";
+            this.btnChangePass.UseVisualStyleBackColor = false;
             // 
             // changePassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 283);
-            this.Controls.Add(this.btnChangeUsername);
+            this.Controls.Add(this.btnChangePass);
             this.Controls.Add(this.pEye2);
             this.Controls.Add(this.pEye);
             this.Controls.Add(this.pictureBox4);
@@ -203,6 +203,6 @@
         private Sunny.UI.UILine uiLine5;
         private TextBox txtPass2;
         private TextBox txtPass1;
-        private Button btnChangeUsername;
+        private Button btnChangePass;
     }
 }
