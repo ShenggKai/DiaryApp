@@ -188,9 +188,9 @@
             // lbUsername
             // 
             this.lbUsername.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbUsername.Location = new System.Drawing.Point(257, 68);
+            this.lbUsername.Location = new System.Drawing.Point(184, 21);
             this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(155, 46);
+            this.lbUsername.Size = new System.Drawing.Size(277, 46);
             this.lbUsername.TabIndex = 0;
             this.lbUsername.Text = "user1";
             this.lbUsername.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -199,7 +199,7 @@
             // 
             this.lbHi.AutoSize = true;
             this.lbHi.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbHi.Location = new System.Drawing.Point(111, 68);
+            this.lbHi.Location = new System.Drawing.Point(38, 21);
             this.lbHi.Name = "lbHi";
             this.lbHi.Size = new System.Drawing.Size(155, 46);
             this.lbHi.TabIndex = 0;
