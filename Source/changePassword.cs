@@ -16,10 +16,18 @@ namespace DiaryApp.Source
         public changePassword()
         {
             InitializeComponent();
+            instance = this;
         }
 
+        #region main variable
+        public static changePassword instance;
+
+        string Username = MainForm.instance.Username.Text;
+        string Email = MainForm.instance.Email.Text;
+
         // SQL server connection
-        SqlConnection conn = new SqlConnection(@"Data Source=KAI\SQLEXPRESS;Initial Catalog=DiaryApp;Integrated Security=True");
+        //SqlConnection conn = new SqlConnection(@"Data Source=KAI\SQLEXPRESS;Initial Catalog=DiaryApp;Integrated Security=True");
+        #endregion main variable
 
         #region eye click
         private bool eyeHide = true;
@@ -68,31 +76,26 @@ namespace DiaryApp.Source
             }
             else
             {
-                try
+                string temPass = txtPass1.Text;
+                using (SqlConnection connection = new SqlConnection(@"Data Source=KAI\SQLEXPRESS;Initial Catalog=DiaryApp;Integrated Security=True"))
                 {
-                    conn.Open();
-                    string query = "INSERT INTO Account VALUES('" + txtUserName1.Text + "', '" + txtEmail.Text + "', '" + txtPass1.Text + "')";
+                    connection.Open();
 
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.ExecuteNonQuery();
+                    string query = "UPDATE Account SET user_pass = @temPass WHERE email = @Email";
 
-                    MessageBox.Show("Tạo tài khoản thành công!", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    txtPass1.Clear();
-                    txtPass2.Clear();
-                    cbAgree.Checked = false;
-
-                    // navigation to login form
-                    pageLogAndReg.SelectTab(0);
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Email", Email);
+                        command.Parameters.AddWithValue("@temPass", temPass);
+                        int rowsAffected = command.ExecuteNonQuery();
+                    }
+                    connection.Close();
                 }
-                catch (Exception)
-                {
-                    MessageBox.Show("Error!", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                finally
-                {
-                    conn.Close();
-                }
+
+                MessageBox.Show("Đổi mật khẩu thành công!", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //txtPass1.Clear();
+                //txtPass2.Clear();
             }
         }
     }

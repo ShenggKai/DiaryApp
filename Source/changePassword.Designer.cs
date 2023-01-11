@@ -160,7 +160,7 @@
             this.btnChangePass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChangePass.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnChangePass.ForeColor = System.Drawing.Color.White;
-            this.btnChangePass.Location = new System.Drawing.Point(148, 201);
+            this.btnChangePass.Location = new System.Drawing.Point(153, 196);
             this.btnChangePass.Name = "btnChangePass";
             this.btnChangePass.Size = new System.Drawing.Size(180, 57);
             this.btnChangePass.TabIndex = 29;
@@ -172,7 +172,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 283);
+            this.ClientSize = new System.Drawing.Size(500, 282);
             this.Controls.Add(this.btnChangePass);
             this.Controls.Add(this.pEye2);
             this.Controls.Add(this.pEye);

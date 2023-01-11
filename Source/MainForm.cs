@@ -10,11 +10,17 @@ namespace DiaryApp
         public MainForm()
         {
             InitializeComponent();
+
             instance = this;
+            Username = lbUsername1;
+            Email = lbEmail;
+
         }
 
         #region Main variable
         public static MainForm instance;
+        public Label Username;
+        public Label Email;
 
         string txtusername = LoginForm.instance.tbUserName.Text;
         string txtpassword = LoginForm.instance.tbPassword.Text;

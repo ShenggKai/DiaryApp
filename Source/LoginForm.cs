@@ -662,7 +662,7 @@ namespace DiaryApp.Source
                 try
                 {
                     conn.Open();
-                    string query = "UPDATE Account SET user_pass = '"+txtPass3.Text+"' WHERE email = '"+tempEmail+"';";
+                    string query = "UPDATE Account SET user_pass = '"+txtPass3.Text+"' WHERE email = '"+tempEmail+"'";
 
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.ExecuteNonQuery();
