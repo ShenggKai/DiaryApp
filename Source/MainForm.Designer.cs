@@ -55,6 +55,7 @@
             this.lbEmail = new System.Windows.Forms.Label();
             this.lbUsername1 = new System.Windows.Forms.Label();
             this.lb1 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.pnMenu.SuspendLayout();
             this.pageMain.SuspendLayout();
             this.tabpageHome.SuspendLayout();
@@ -371,6 +372,7 @@
             this.pUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pUser.TabIndex = 2;
             this.pUser.TabStop = false;
+            this.pUser.Click += new System.EventHandler(this.pUser_Click);
             // 
             // label5
             // 
@@ -412,6 +414,11 @@
             this.lb1.TabIndex = 1;
             this.lb1.Text = "Username:";
             this.lb1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.Filter = "Image Files (*.bmp;*.jpg;*.jpeg,*.png)|*.BMP;*.JPG;*.JPEG;*.PNG";
+            this.openFileDialog1.Title = "Thay đổi avatar";
             // 
             // MainForm
             // 
@@ -470,5 +477,6 @@
         private PictureBox pEditEmail;
         private PictureBox pEditPass;
         private PictureBox pEditUser;
+        private OpenFileDialog openFileDialog1;
     }
 }

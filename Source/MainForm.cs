@@ -1,6 +1,7 @@
 using DiaryApp.Source;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace DiaryApp
 {
@@ -177,6 +178,15 @@ namespace DiaryApp
         {
             changePassword chPass = new changePassword();
             chPass.ShowDialog();
+        }
+
+        private void pUser_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                // Set the Image property of the PictureBox to the selected image
+                pUser.Image = Image.FromFile(openFileDialog1.FileName);
+            }
         }
         #endregion ACCOUNT
     }
