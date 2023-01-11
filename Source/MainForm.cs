@@ -39,6 +39,19 @@ namespace DiaryApp
         private void MainForm_Load(object sender, EventArgs e)
         {
             lbUsername.Text = LoginForm.instance.tbUserName.Text;
+
+            try
+            {
+                string query = "";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error!", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
         #endregion MAIN
 

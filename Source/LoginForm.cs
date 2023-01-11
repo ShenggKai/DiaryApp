@@ -241,7 +241,6 @@ namespace DiaryApp.Source
             }
             catch (Exception)
             {
-
                 MessageBox.Show("Error!", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
