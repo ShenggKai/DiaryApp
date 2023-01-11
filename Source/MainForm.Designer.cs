@@ -37,12 +37,12 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.pageMain = new System.Windows.Forms.TabControl();
             this.tabpageHome = new System.Windows.Forms.TabPage();
+            this.lbUsername = new System.Windows.Forms.Label();
             this.lbHi = new System.Windows.Forms.Label();
             this.tabpageCalendar = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
             this.tabpageUser = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
-            this.lbUsername = new System.Windows.Forms.Label();
             this.pnMenu.SuspendLayout();
             this.pageMain.SuspendLayout();
             this.tabpageHome.SuspendLayout();
@@ -109,13 +109,14 @@
             // 
             // btnHome
             // 
+            this.btnHome.BackColor = System.Drawing.Color.Gainsboro;
             this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Image = global::DiaryApp.Properties.Resources.home_full;
+            this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
+            this.btnHome.Image = global::DiaryApp.Properties.Resources.home_green;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.Location = new System.Drawing.Point(0, 86);
             this.btnHome.Name = "btnHome";
@@ -125,7 +126,7 @@
             this.btnHome.Text = " Trang chủ";
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // lbLogo
@@ -184,6 +185,16 @@
             this.tabpageHome.TabIndex = 0;
             this.tabpageHome.Text = "TrangChu";
             // 
+            // lbUsername
+            // 
+            this.lbUsername.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbUsername.Location = new System.Drawing.Point(257, 68);
+            this.lbUsername.Name = "lbUsername";
+            this.lbUsername.Size = new System.Drawing.Size(155, 46);
+            this.lbUsername.TabIndex = 0;
+            this.lbUsername.Text = "user1";
+            this.lbUsername.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // lbHi
             // 
             this.lbHi.AutoSize = true;
@@ -235,16 +246,6 @@
             this.label3.Size = new System.Drawing.Size(134, 38);
             this.label3.TabIndex = 1;
             this.label3.Text = "Tai khoan";
-            // 
-            // lbUsername
-            // 
-            this.lbUsername.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbUsername.Location = new System.Drawing.Point(257, 68);
-            this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(155, 46);
-            this.lbUsername.TabIndex = 0;
-            this.lbUsername.Text = "user1";
-            this.lbUsername.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // MainForm
             // 

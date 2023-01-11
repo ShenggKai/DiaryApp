@@ -20,16 +20,25 @@ namespace DiaryApp
         SqlConnection conn = new SqlConnection(@"Data Source=KAI\SQLEXPRESS;Initial Catalog=DiaryApp;Integrated Security=True");
         #endregion Main variable
 
+        // button dang xuat
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            var result = MessageBox.Show("Are you sure you want to Logout?", "DiaryApp",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            //var result = MessageBox.Show("Are you sure you want to Logout?", "DiaryApp",
+            //    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if (result == DialogResult.Yes)
-            {
-                new LoginForm().Show();
-                this.Close();
-            }
+            //if (result == DialogResult.Yes)
+            //{
+            //    new LoginForm().Show();
+            //    this.Close();
+            //}
+            new LoginForm().Show();
+            this.Close();
+        }
+
+        // when main form load
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            lbUsername.Text = LoginForm.instance.tbUserName.Text;
         }
         #endregion MAIN
 
@@ -103,9 +112,6 @@ namespace DiaryApp
 
         #endregion MENU
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }

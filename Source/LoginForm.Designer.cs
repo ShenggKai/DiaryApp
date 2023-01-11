@@ -155,6 +155,7 @@
             this.txtUserName.PlaceholderText = "Username hoặc email";
             this.txtUserName.Size = new System.Drawing.Size(350, 29);
             this.txtUserName.TabIndex = 4;
+            this.txtUserName.Text = "admin";
             this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
             // 
             // uiLine2
@@ -197,6 +198,7 @@
             this.txtPass.PlaceholderText = "Mật khẩu";
             this.txtPass.Size = new System.Drawing.Size(319, 29);
             this.txtPass.TabIndex = 4;
+            this.txtPass.Text = "111";
             this.txtPass.UseSystemPasswordChar = true;
             this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
             // 
