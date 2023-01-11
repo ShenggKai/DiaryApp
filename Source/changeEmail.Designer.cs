@@ -91,6 +91,7 @@
             this.btnChangeEmail.TabIndex = 24;
             this.btnChangeEmail.Text = "Đổi email";
             this.btnChangeEmail.UseVisualStyleBackColor = false;
+            this.btnChangeEmail.Click += new System.EventHandler(this.btnChangeEmail_Click);
             // 
             // changeEmail
             // 
