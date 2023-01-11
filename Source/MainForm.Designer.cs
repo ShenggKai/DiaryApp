@@ -35,9 +35,12 @@
             this.btnHome = new System.Windows.Forms.Button();
             this.lbLogo = new System.Windows.Forms.Label();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pageMain = new System.Windows.Forms.TabControl();
+            this.tabpageHome = new System.Windows.Forms.TabPage();
+            this.tabpageCalendar = new System.Windows.Forms.TabPage();
+            this.tabpageUser = new System.Windows.Forms.TabPage();
             this.pnMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pageMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnMenu
@@ -148,28 +151,62 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // pictureBox1
+            // pageMain
             // 
-            this.pictureBox1.Image = global::DiaryApp.Properties.Resources.user_green1;
-            this.pictureBox1.Location = new System.Drawing.Point(447, 104);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(161, 138);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.pageMain.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.pageMain.Controls.Add(this.tabpageHome);
+            this.pageMain.Controls.Add(this.tabpageCalendar);
+            this.pageMain.Controls.Add(this.tabpageUser);
+            this.pageMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pageMain.Location = new System.Drawing.Point(272, 0);
+            this.pageMain.Name = "pageMain";
+            this.pageMain.SelectedIndex = 0;
+            this.pageMain.Size = new System.Drawing.Size(1630, 1033);
+            this.pageMain.TabIndex = 1;
+            // 
+            // tabpageHome
+            // 
+            this.tabpageHome.Location = new System.Drawing.Point(4, 4);
+            this.tabpageHome.Name = "tabpageHome";
+            this.tabpageHome.Padding = new System.Windows.Forms.Padding(3);
+            this.tabpageHome.Size = new System.Drawing.Size(1622, 1000);
+            this.tabpageHome.TabIndex = 0;
+            this.tabpageHome.Text = "TrangChu";
+            this.tabpageHome.UseVisualStyleBackColor = true;
+            // 
+            // tabpageCalendar
+            // 
+            this.tabpageCalendar.Location = new System.Drawing.Point(4, 4);
+            this.tabpageCalendar.Name = "tabpageCalendar";
+            this.tabpageCalendar.Padding = new System.Windows.Forms.Padding(3);
+            this.tabpageCalendar.Size = new System.Drawing.Size(1622, 1000);
+            this.tabpageCalendar.TabIndex = 1;
+            this.tabpageCalendar.Text = "Lich";
+            this.tabpageCalendar.UseVisualStyleBackColor = true;
+            // 
+            // tabpageUser
+            // 
+            this.tabpageUser.Location = new System.Drawing.Point(4, 4);
+            this.tabpageUser.Name = "tabpageUser";
+            this.tabpageUser.Padding = new System.Windows.Forms.Padding(3);
+            this.tabpageUser.Size = new System.Drawing.Size(1622, 1000);
+            this.tabpageUser.TabIndex = 2;
+            this.tabpageUser.Text = "TaiKhoan";
+            this.tabpageUser.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pageMain);
             this.Controls.Add(this.pnMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "DiaryApp";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pageMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -182,6 +219,9 @@
         private Label lbLogo;
         private Button btnUser;
         private Button btnCalendar;
-        private PictureBox pictureBox1;
+        private TabControl pageMain;
+        private TabPage tabpageHome;
+        private TabPage tabpageCalendar;
+        private TabPage tabpageUser;
     }
 }
