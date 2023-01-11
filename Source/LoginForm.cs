@@ -20,15 +20,24 @@ using System.Net.Mail;
 
 namespace DiaryApp.Source
 {
-    public partial class LoginForm : Form
+    public partial class LoginForm : Form // form 1
     {
         #region Main
         public LoginForm()
         {
             InitializeComponent();
+
+            instance = this;
+            tbUserName = txtUserName;
+            tbPassword = txtPass;
         }
 
         #region Main variable
+        // to can access from another form
+        public static LoginForm instance;
+        public TextBox tbUserName;
+        public TextBox tbPassword;
+
         // to paste OTP string
         private string tempOTP = "000000";
 

@@ -1,14 +1,24 @@
 using DiaryApp.Source;
+using System.Data.SqlClient;
 using System.Drawing;
 
 namespace DiaryApp
 {
-    public partial class MainForm : Form
+    public partial class MainForm : Form //form 2
     {
+        #region MAIN
         public MainForm()
         {
             InitializeComponent();
+            instance = this;
         }
+
+        #region Main variable
+        public static MainForm instance;
+
+        // SQL server connection
+        SqlConnection conn = new SqlConnection(@"Data Source=KAI\SQLEXPRESS;Initial Catalog=DiaryApp;Integrated Security=True");
+        #endregion Main variable
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
@@ -21,6 +31,7 @@ namespace DiaryApp
                 this.Close();
             }
         }
+        #endregion MAIN
 
         #region MENU
 
@@ -91,5 +102,10 @@ namespace DiaryApp
         }
 
         #endregion MENU
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

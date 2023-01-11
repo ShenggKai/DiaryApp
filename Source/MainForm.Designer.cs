@@ -37,11 +37,12 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.pageMain = new System.Windows.Forms.TabControl();
             this.tabpageHome = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbHi = new System.Windows.Forms.Label();
             this.tabpageCalendar = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
             this.tabpageUser = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
+            this.lbUsername = new System.Windows.Forms.Label();
             this.pnMenu.SuspendLayout();
             this.pageMain.SuspendLayout();
             this.tabpageHome.SuspendLayout();
@@ -174,7 +175,8 @@
             // tabpageHome
             // 
             this.tabpageHome.BackColor = System.Drawing.Color.Gainsboro;
-            this.tabpageHome.Controls.Add(this.label1);
+            this.tabpageHome.Controls.Add(this.lbUsername);
+            this.tabpageHome.Controls.Add(this.lbHi);
             this.tabpageHome.Location = new System.Drawing.Point(4, 4);
             this.tabpageHome.Margin = new System.Windows.Forms.Padding(0);
             this.tabpageHome.Name = "tabpageHome";
@@ -182,15 +184,15 @@
             this.tabpageHome.TabIndex = 0;
             this.tabpageHome.Text = "TrangChu";
             // 
-            // label1
+            // lbHi
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(111, 68);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 38);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Trang Chu";
+            this.lbHi.AutoSize = true;
+            this.lbHi.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbHi.Location = new System.Drawing.Point(111, 68);
+            this.lbHi.Name = "lbHi";
+            this.lbHi.Size = new System.Drawing.Size(155, 46);
+            this.lbHi.TabIndex = 0;
+            this.lbHi.Text = "Xin chào,";
             // 
             // tabpageCalendar
             // 
@@ -234,6 +236,16 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Tai khoan";
             // 
+            // lbUsername
+            // 
+            this.lbUsername.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbUsername.Location = new System.Drawing.Point(257, 68);
+            this.lbUsername.Name = "lbUsername";
+            this.lbUsername.Size = new System.Drawing.Size(155, 46);
+            this.lbUsername.TabIndex = 0;
+            this.lbUsername.Text = "user1";
+            this.lbUsername.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -245,6 +257,7 @@
             this.Name = "MainForm";
             this.Text = "DiaryApp";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.pnMenu.ResumeLayout(false);
             this.pageMain.ResumeLayout(false);
             this.tabpageHome.ResumeLayout(false);
@@ -269,8 +282,9 @@
         private TabPage tabpageHome;
         private TabPage tabpageCalendar;
         private TabPage tabpageUser;
-        private Label label1;
+        private Label lbHi;
         private Label label2;
         private Label label3;
+        private Label lbUsername;
     }
 }
