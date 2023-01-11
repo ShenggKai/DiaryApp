@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.pnMenu = new System.Windows.Forms.Panel();
             this.btnUser = new System.Windows.Forms.Button();
@@ -56,6 +57,7 @@
             this.lbUsername1 = new System.Windows.Forms.Label();
             this.lb1 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pnMenu.SuspendLayout();
             this.pageMain.SuspendLayout();
             this.tabpageHome.SuspendLayout();
@@ -373,6 +375,7 @@
             this.pUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pUser.TabIndex = 2;
             this.pUser.TabStop = false;
+            this.toolTip1.SetToolTip(this.pUser, "Thay đổi avatar");
             this.pUser.Click += new System.EventHandler(this.pUser_Click);
             // 
             // label5
@@ -420,6 +423,14 @@
             // 
             this.openFileDialog1.Filter = "Image Files (*.bmp;*.jpg;*.jpeg,*.png)|*.BMP;*.JPG;*.JPEG;*.PNG";
             this.openFileDialog1.Title = "Thay đổi avatar";
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.BackColor = System.Drawing.Color.Gainsboro;
+            this.toolTip1.ForeColor = System.Drawing.Color.Black;
+            this.toolTip1.IsBalloon = true;
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip1.ToolTipTitle = "Chỉ dẫn";
             // 
             // MainForm
             // 
@@ -479,5 +490,6 @@
         private PictureBox pEditPass;
         private PictureBox pEditUser;
         private OpenFileDialog openFileDialog1;
+        private ToolTip toolTip1;
     }
 }
