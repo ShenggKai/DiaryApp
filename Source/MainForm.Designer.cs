@@ -38,6 +38,7 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.pageMain = new System.Windows.Forms.TabControl();
             this.tabpageHome = new System.Windows.Forms.TabPage();
+            this.fpnItem = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAdd = new Sunny.UI.UIButton();
             this.pBanner = new System.Windows.Forms.PictureBox();
             this.lbUsername = new System.Windows.Forms.Label();
@@ -61,7 +62,6 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pnMenu.SuspendLayout();
             this.pageMain.SuspendLayout();
             this.tabpageHome.SuspendLayout();
@@ -202,7 +202,7 @@
             // tabpageHome
             // 
             this.tabpageHome.BackColor = System.Drawing.Color.Gainsboro;
-            this.tabpageHome.Controls.Add(this.flowLayoutPanel1);
+            this.tabpageHome.Controls.Add(this.fpnItem);
             this.tabpageHome.Controls.Add(this.btnAdd);
             this.tabpageHome.Controls.Add(this.pBanner);
             this.tabpageHome.Controls.Add(this.lbUsername);
@@ -215,6 +215,14 @@
             this.tabpageHome.Name = "tabpageHome";
             this.tabpageHome.Size = new System.Drawing.Size(1622, 1000);
             this.tabpageHome.TabIndex = 0;
+            // 
+            // fpnItem
+            // 
+            this.fpnItem.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.fpnItem.Location = new System.Drawing.Point(0, 366);
+            this.fpnItem.Name = "fpnItem";
+            this.fpnItem.Size = new System.Drawing.Size(1622, 634);
+            this.fpnItem.TabIndex = 3;
             // 
             // btnAdd
             // 
@@ -470,14 +478,6 @@
             this.toolTip2.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip2.ToolTipTitle = "Thay đổi tài khoản";
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 366);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1622, 634);
-            this.flowLayoutPanel1.TabIndex = 3;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -540,6 +540,6 @@
         private ToolTip toolTip2;
         private Label label3;
         private Sunny.UI.UIButton btnAdd;
-        private FlowLayoutPanel flowLayoutPanel1;
+        private FlowLayoutPanel fpnItem;
     }
 }
