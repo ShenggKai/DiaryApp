@@ -365,6 +365,7 @@
             // 
             // pUser
             // 
+            this.pUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pUser.Image = global::DiaryApp.Properties.Resources.avt;
             this.pUser.Location = new System.Drawing.Point(120, 48);
             this.pUser.Name = "pUser";
