@@ -226,7 +226,10 @@ namespace DiaryApp.Source
                     user_pass = txtPass.Text;
 
                     //form that need to be load next
-                    new MainForm().Show();
+                    //new MainForm().Show();
+                    MainForm mainFr = new MainForm();
+                    mainFr.Show();
+
                     this.Hide();
                 }
                 else

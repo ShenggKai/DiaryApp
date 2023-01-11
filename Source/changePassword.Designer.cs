@@ -54,6 +54,7 @@
             this.pEye2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pEye2.TabIndex = 25;
             this.pEye2.TabStop = false;
+            this.pEye2.Click += new System.EventHandler(this.pEye2_Click);
             // 
             // pEye
             // 
@@ -65,6 +66,7 @@
             this.pEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pEye.TabIndex = 26;
             this.pEye.TabStop = false;
+            this.pEye.Click += new System.EventHandler(this.pEye_Click);
             // 
             // pictureBox4
             // 
@@ -164,6 +166,7 @@
             this.btnChangePass.TabIndex = 29;
             this.btnChangePass.Text = "Đổi mật khẩu";
             this.btnChangePass.UseVisualStyleBackColor = false;
+            this.btnChangePass.Click += new System.EventHandler(this.btnChangePass_Click);
             // 
             // changePassword
             // 

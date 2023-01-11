@@ -237,7 +237,7 @@
             this.lbDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.lbDate.Location = new System.Drawing.Point(655, 274);
             this.lbDate.Name = "lbDate";
-            this.lbDate.Size = new System.Drawing.Size(450, 46);
+            this.lbDate.Size = new System.Drawing.Size(436, 45);
             this.lbDate.TabIndex = 0;
             this.lbDate.Text = "thứ 5, ngày 12 tháng 1, 2023";
             // 
@@ -248,7 +248,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.label1.Location = new System.Drawing.Point(505, 274);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 46);
+            this.label1.Size = new System.Drawing.Size(155, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hôm nay";
             // 
@@ -259,7 +259,7 @@
             this.lbHi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.lbHi.Location = new System.Drawing.Point(20, 273);
             this.lbHi.Name = "lbHi";
-            this.lbHi.Size = new System.Drawing.Size(161, 46);
+            this.lbHi.Size = new System.Drawing.Size(157, 45);
             this.lbHi.TabIndex = 0;
             this.lbHi.Text = "Xin chào,";
             // 
@@ -314,6 +314,7 @@
             this.pEditPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pEditPass.TabIndex = 4;
             this.pEditPass.TabStop = false;
+            this.pEditPass.Click += new System.EventHandler(this.pEditPass_Click);
             // 
             // pEditUser
             // 
@@ -325,6 +326,7 @@
             this.pEditUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pEditUser.TabIndex = 4;
             this.pEditUser.TabStop = false;
+            this.pEditUser.Click += new System.EventHandler(this.pEditUser_Click);
             // 
             // pEditEmail
             // 
@@ -336,6 +338,7 @@
             this.pEditEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pEditEmail.TabIndex = 4;
             this.pEditEmail.TabStop = false;
+            this.pEditEmail.Click += new System.EventHandler(this.pEditEmail_Click);
             // 
             // label6
             // 

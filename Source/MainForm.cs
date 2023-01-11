@@ -153,5 +153,25 @@ namespace DiaryApp
 
 
         #endregion MENU
+
+        #region ACCOUNT
+        private void pEditUser_Click(object sender, EventArgs e)
+        {
+            changeUsername chUser = new changeUsername();
+            chUser.ShowDialog();
+        }
+
+        private void pEditEmail_Click(object sender, EventArgs e)
+        {
+            changeEmail chEmail = new changeEmail();
+            chEmail.ShowDialog();
+        }
+
+        private void pEditPass_Click(object sender, EventArgs e)
+        {
+            changePassword chPass = new changePassword();
+            chPass.ShowDialog();
+        }
+        #endregion ACCOUNT
     }
 }
