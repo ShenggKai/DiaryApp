@@ -58,6 +58,7 @@
             this.lb1 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.pnMenu.SuspendLayout();
             this.pageMain.SuspendLayout();
             this.tabpageHome.SuspendLayout();
@@ -375,7 +376,7 @@
             this.pUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pUser.TabIndex = 2;
             this.pUser.TabStop = false;
-            this.toolTip1.SetToolTip(this.pUser, "Thay đổi avatar");
+            this.toolTip1.SetToolTip(this.pUser, "nhấp để thay đổi");
             this.pUser.Click += new System.EventHandler(this.pUser_Click);
             // 
             // label5
@@ -430,7 +431,13 @@
             this.toolTip1.ForeColor = System.Drawing.Color.Black;
             this.toolTip1.IsBalloon = true;
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.toolTip1.ToolTipTitle = "Chỉ dẫn";
+            this.toolTip1.ToolTipTitle = "Thay đổi avatar";
+            // 
+            // toolTip2
+            // 
+            this.toolTip2.IsBalloon = true;
+            this.toolTip2.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip2.ToolTipTitle = "Thay đổi tài khoản";
             // 
             // MainForm
             // 
@@ -491,5 +498,6 @@
         private PictureBox pEditUser;
         private OpenFileDialog openFileDialog1;
         private ToolTip toolTip1;
+        private ToolTip toolTip2;
     }
 }
