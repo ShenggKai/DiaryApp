@@ -31,15 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.pnMenu = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             this.lbLogo = new System.Windows.Forms.Label();
+            this.btnCalendar = new System.Windows.Forms.Button();
+            this.btnUser = new System.Windows.Forms.Button();
             this.pnMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnMenu
             // 
             this.pnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
-            this.pnMenu.Controls.Add(this.button1);
+            this.pnMenu.Controls.Add(this.btnUser);
+            this.pnMenu.Controls.Add(this.btnCalendar);
+            this.pnMenu.Controls.Add(this.btnHome);
             this.pnMenu.Controls.Add(this.lbLogo);
             this.pnMenu.Controls.Add(this.btnLogout);
             this.pnMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -66,15 +70,25 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // button1
+            // btnHome
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.Location = new System.Drawing.Point(0, 86);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(272, 76);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Image = global::DiaryApp.Properties.Resources.home_full;
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(0, 86);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btnHome.Size = new System.Drawing.Size(272, 71);
+            this.btnHome.TabIndex = 2;
+            this.btnHome.Text = " Trang chủ";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHome.UseVisualStyleBackColor = true;
             // 
             // lbLogo
             // 
@@ -88,6 +102,46 @@
             this.lbLogo.TabIndex = 3;
             this.lbLogo.Text = "DiaryApp";
             this.lbLogo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnCalendar
+            // 
+            this.btnCalendar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCalendar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCalendar.FlatAppearance.BorderSize = 0;
+            this.btnCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalendar.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCalendar.ForeColor = System.Drawing.Color.White;
+            this.btnCalendar.Image = global::DiaryApp.Properties.Resources.calendar;
+            this.btnCalendar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCalendar.Location = new System.Drawing.Point(0, 157);
+            this.btnCalendar.Name = "btnCalendar";
+            this.btnCalendar.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btnCalendar.Size = new System.Drawing.Size(272, 71);
+            this.btnCalendar.TabIndex = 4;
+            this.btnCalendar.Text = " Lịch";
+            this.btnCalendar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCalendar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCalendar.UseVisualStyleBackColor = true;
+            // 
+            // btnUser
+            // 
+            this.btnUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUser.FlatAppearance.BorderSize = 0;
+            this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUser.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUser.ForeColor = System.Drawing.Color.White;
+            this.btnUser.Image = global::DiaryApp.Properties.Resources.user;
+            this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUser.Location = new System.Drawing.Point(0, 228);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btnUser.Size = new System.Drawing.Size(272, 71);
+            this.btnUser.TabIndex = 5;
+            this.btnUser.Text = " Tài khoản";
+            this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUser.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -107,7 +161,9 @@
 
         private Panel pnMenu;
         private Button btnLogout;
-        private Button button1;
+        private Button btnHome;
         private Label lbLogo;
+        private Button btnUser;
+        private Button btnCalendar;
     }
 }
