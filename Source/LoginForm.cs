@@ -28,6 +28,7 @@ namespace DiaryApp.Source
             InitializeComponent();
         }
 
+        #region Main variable
         // to paste OTP string
         private string tempOTP = "000000";
 
@@ -66,6 +67,7 @@ namespace DiaryApp.Source
 
         // SQL server connection
         SqlConnection conn = new SqlConnection(@"Data Source=KAI\SQLEXPRESS;Initial Catalog=DiaryApp;Integrated Security=True");
+        #endregion Main variable
 
         // Close button
         private void pClose_Click(object sender, EventArgs e)
