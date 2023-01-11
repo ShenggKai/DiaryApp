@@ -16,8 +16,10 @@ namespace DiaryApp
         #region Main variable
         public static MainForm instance;
 
-        // SQL server connection
-        //SqlConnection conn = new SqlConnection(@"Data Source=KAI\SQLEXPRESS;Initial Catalog=DiaryApp;Integrated Security=True");
+        string txtusername = LoginForm.instance.tbUserName.Text;
+        string txtpassword = LoginForm.instance.tbPassword.Text;
+        string txtemail = "e";
+
         #endregion Main variable
 
         // button dang xuat
@@ -41,10 +43,6 @@ namespace DiaryApp
             //demo
             //lbUsername.Text = LoginForm.instance.tbUserName.Text;
 
-            string txtusername = LoginForm.instance.tbUserName.Text;
-            string txtpassword = LoginForm.instance.tbPassword.Text;
-            string txtemail = "e";
-
             #region load user information
             try
             {
@@ -66,6 +64,10 @@ namespace DiaryApp
 
                                 lbUsername.Text = tempuser;
                                 txtemail = tempemail;
+
+                                // thong tin tai khoan
+                                lbUsername1.Text = tempuser;
+                                lbEmail.Text = tempemail;
                             }
                         }
                     }
@@ -78,8 +80,6 @@ namespace DiaryApp
                 MessageBox.Show("Error!", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             #endregion load user information
-
-
         }
         #endregion MAIN
 

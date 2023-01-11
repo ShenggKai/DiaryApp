@@ -45,26 +45,26 @@
             this.tabpageCalendar = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
             this.tabpageUser = new System.Windows.Forms.TabPage();
-            this.lb1 = new System.Windows.Forms.Label();
-            this.pUser = new System.Windows.Forms.PictureBox();
-            this.lb2 = new System.Windows.Forms.Label();
-            this.lbUsername1 = new System.Windows.Forms.Label();
-            this.lbEmail = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pEditEmail = new System.Windows.Forms.PictureBox();
             this.pEditPass = new System.Windows.Forms.PictureBox();
             this.pEditUser = new System.Windows.Forms.PictureBox();
+            this.pEditEmail = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lb2 = new System.Windows.Forms.Label();
+            this.pUser = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lbEmail = new System.Windows.Forms.Label();
+            this.lbUsername1 = new System.Windows.Forms.Label();
+            this.lb1 = new System.Windows.Forms.Label();
             this.pnMenu.SuspendLayout();
             this.pageMain.SuspendLayout();
             this.tabpageHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBanner)).BeginInit();
             this.tabpageCalendar.SuspendLayout();
             this.tabpageUser.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pEditEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pEditPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pEditUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pEditEmail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
             this.SuspendLayout();
             // 
             // pnMenu
@@ -304,67 +304,38 @@
             this.tabpageUser.TabIndex = 2;
             this.tabpageUser.Text = "TaiKhoan";
             // 
-            // lb1
+            // pEditPass
             // 
-            this.lb1.AutoSize = true;
-            this.lb1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb1.Location = new System.Drawing.Point(370, 48);
-            this.lb1.Name = "lb1";
-            this.lb1.Size = new System.Drawing.Size(148, 38);
-            this.lb1.TabIndex = 1;
-            this.lb1.Text = "Username:";
-            this.lb1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.pEditPass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pEditPass.Image = global::DiaryApp.Properties.Resources.edit;
+            this.pEditPass.Location = new System.Drawing.Point(1118, 200);
+            this.pEditPass.Name = "pEditPass";
+            this.pEditPass.Size = new System.Drawing.Size(40, 40);
+            this.pEditPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pEditPass.TabIndex = 4;
+            this.pEditPass.TabStop = false;
             // 
-            // pUser
+            // pEditUser
             // 
-            this.pUser.Image = global::DiaryApp.Properties.Resources.avt;
-            this.pUser.Location = new System.Drawing.Point(120, 48);
-            this.pUser.Name = "pUser";
-            this.pUser.Size = new System.Drawing.Size(200, 200);
-            this.pUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pUser.TabIndex = 2;
-            this.pUser.TabStop = false;
+            this.pEditUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pEditUser.Image = global::DiaryApp.Properties.Resources.edit;
+            this.pEditUser.Location = new System.Drawing.Point(1118, 48);
+            this.pEditUser.Name = "pEditUser";
+            this.pEditUser.Size = new System.Drawing.Size(40, 40);
+            this.pEditUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pEditUser.TabIndex = 4;
+            this.pEditUser.TabStop = false;
             // 
-            // lb2
+            // pEditEmail
             // 
-            this.lb2.AutoSize = true;
-            this.lb2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb2.Location = new System.Drawing.Point(370, 127);
-            this.lb2.Name = "lb2";
-            this.lb2.Size = new System.Drawing.Size(229, 38);
-            this.lb2.TabIndex = 3;
-            this.lb2.Text = "Email đăng nhập:";
-            this.lb2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbUsername1
-            // 
-            this.lbUsername1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbUsername1.Location = new System.Drawing.Point(628, 44);
-            this.lbUsername1.Name = "lbUsername1";
-            this.lbUsername1.Size = new System.Drawing.Size(484, 38);
-            this.lbUsername1.TabIndex = 1;
-            this.lbUsername1.Text = "Username";
-            this.lbUsername1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbEmail
-            // 
-            this.lbEmail.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbEmail.Location = new System.Drawing.Point(628, 127);
-            this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(484, 38);
-            this.lbEmail.TabIndex = 1;
-            this.lbEmail.Text = "a@gmail.com";
-            this.lbEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(628, 202);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(155, 38);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "••••••••••••";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.pEditEmail.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pEditEmail.Image = global::DiaryApp.Properties.Resources.edit;
+            this.pEditEmail.Location = new System.Drawing.Point(1118, 125);
+            this.pEditEmail.Name = "pEditEmail";
+            this.pEditEmail.Size = new System.Drawing.Size(40, 40);
+            this.pEditEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pEditEmail.TabIndex = 4;
+            this.pEditEmail.TabStop = false;
             // 
             // label6
             // 
@@ -377,35 +348,67 @@
             this.label6.Text = "Mật khẩu";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pEditEmail
+            // lb2
             // 
-            this.pEditEmail.Image = global::DiaryApp.Properties.Resources.edit;
-            this.pEditEmail.Location = new System.Drawing.Point(1118, 125);
-            this.pEditEmail.Name = "pEditEmail";
-            this.pEditEmail.Size = new System.Drawing.Size(40, 40);
-            this.pEditEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pEditEmail.TabIndex = 4;
-            this.pEditEmail.TabStop = false;
+            this.lb2.AutoSize = true;
+            this.lb2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lb2.Location = new System.Drawing.Point(370, 127);
+            this.lb2.Name = "lb2";
+            this.lb2.Size = new System.Drawing.Size(229, 38);
+            this.lb2.TabIndex = 3;
+            this.lb2.Text = "Email đăng nhập:";
+            this.lb2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pEditPass
+            // pUser
             // 
-            this.pEditPass.Image = global::DiaryApp.Properties.Resources.edit;
-            this.pEditPass.Location = new System.Drawing.Point(1118, 200);
-            this.pEditPass.Name = "pEditPass";
-            this.pEditPass.Size = new System.Drawing.Size(40, 40);
-            this.pEditPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pEditPass.TabIndex = 4;
-            this.pEditPass.TabStop = false;
+            this.pUser.Image = global::DiaryApp.Properties.Resources.avt;
+            this.pUser.Location = new System.Drawing.Point(120, 48);
+            this.pUser.Name = "pUser";
+            this.pUser.Size = new System.Drawing.Size(200, 200);
+            this.pUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pUser.TabIndex = 2;
+            this.pUser.TabStop = false;
             // 
-            // pEditUser
+            // label5
             // 
-            this.pEditUser.Image = global::DiaryApp.Properties.Resources.edit;
-            this.pEditUser.Location = new System.Drawing.Point(1118, 48);
-            this.pEditUser.Name = "pEditUser";
-            this.pEditUser.Size = new System.Drawing.Size(40, 40);
-            this.pEditUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pEditUser.TabIndex = 4;
-            this.pEditUser.TabStop = false;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(628, 202);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(155, 38);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "••••••••••••";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbEmail
+            // 
+            this.lbEmail.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbEmail.Location = new System.Drawing.Point(628, 127);
+            this.lbEmail.Name = "lbEmail";
+            this.lbEmail.Size = new System.Drawing.Size(484, 38);
+            this.lbEmail.TabIndex = 1;
+            this.lbEmail.Text = "a@gmail.com";
+            this.lbEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbUsername1
+            // 
+            this.lbUsername1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbUsername1.Location = new System.Drawing.Point(628, 44);
+            this.lbUsername1.Name = "lbUsername1";
+            this.lbUsername1.Size = new System.Drawing.Size(484, 38);
+            this.lbUsername1.TabIndex = 1;
+            this.lbUsername1.Text = "Username";
+            this.lbUsername1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lb1
+            // 
+            this.lb1.AutoSize = true;
+            this.lb1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lb1.Location = new System.Drawing.Point(370, 48);
+            this.lb1.Name = "lb1";
+            this.lb1.Size = new System.Drawing.Size(148, 38);
+            this.lb1.TabIndex = 1;
+            this.lb1.Text = "Username:";
+            this.lb1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // MainForm
             // 
@@ -428,10 +431,10 @@
             this.tabpageCalendar.PerformLayout();
             this.tabpageUser.ResumeLayout(false);
             this.tabpageUser.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pUser)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pEditEmail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pEditPass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pEditUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pEditEmail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pUser)).EndInit();
             this.ResumeLayout(false);
 
         }
