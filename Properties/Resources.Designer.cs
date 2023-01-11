@@ -83,6 +83,16 @@ namespace DiaryApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap avt {
+            get {
+                object obj = ResourceManager.GetObject("avt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap banner {
             get {
                 object obj = ResourceManager.GetObject("banner", resourceCulture);
@@ -116,6 +126,16 @@ namespace DiaryApp.Properties {
         internal static System.Drawing.Bitmap close_green {
             get {
                 object obj = ResourceManager.GetObject("close_green", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit {
+            get {
+                object obj = ResourceManager.GetObject("edit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

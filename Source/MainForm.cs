@@ -151,8 +151,7 @@ namespace DiaryApp
             pageMain.SelectTab(2);
         }
 
+
         #endregion MENU
-
-
     }
 }
