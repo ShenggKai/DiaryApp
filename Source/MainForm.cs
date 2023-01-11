@@ -17,7 +17,7 @@ namespace DiaryApp
         public static MainForm instance;
 
         // SQL server connection
-        SqlConnection conn = new SqlConnection(@"Data Source=KAI\SQLEXPRESS;Initial Catalog=DiaryApp;Integrated Security=True");
+        //SqlConnection conn = new SqlConnection(@"Data Source=KAI\SQLEXPRESS;Initial Catalog=DiaryApp;Integrated Security=True");
         #endregion Main variable
 
         // button dang xuat
@@ -38,20 +38,48 @@ namespace DiaryApp
         // when main form load
         private void MainForm_Load(object sender, EventArgs e)
         {
-            lbUsername.Text = LoginForm.instance.tbUserName.Text;
+            //demo
+            //lbUsername.Text = LoginForm.instance.tbUserName.Text;
 
+            string txtusername = LoginForm.instance.tbUserName.Text;
+            string txtpassword = LoginForm.instance.tbPassword.Text;
+            string txtemail = "e";
+
+            #region load user information
             try
             {
-                string query = "";
+                using (SqlConnection conn = new SqlConnection(@"Data Source=KAI\SQLEXPRESS;Initial Catalog=DiaryApp;Integrated Security=True"))
+                {
+                    conn.Open();
+
+                    string query = "SELECT username, email FROM Account WHERE username = @txtusername OR email = @txtusername";
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@txtusername", txtusername);
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                string tempuser = reader["username"].ToString();
+                                string tempemail = reader["email"].ToString();
+
+                                lbUsername.Text = tempuser;
+                                txtemail = tempemail;
+                            }
+                        }
+                    }
+
+                    conn.Close();
+                }
             }
             catch (Exception)
             {
                 MessageBox.Show("Error!", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            finally
-            {
-                conn.Close();
-            }
+            #endregion load user information
+
+
         }
         #endregion MAIN
 
