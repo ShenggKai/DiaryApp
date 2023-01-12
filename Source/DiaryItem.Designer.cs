@@ -28,12 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(427, 20);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(269, 99);
+            this.panel1.TabIndex = 0;
             // 
             // DiaryItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panel1);
             this.Name = "DiaryItem";
             this.Size = new System.Drawing.Size(1622, 126);
             this.ResumeLayout(false);
@@ -41,5 +50,7 @@
         }
 
         #endregion
+
+        private Panel panel1;
     }
 }

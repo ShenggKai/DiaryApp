@@ -357,6 +357,7 @@
             this.pEditPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pEditPass.TabIndex = 4;
             this.pEditPass.TabStop = false;
+            this.toolTip2.SetToolTip(this.pEditPass, "nhấp để thay đổi mật khẩu");
             this.pEditPass.Click += new System.EventHandler(this.pEditPass_Click);
             // 
             // pEditUser
@@ -369,6 +370,7 @@
             this.pEditUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pEditUser.TabIndex = 4;
             this.pEditUser.TabStop = false;
+            this.toolTip2.SetToolTip(this.pEditUser, "nhấp để thay đổi username");
             this.pEditUser.Click += new System.EventHandler(this.pEditUser_Click);
             // 
             // pEditEmail
@@ -381,6 +383,7 @@
             this.pEditEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pEditEmail.TabIndex = 4;
             this.pEditEmail.TabStop = false;
+            this.toolTip2.SetToolTip(this.pEditEmail, "nhấp để thay đổi email");
             this.pEditEmail.Click += new System.EventHandler(this.pEditEmail_Click);
             // 
             // label6
