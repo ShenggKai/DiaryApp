@@ -77,8 +77,8 @@ namespace DiaryApp.Source
 
         private void pEit_Click(object sender, EventArgs e)
         {
-            //EditDiary content = new EditDiary();
-            //content.ShowDialog();
+            EditContent cont = new EditContent();
+            cont.ShowDialog();
         }
         #endregion custom event
 
