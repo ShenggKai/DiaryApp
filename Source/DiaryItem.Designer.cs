@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.pnNote = new System.Windows.Forms.Panel();
+            this.rtxtContent = new System.Windows.Forms.RichTextBox();
             this.lbTitle = new System.Windows.Forms.Label();
             this.lbDate = new System.Windows.Forms.Label();
             this.lbTime = new System.Windows.Forms.Label();
             this.pDel = new System.Windows.Forms.PictureBox();
             this.pShare = new System.Windows.Forms.PictureBox();
             this.pEit = new System.Windows.Forms.PictureBox();
-            this.rtxtContent = new System.Windows.Forms.RichTextBox();
             this.pnNote.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pDel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pShare)).BeginInit();
@@ -52,6 +52,14 @@
             this.pnNote.Name = "pnNote";
             this.pnNote.Size = new System.Drawing.Size(926, 126);
             this.pnNote.TabIndex = 0;
+            // 
+            // rtxtContent
+            // 
+            this.rtxtContent.Location = new System.Drawing.Point(55, 34);
+            this.rtxtContent.Name = "rtxtContent";
+            this.rtxtContent.Size = new System.Drawing.Size(225, 77);
+            this.rtxtContent.TabIndex = 1;
+            this.rtxtContent.Text = "";
             // 
             // lbTitle
             // 
@@ -80,7 +88,7 @@
             this.lbTime.AutoSize = true;
             this.lbTime.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbTime.ForeColor = System.Drawing.Color.White;
-            this.lbTime.Location = new System.Drawing.Point(140, 71);
+            this.lbTime.Location = new System.Drawing.Point(140, 72);
             this.lbTime.Name = "lbTime";
             this.lbTime.Size = new System.Drawing.Size(77, 35);
             this.lbTime.TabIndex = 1;
@@ -122,14 +130,6 @@
             this.pEit.TabStop = false;
             this.pEit.Click += new System.EventHandler(this.pEit_Click);
             // 
-            // rtxtContent
-            // 
-            this.rtxtContent.Location = new System.Drawing.Point(55, 34);
-            this.rtxtContent.Name = "rtxtContent";
-            this.rtxtContent.Size = new System.Drawing.Size(225, 77);
-            this.rtxtContent.TabIndex = 1;
-            this.rtxtContent.Text = "";
-            // 
             // DiaryItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -141,7 +141,7 @@
             this.Controls.Add(this.lbTime);
             this.Controls.Add(this.lbDate);
             this.Controls.Add(this.pnNote);
-            this.Margin = new System.Windows.Forms.Padding(0);
+            this.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.Name = "DiaryItem";
             this.Size = new System.Drawing.Size(1622, 126);
             this.Load += new System.EventHandler(this.DiaryItem_Load);
