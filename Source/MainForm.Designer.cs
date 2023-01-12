@@ -224,6 +224,7 @@
             this.fpnItem.AutoScroll = true;
             this.fpnItem.Controls.Add(this.diaryItem1);
             this.fpnItem.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.fpnItem.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.fpnItem.Location = new System.Drawing.Point(0, 344);
             this.fpnItem.Name = "fpnItem";
             this.fpnItem.Size = new System.Drawing.Size(1622, 656);
@@ -233,12 +234,12 @@
             // 
             this.diaryItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(160)))), ((int)(((byte)(103)))));
             this.diaryItem1.Content = "";
-            this.diaryItem1.Location = new System.Drawing.Point(0, 5);
+            this.diaryItem1.Location = new System.Drawing.Point(10, 5);
             this.diaryItem1.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.diaryItem1.Name = "diaryItem1";
-            this.diaryItem1.Size = new System.Drawing.Size(1622, 126);
+            this.diaryItem1.Size = new System.Drawing.Size(1612, 126);
             this.diaryItem1.TabIndex = 0;
-            this.diaryItem1.Title = "Tiêu đề nhật ký";
+            this.diaryItem1.Title = "Demo";
             // 
             // btnAdd
             // 

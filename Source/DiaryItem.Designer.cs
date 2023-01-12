@@ -110,7 +110,7 @@
             // 
             this.pShare.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pShare.Image = global::DiaryApp.Properties.Resources.share;
-            this.pShare.Location = new System.Drawing.Point(1439, 44);
+            this.pShare.Location = new System.Drawing.Point(1427, 44);
             this.pShare.Name = "pShare";
             this.pShare.Size = new System.Drawing.Size(40, 40);
             this.pShare.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -122,7 +122,7 @@
             // 
             this.pEit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pEit.Image = global::DiaryApp.Properties.Resources.edit_white;
-            this.pEit.Location = new System.Drawing.Point(1536, 44);
+            this.pEit.Location = new System.Drawing.Point(1527, 44);
             this.pEit.Name = "pEit";
             this.pEit.Size = new System.Drawing.Size(40, 40);
             this.pEit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -143,7 +143,7 @@
             this.Controls.Add(this.pnNote);
             this.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.Name = "DiaryItem";
-            this.Size = new System.Drawing.Size(1622, 126);
+            this.Size = new System.Drawing.Size(1612, 126);
             this.Load += new System.EventHandler(this.DiaryItem_Load);
             this.pnNote.ResumeLayout(false);
             this.pnNote.PerformLayout();
