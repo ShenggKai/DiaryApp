@@ -55,19 +55,19 @@
             // 
             // rtxtContent
             // 
-            this.rtxtContent.Location = new System.Drawing.Point(55, 34);
+            this.rtxtContent.Location = new System.Drawing.Point(55, 72);
             this.rtxtContent.Name = "rtxtContent";
-            this.rtxtContent.Size = new System.Drawing.Size(225, 77);
+            this.rtxtContent.Size = new System.Drawing.Size(51, 39);
             this.rtxtContent.TabIndex = 1;
             this.rtxtContent.Text = "";
+            this.rtxtContent.Visible = false;
             // 
             // lbTitle
             // 
-            this.lbTitle.AutoSize = true;
             this.lbTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbTitle.Location = new System.Drawing.Point(341, 20);
+            this.lbTitle.Location = new System.Drawing.Point(3, 20);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(250, 45);
+            this.lbTitle.Size = new System.Drawing.Size(920, 45);
             this.lbTitle.TabIndex = 0;
             this.lbTitle.Text = "Tiêu đề nhật ký";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -146,7 +146,6 @@
             this.Size = new System.Drawing.Size(1612, 126);
             this.Load += new System.EventHandler(this.DiaryItem_Load);
             this.pnNote.ResumeLayout(false);
-            this.pnNote.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pDel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pShare)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pEit)).EndInit();
