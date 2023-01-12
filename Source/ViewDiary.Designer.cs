@@ -55,6 +55,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "Xem nhật ký";
+            this.Load += new System.EventHandler(this.ViewDiary_Load);
             this.ResumeLayout(false);
 
         }

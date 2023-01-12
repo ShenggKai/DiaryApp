@@ -52,15 +52,17 @@
             this.pnNote.Name = "pnNote";
             this.pnNote.Size = new System.Drawing.Size(926, 126);
             this.pnNote.TabIndex = 0;
+            this.pnNote.Click += new System.EventHandler(this.DiaryItem_Click);
             // 
             // rtxtContent
             // 
             this.rtxtContent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxtContent.Location = new System.Drawing.Point(55, 72);
             this.rtxtContent.Name = "rtxtContent";
-            this.rtxtContent.Size = new System.Drawing.Size(419, 39);
+            this.rtxtContent.Size = new System.Drawing.Size(29, 39);
             this.rtxtContent.TabIndex = 1;
             this.rtxtContent.Text = "";
+            this.rtxtContent.Visible = false;
             // 
             // lbTitle
             // 
@@ -145,6 +147,7 @@
             this.Name = "DiaryItem";
             this.Size = new System.Drawing.Size(1612, 126);
             this.Load += new System.EventHandler(this.DiaryItem_Load);
+            this.Click += new System.EventHandler(this.DiaryItem_Click);
             this.pnNote.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pDel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pShare)).EndInit();

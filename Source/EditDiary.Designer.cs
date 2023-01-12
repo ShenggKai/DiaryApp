@@ -32,16 +32,16 @@
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.rtEditConent = new System.Windows.Forms.RichTextBox();
-            this.pAddImage = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnPost = new Sunny.UI.UIButton();
             this.btnCancel = new Sunny.UI.UIButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pAddImage)).BeginInit();
+            this.pInsertimage = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pInsertimage)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTitle
@@ -68,24 +68,12 @@
             this.rtEditConent.BackColor = System.Drawing.Color.Gainsboro;
             this.rtEditConent.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtEditConent.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rtEditConent.Location = new System.Drawing.Point(12, 136);
+            this.rtEditConent.Location = new System.Drawing.Point(324, 136);
             this.rtEditConent.Name = "rtEditConent";
             this.rtEditConent.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.rtEditConent.Size = new System.Drawing.Size(1072, 302);
+            this.rtEditConent.Size = new System.Drawing.Size(760, 302);
             this.rtEditConent.TabIndex = 2;
             this.rtEditConent.Text = "";
-            // 
-            // pAddImage
-            // 
-            this.pAddImage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pAddImage.Image = global::DiaryApp.Properties.Resources.addphoto;
-            this.pAddImage.Location = new System.Drawing.Point(506, 84);
-            this.pAddImage.Name = "pAddImage";
-            this.pAddImage.Size = new System.Drawing.Size(35, 35);
-            this.pAddImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pAddImage.TabIndex = 3;
-            this.pAddImage.TabStop = false;
-            this.pAddImage.Click += new System.EventHandler(this.pAddImage_Click);
             // 
             // pictureBox1
             // 
@@ -165,17 +153,28 @@
             this.btnCancel.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // pInsertimage
+            // 
+            this.pInsertimage.Image = global::DiaryApp.Properties.Resources.insertimage;
+            this.pInsertimage.Location = new System.Drawing.Point(11, 136);
+            this.pInsertimage.Name = "pInsertimage";
+            this.pInsertimage.Size = new System.Drawing.Size(302, 302);
+            this.pInsertimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pInsertimage.TabIndex = 5;
+            this.pInsertimage.TabStop = false;
+            this.pInsertimage.Click += new System.EventHandler(this.pInsertimage_Click);
+            // 
             // EditDiary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1096, 532);
+            this.Controls.Add(this.pInsertimage);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnPost);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pAddImage);
             this.Controls.Add(this.rtEditConent);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtTitle);
@@ -186,10 +185,10 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Nội dung nhật ký";
-            ((System.ComponentModel.ISupportInitialize)(this.pAddImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pInsertimage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,11 +199,11 @@
         private TextBox txtTitle;
         private Panel panel1;
         private RichTextBox rtEditConent;
-        private PictureBox pAddImage;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Sunny.UI.UIButton btnPost;
         private Sunny.UI.UIButton btnCancel;
+        private PictureBox pInsertimage;
     }
 }

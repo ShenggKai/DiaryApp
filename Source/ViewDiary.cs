@@ -16,5 +16,10 @@ namespace DiaryApp.Source
         {
             InitializeComponent();
         }
+
+        private void ViewDiary_Load(object sender, EventArgs e)
+        {
+            richTextBox1.Text = DiaryItem.instance.NoiDung.Text;
+        }
     }
 }

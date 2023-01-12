@@ -47,5 +47,17 @@ namespace DiaryApp.Source
             }
         }
         #endregion button click
+
+        private void pInsertimage_Click(object sender, EventArgs e)
+        {
+            // Create an OpenFileDialog to select a new image
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Image Files (*.bmp;*.jpg;*.jpeg,*.png)|*.BMP;*.JPG;*.JPEG;*.PNG";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                // Set the Image property of the PictureBox to the selected image
+                pInsertimage.Image = Image.FromFile(ofd.FileName);
+            }
+        }
     }
 }

@@ -232,7 +232,8 @@
             // diaryItem1
             // 
             this.diaryItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(160)))), ((int)(((byte)(103)))));
-            this.diaryItem1.Content = "";
+            this.diaryItem1.Content = "{\\rtf1\\ansi\\ansicpg1252\\deff0\\nouicompat\\deflang1033{\\fonttbl{\\f0\\fnil Segoe UI;}" +
+    "}\r\n{\\*\\generator Riched20 10.0.22621}\\viewkind4\\uc1 \r\n\\pard\\f0\\fs18\\par\r\n}\r\n";
             this.diaryItem1.Location = new System.Drawing.Point(0, 5);
             this.diaryItem1.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.diaryItem1.Name = "diaryItem1";

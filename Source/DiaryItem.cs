@@ -72,5 +72,11 @@ namespace DiaryApp.Source
 
         }
         #endregion custom event
+
+        private void DiaryItem_Click(object sender, EventArgs e)
+        {
+            ViewDiary view = new ViewDiary();
+            view.ShowDialog();
+        }
     }
 }
