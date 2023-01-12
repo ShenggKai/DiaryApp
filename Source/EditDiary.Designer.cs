@@ -85,6 +85,7 @@
             this.pAddImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pAddImage.TabIndex = 3;
             this.pAddImage.TabStop = false;
+            this.pAddImage.Click += new System.EventHandler(this.pAddImage_Click);
             // 
             // pictureBox1
             // 

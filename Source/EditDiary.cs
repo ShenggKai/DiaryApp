@@ -33,6 +33,19 @@ namespace DiaryApp.Source
             MainForm.instance.pnItem.Controls.Add(diaryItem);
             this.Close();
         }
+
+        private void pAddImage_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "Images|*.png;*.bmp;*.jpg" })
+            {
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    Image img = Image.FromFile(ofd.FileName);
+                    Clipboard.SetImage(img);
+                    rtEditConent.Paste();
+                }
+            }
+        }
         #endregion button click
     }
 }
