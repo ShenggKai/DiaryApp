@@ -38,10 +38,16 @@
             this.btnPost = new Sunny.UI.UIButton();
             this.btnCancel = new Sunny.UI.UIButton();
             this.pInsertimage = new System.Windows.Forms.PictureBox();
+            this.pBold = new System.Windows.Forms.PictureBox();
+            this.pItalic = new System.Windows.Forms.PictureBox();
+            this.pUnderline = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pInsertimage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBold)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pItalic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pUnderline)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTitle
@@ -79,7 +85,7 @@
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::DiaryApp.Properties.Resources.heading1;
-            this.pictureBox1.Location = new System.Drawing.Point(603, 84);
+            this.pictureBox1.Location = new System.Drawing.Point(622, 84);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(35, 35);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -90,7 +96,7 @@
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::DiaryApp.Properties.Resources.heading2;
-            this.pictureBox2.Location = new System.Drawing.Point(688, 84);
+            this.pictureBox2.Location = new System.Drawing.Point(704, 84);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(35, 35);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -101,7 +107,7 @@
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::DiaryApp.Properties.Resources.heading3;
-            this.pictureBox3.Location = new System.Drawing.Point(774, 84);
+            this.pictureBox3.Location = new System.Drawing.Point(783, 84);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(35, 35);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -164,6 +170,42 @@
             this.pInsertimage.TabStop = false;
             this.pInsertimage.Click += new System.EventHandler(this.pInsertimage_Click);
             // 
+            // pBold
+            // 
+            this.pBold.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pBold.Image = global::DiaryApp.Properties.Resources.bold_gray;
+            this.pBold.Location = new System.Drawing.Point(858, 84);
+            this.pBold.Name = "pBold";
+            this.pBold.Size = new System.Drawing.Size(35, 35);
+            this.pBold.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBold.TabIndex = 3;
+            this.pBold.TabStop = false;
+            this.pBold.Click += new System.EventHandler(this.pBold_Click);
+            // 
+            // pItalic
+            // 
+            this.pItalic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pItalic.Image = global::DiaryApp.Properties.Resources.italics_gray;
+            this.pItalic.Location = new System.Drawing.Point(935, 84);
+            this.pItalic.Name = "pItalic";
+            this.pItalic.Size = new System.Drawing.Size(35, 35);
+            this.pItalic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pItalic.TabIndex = 3;
+            this.pItalic.TabStop = false;
+            this.pItalic.Click += new System.EventHandler(this.pItalic_Click);
+            // 
+            // pUnderline
+            // 
+            this.pUnderline.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pUnderline.Image = global::DiaryApp.Properties.Resources.underline_gray;
+            this.pUnderline.Location = new System.Drawing.Point(1010, 84);
+            this.pUnderline.Name = "pUnderline";
+            this.pUnderline.Size = new System.Drawing.Size(35, 35);
+            this.pUnderline.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pUnderline.TabIndex = 3;
+            this.pUnderline.TabStop = false;
+            this.pUnderline.Click += new System.EventHandler(this.pUnderline_Click);
+            // 
             // EditDiary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -172,6 +214,9 @@
             this.Controls.Add(this.pInsertimage);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnPost);
+            this.Controls.Add(this.pUnderline);
+            this.Controls.Add(this.pItalic);
+            this.Controls.Add(this.pBold);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -189,6 +234,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pInsertimage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBold)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pItalic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pUnderline)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,5 +253,8 @@
         private Sunny.UI.UIButton btnPost;
         private Sunny.UI.UIButton btnCancel;
         private PictureBox pInsertimage;
+        private PictureBox pBold;
+        private PictureBox pItalic;
+        private PictureBox pUnderline;
     }
 }

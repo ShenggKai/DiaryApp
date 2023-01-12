@@ -20,6 +20,7 @@ namespace DiaryApp.Source
         private void ViewDiary_Load(object sender, EventArgs e)
         {
             richTextBox1.Text = DiaryItem.instance.NoiDung.Text;
+            pImage.Image = DiaryItem.instance.Image.Image;
         }
     }
 }

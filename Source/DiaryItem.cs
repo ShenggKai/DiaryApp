@@ -19,11 +19,13 @@ namespace DiaryApp.Source
             instance = this;
             TieuDe = lbTitle;
             NoiDung = rtxtContent;
+            Image = pImage;
         }
 
         public static DiaryItem instance;
         public Label TieuDe;
         public RichTextBox NoiDung;
+        public PictureBox Image;
 
         private void DiaryItem_Load(object sender, EventArgs e)
         {
@@ -44,6 +46,12 @@ namespace DiaryApp.Source
         {
             get { return rtxtContent.Text; }
             set { rtxtContent.Text = value;}
+        }
+
+        public Image Pic
+        {
+            get { return pImage.Image; }
+            set { pImage.Image = value; }
         }
 
         #endregion editable string

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnNote = new System.Windows.Forms.Panel();
+            this.pImage = new System.Windows.Forms.PictureBox();
             this.rtxtContent = new System.Windows.Forms.RichTextBox();
             this.lbTitle = new System.Windows.Forms.Label();
             this.lbDate = new System.Windows.Forms.Label();
@@ -37,6 +38,7 @@
             this.pShare = new System.Windows.Forms.PictureBox();
             this.pEit = new System.Windows.Forms.PictureBox();
             this.pnNote.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pDel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pShare)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pEit)).BeginInit();
@@ -45,6 +47,7 @@
             // pnNote
             // 
             this.pnNote.BackColor = System.Drawing.Color.White;
+            this.pnNote.Controls.Add(this.pImage);
             this.pnNote.Controls.Add(this.rtxtContent);
             this.pnNote.Controls.Add(this.lbTitle);
             this.pnNote.Location = new System.Drawing.Point(367, 0);
@@ -53,6 +56,16 @@
             this.pnNote.Size = new System.Drawing.Size(926, 126);
             this.pnNote.TabIndex = 0;
             this.pnNote.Click += new System.EventHandler(this.DiaryItem_Click);
+            // 
+            // pImage
+            // 
+            this.pImage.Location = new System.Drawing.Point(116, 67);
+            this.pImage.Name = "pImage";
+            this.pImage.Size = new System.Drawing.Size(32, 44);
+            this.pImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pImage.TabIndex = 2;
+            this.pImage.TabStop = false;
+            this.pImage.Visible = false;
             // 
             // rtxtContent
             // 
@@ -73,6 +86,7 @@
             this.lbTitle.TabIndex = 0;
             this.lbTitle.Text = "Tiêu đề nhật ký";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbTitle.Click += new System.EventHandler(this.DiaryItem_Click);
             // 
             // lbDate
             // 
@@ -149,6 +163,7 @@
             this.Load += new System.EventHandler(this.DiaryItem_Load);
             this.Click += new System.EventHandler(this.DiaryItem_Click);
             this.pnNote.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pDel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pShare)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pEit)).EndInit();
@@ -167,5 +182,6 @@
         private PictureBox pShare;
         private PictureBox pEit;
         private RichTextBox rtxtContent;
+        private PictureBox pImage;
     }
 }

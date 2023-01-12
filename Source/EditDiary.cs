@@ -29,6 +29,7 @@ namespace DiaryApp.Source
             DiaryItem diaryItem = new DiaryItem();
             diaryItem.Title = txtTitle.Text;
             diaryItem.Content = rtEditConent.Text;
+            diaryItem.Pic = pInsertimage.Image;
 
             MainForm.instance.pnItem.Controls.Add(diaryItem);
             this.Close();
@@ -46,7 +47,6 @@ namespace DiaryApp.Source
                 }
             }
         }
-        #endregion button click
 
         private void pInsertimage_Click(object sender, EventArgs e)
         {
@@ -59,5 +59,38 @@ namespace DiaryApp.Source
                 pInsertimage.Image = Image.FromFile(ofd.FileName);
             }
         }
+
+        private void pBold_Click(object sender, EventArgs e)
+        {
+            if (rtEditConent.SelectionFont != null)
+            {
+                System.Drawing.Font currentFont = rtEditConent.SelectionFont;
+                System.Drawing.FontStyle newFontStyle;
+
+                if (rtEditConent.SelectionFont.Bold == true)
+                {
+                    newFontStyle = FontStyle.Regular;
+                }
+                else
+                {
+                    newFontStyle = FontStyle.Bold;
+                }
+
+                rtEditConent.SelectionFont = new Font(
+                   currentFont.FontFamily, currentFont.Size, newFontStyle);
+            }
+        }
+
+        private void pItalic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pUnderline_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        #endregion button click
     }
 }
