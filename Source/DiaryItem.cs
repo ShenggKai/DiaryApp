@@ -72,7 +72,8 @@ namespace DiaryApp.Source
 
         protected void pShare_Click(object sender, EventArgs e)
         {
-
+            Share chiase = new Share();
+            chiase.ShowDialog();
         }
 
         private void pEit_Click(object sender, EventArgs e)

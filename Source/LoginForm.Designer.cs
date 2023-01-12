@@ -403,9 +403,9 @@
             this.tabpageRes.Controls.Add(this.label1);
             this.tabpageRes.Controls.Add(this.label6);
             this.tabpageRes.Controls.Add(this.lbDiaryApp2);
-            this.tabpageRes.Location = new System.Drawing.Point(0, -1);
+            this.tabpageRes.Location = new System.Drawing.Point(0, 0);
             this.tabpageRes.Name = "tabpageRes";
-            this.tabpageRes.Size = new System.Drawing.Size(572, 569);
+            this.tabpageRes.Size = new System.Drawing.Size(200, 99);
             this.tabpageRes.TabIndex = 1;
             this.tabpageRes.Text = "DangKy";
             // 
@@ -684,7 +684,7 @@
             this.lbDiaryApp2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.lbDiaryApp2.Location = new System.Drawing.Point(0, 0);
             this.lbDiaryApp2.Name = "lbDiaryApp2";
-            this.lbDiaryApp2.Size = new System.Drawing.Size(572, 65);
+            this.lbDiaryApp2.Size = new System.Drawing.Size(200, 65);
             this.lbDiaryApp2.TabIndex = 13;
             this.lbDiaryApp2.Text = "DiaryApp";
             this.lbDiaryApp2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -705,9 +705,9 @@
             this.tabpageForget.Controls.Add(this.pictureBox7);
             this.tabpageForget.Controls.Add(this.txtOTP);
             this.tabpageForget.Controls.Add(this.lbDiaryApp3);
-            this.tabpageForget.Location = new System.Drawing.Point(0, 0);
+            this.tabpageForget.Location = new System.Drawing.Point(0, -1);
             this.tabpageForget.Name = "tabpageForget";
-            this.tabpageForget.Size = new System.Drawing.Size(200, 99);
+            this.tabpageForget.Size = new System.Drawing.Size(572, 569);
             this.tabpageForget.TabIndex = 2;
             this.tabpageForget.Text = "QuenMK";
             // 
@@ -884,7 +884,7 @@
             this.lbDiaryApp3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.lbDiaryApp3.Location = new System.Drawing.Point(0, 0);
             this.lbDiaryApp3.Name = "lbDiaryApp3";
-            this.lbDiaryApp3.Size = new System.Drawing.Size(200, 65);
+            this.lbDiaryApp3.Size = new System.Drawing.Size(572, 65);
             this.lbDiaryApp3.TabIndex = 14;
             this.lbDiaryApp3.Text = "DiaryApp";
             this.lbDiaryApp3.TextAlign = System.Drawing.ContentAlignment.TopCenter;

@@ -131,6 +131,7 @@
             this.btnCalendar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCalendar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCalendar.UseVisualStyleBackColor = true;
+            this.btnCalendar.Visible = false;
             this.btnCalendar.Click += new System.EventHandler(this.btnCalendar_Click);
             // 
             // btnHome
@@ -195,6 +196,7 @@
             this.pageMain.Controls.Add(this.tabpageCalendar);
             this.pageMain.Controls.Add(this.tabpageUser);
             this.pageMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pageMain.ItemSize = new System.Drawing.Size(60, 1);
             this.pageMain.Location = new System.Drawing.Point(272, 0);
             this.pageMain.Name = "pageMain";
             this.pageMain.SelectedIndex = 0;
@@ -232,12 +234,11 @@
             // diaryItem1
             // 
             this.diaryItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(160)))), ((int)(((byte)(103)))));
-            this.diaryItem1.Content = "{\\rtf1\\ansi\\ansicpg1252\\deff0\\nouicompat\\deflang1033{\\fonttbl{\\f0\\fnil Segoe UI;}" +
-    "}\r\n{\\*\\generator Riched20 10.0.22621}\\viewkind4\\uc1 \r\n\\pard\\f0\\fs18\\par\r\n}\r\n";
+            this.diaryItem1.Content = "1 2  3 4";
             this.diaryItem1.Location = new System.Drawing.Point(0, 5);
             this.diaryItem1.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.diaryItem1.Name = "diaryItem1";
-            this.diaryItem1.Pic = null;
+            this.diaryItem1.Pic = ((System.Drawing.Image)(resources.GetObject("diaryItem1.Pic")));
             this.diaryItem1.Size = new System.Drawing.Size(1612, 126);
             this.diaryItem1.TabIndex = 0;
             this.diaryItem1.Title = "Demo";
@@ -353,7 +354,7 @@
             this.tabpageUser.Location = new System.Drawing.Point(4, 4);
             this.tabpageUser.Name = "tabpageUser";
             this.tabpageUser.Padding = new System.Windows.Forms.Padding(3);
-            this.tabpageUser.Size = new System.Drawing.Size(192, 67);
+            this.tabpageUser.Size = new System.Drawing.Size(1622, 1024);
             this.tabpageUser.TabIndex = 2;
             // 
             // label3
