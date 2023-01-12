@@ -190,5 +190,13 @@ namespace DiaryApp
             }
         }
         #endregion ACCOUNT
+
+        #region HOME
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            DiaryItem diaryItem = new DiaryItem();
+            fpnItem.Controls.Add(diaryItem);
+        }
+        #endregion HOME
     }
 }

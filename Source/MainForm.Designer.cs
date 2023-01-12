@@ -254,6 +254,7 @@
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Thêm nhật ký";
             this.btnAdd.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // pBanner
             // 
