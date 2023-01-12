@@ -237,6 +237,7 @@
             this.diaryItem1.Location = new System.Drawing.Point(0, 5);
             this.diaryItem1.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.diaryItem1.Name = "diaryItem1";
+            this.diaryItem1.Pic = null;
             this.diaryItem1.Size = new System.Drawing.Size(1612, 126);
             this.diaryItem1.TabIndex = 0;
             this.diaryItem1.Title = "Demo";
