@@ -230,11 +230,13 @@
             // diaryItem1
             // 
             this.diaryItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(160)))), ((int)(((byte)(103)))));
+            this.diaryItem1.Content = "";
             this.diaryItem1.Location = new System.Drawing.Point(0, 0);
             this.diaryItem1.Margin = new System.Windows.Forms.Padding(0);
             this.diaryItem1.Name = "diaryItem1";
             this.diaryItem1.Size = new System.Drawing.Size(1622, 126);
             this.diaryItem1.TabIndex = 0;
+            this.diaryItem1.Title = "Tiêu đề nhật ký";
             // 
             // btnAdd
             // 
@@ -345,7 +347,7 @@
             this.tabpageUser.Location = new System.Drawing.Point(4, 4);
             this.tabpageUser.Name = "tabpageUser";
             this.tabpageUser.Padding = new System.Windows.Forms.Padding(3);
-            this.tabpageUser.Size = new System.Drawing.Size(1622, 1000);
+            this.tabpageUser.Size = new System.Drawing.Size(192, 67);
             this.tabpageUser.TabIndex = 2;
             // 
             // label3

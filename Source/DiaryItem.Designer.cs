@@ -35,6 +35,7 @@
             this.pDel = new System.Windows.Forms.PictureBox();
             this.pShare = new System.Windows.Forms.PictureBox();
             this.pEit = new System.Windows.Forms.PictureBox();
+            this.rtxtContent = new System.Windows.Forms.RichTextBox();
             this.pnNote.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pDel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pShare)).BeginInit();
@@ -44,6 +45,7 @@
             // pnNote
             // 
             this.pnNote.BackColor = System.Drawing.Color.White;
+            this.pnNote.Controls.Add(this.rtxtContent);
             this.pnNote.Controls.Add(this.lbTitle);
             this.pnNote.Location = new System.Drawing.Point(367, 0);
             this.pnNote.Margin = new System.Windows.Forms.Padding(0);
@@ -57,7 +59,7 @@
             this.lbTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbTitle.Location = new System.Drawing.Point(341, 20);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(257, 46);
+            this.lbTitle.Size = new System.Drawing.Size(250, 45);
             this.lbTitle.TabIndex = 0;
             this.lbTitle.Text = "Tiêu đề nhật ký";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -72,7 +74,6 @@
             this.lbDate.TabIndex = 1;
             this.lbDate.Text = "Thứ năm, 11 tháng 1 2023";
             this.lbDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbDate.Click += new System.EventHandler(this.lbDate_Click);
             // 
             // lbTime
             // 
@@ -95,6 +96,7 @@
             this.pDel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pDel.TabIndex = 2;
             this.pDel.TabStop = false;
+            this.pDel.Click += new System.EventHandler(this.pDel_Click);
             // 
             // pShare
             // 
@@ -106,6 +108,7 @@
             this.pShare.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pShare.TabIndex = 2;
             this.pShare.TabStop = false;
+            this.pShare.Click += new System.EventHandler(this.pShare_Click);
             // 
             // pEit
             // 
@@ -117,6 +120,15 @@
             this.pEit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pEit.TabIndex = 2;
             this.pEit.TabStop = false;
+            this.pEit.Click += new System.EventHandler(this.pEit_Click);
+            // 
+            // rtxtContent
+            // 
+            this.rtxtContent.Location = new System.Drawing.Point(55, 34);
+            this.rtxtContent.Name = "rtxtContent";
+            this.rtxtContent.Size = new System.Drawing.Size(225, 77);
+            this.rtxtContent.TabIndex = 1;
+            this.rtxtContent.Text = "";
             // 
             // DiaryItem
             // 
@@ -152,5 +164,6 @@
         private PictureBox pDel;
         private PictureBox pShare;
         private PictureBox pEit;
+        private RichTextBox rtxtContent;
     }
 }
