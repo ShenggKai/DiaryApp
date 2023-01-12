@@ -194,6 +194,9 @@ namespace DiaryApp
         #region HOME
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            EditDiary content = new EditDiary();
+            content.ShowDialog();
+
             DiaryItem diaryItem = new DiaryItem();
             fpnItem.Controls.Add(diaryItem);
         }
