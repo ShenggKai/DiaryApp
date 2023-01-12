@@ -233,6 +233,26 @@ namespace DiaryApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fontcolor {
+            get {
+                object obj = ResourceManager.GetObject("fontcolor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fontsize {
+            get {
+                object obj = ResourceManager.GetObject("fontsize", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap heading1 {
             get {
                 object obj = ResourceManager.GetObject("heading1", resourceCulture);
@@ -376,6 +396,16 @@ namespace DiaryApp.Properties {
         internal static System.Drawing.Bitmap trash_white {
             get {
                 object obj = ResourceManager.GetObject("trash_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap typography {
+            get {
+                object obj = ResourceManager.GetObject("typography", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

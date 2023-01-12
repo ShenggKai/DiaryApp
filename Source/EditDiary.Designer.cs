@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditDiary));
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -41,6 +42,7 @@
             this.pBold = new System.Windows.Forms.PictureBox();
             this.pItalic = new System.Windows.Forms.PictureBox();
             this.pUnderline = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -85,35 +87,41 @@
             // pictureBox1
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::DiaryApp.Properties.Resources.heading1;
+            this.pictureBox1.Image = global::DiaryApp.Properties.Resources.fontsize;
             this.pictureBox1.Location = new System.Drawing.Point(622, 84);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(35, 35);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox1, "nhấp để thay đổi kích thước chữ");
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::DiaryApp.Properties.Resources.heading2;
+            this.pictureBox2.Image = global::DiaryApp.Properties.Resources.fontcolor;
             this.pictureBox2.Location = new System.Drawing.Point(704, 84);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(35, 35);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox2, "nhấp để thay đổi màu chữ");
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::DiaryApp.Properties.Resources.heading3;
+            this.pictureBox3.Image = global::DiaryApp.Properties.Resources.typography;
             this.pictureBox3.Location = new System.Drawing.Point(783, 84);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(35, 35);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox3, "nhấp để thay đổi kiểu chữ");
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // btnPost
             // 
@@ -181,6 +189,7 @@
             this.pBold.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBold.TabIndex = 3;
             this.pBold.TabStop = false;
+            this.toolTip1.SetToolTip(this.pBold, "in đậm");
             this.pBold.Click += new System.EventHandler(this.pBold_Click);
             // 
             // pItalic
@@ -193,6 +202,7 @@
             this.pItalic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pItalic.TabIndex = 3;
             this.pItalic.TabStop = false;
+            this.toolTip1.SetToolTip(this.pItalic, "in nghiêng");
             this.pItalic.Click += new System.EventHandler(this.pItalic_Click);
             // 
             // pUnderline
@@ -205,7 +215,14 @@
             this.pUnderline.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pUnderline.TabIndex = 3;
             this.pUnderline.TabStop = false;
+            this.toolTip1.SetToolTip(this.pUnderline, "gạch chân");
             this.pUnderline.Click += new System.EventHandler(this.pUnderline_Click);
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.IsBalloon = true;
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip1.ToolTipTitle = "Thay đổi font";
             // 
             // EditDiary
             // 
@@ -257,5 +274,6 @@
         private PictureBox pBold;
         private PictureBox pItalic;
         private PictureBox pUnderline;
+        private ToolTip toolTip1;
     }
 }

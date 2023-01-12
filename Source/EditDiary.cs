@@ -60,6 +60,7 @@ namespace DiaryApp.Source
             }
         }
 
+        #region Fomart text
         private void pBold_Click(object sender, EventArgs e)
         {
             if (rtEditConent.SelectionFont != null)
@@ -70,10 +71,12 @@ namespace DiaryApp.Source
                 if (rtEditConent.SelectionFont.Bold == true)
                 {
                     newFontStyle = FontStyle.Regular;
+                    pBold.Image = global::DiaryApp.Properties.Resources.bold_gray;
                 }
                 else
                 {
                     newFontStyle = FontStyle.Bold;
+                    pBold.Image = global::DiaryApp.Properties.Resources.bold;
                 }
 
                 rtEditConent.SelectionFont = new Font(
@@ -83,14 +86,87 @@ namespace DiaryApp.Source
 
         private void pItalic_Click(object sender, EventArgs e)
         {
+            if (rtEditConent.SelectionFont != null)
+            {
+                System.Drawing.Font currentFont = rtEditConent.SelectionFont;
+                System.Drawing.FontStyle newFontStyle;
 
+                if (rtEditConent.SelectionFont.Italic == true)
+                {
+                    newFontStyle = FontStyle.Regular;
+                    pItalic.Image = global::DiaryApp.Properties.Resources.italics_gray;
+                }
+                else
+                {
+                    newFontStyle = FontStyle.Italic;
+                    pItalic.Image = global::DiaryApp.Properties.Resources.italics;
+                }
+
+                rtEditConent.SelectionFont = new Font(
+                   currentFont.FontFamily, currentFont.Size, newFontStyle);
+            }
         }
 
         private void pUnderline_Click(object sender, EventArgs e)
         {
+            if (rtEditConent.SelectionFont != null)
+            {
+                System.Drawing.Font currentFont = rtEditConent.SelectionFont;
+                System.Drawing.FontStyle newFontStyle;
 
+                if (rtEditConent.SelectionFont.Underline == true)
+                {
+                    newFontStyle = FontStyle.Regular;
+                    pUnderline.Image = global::DiaryApp.Properties.Resources.underline_gray;
+                }
+                else
+                {
+                    newFontStyle = FontStyle.Underline;
+                    pUnderline.Image = global::DiaryApp.Properties.Resources.underline;
+                }
+
+                rtEditConent.SelectionFont = new Font(
+                   currentFont.FontFamily, currentFont.Size, newFontStyle);
+            }
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            // Show a input dialog to get the new font size from the user
+            string input = Microsoft.VisualBasic.Interaction.InputBox("Enter the new font size:", "Change Font Size", "12", -1, -1);
+            float newSize;
+            if (float.TryParse(input, out newSize))
+            {
+                if (rtEditConent.SelectionFont != null)
+                {
+                    System.Drawing.Font currentFont = rtEditConent.SelectionFont;
+                    rtEditConent.SelectionFont = new Font(currentFont.FontFamily, newSize, currentFont.Style);
+                }
+            }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorDialog = new ColorDialog();
+            if (colorDialog.ShowDialog() == DialogResult.OK)
+            {
+                rtEditConent.SelectionColor = colorDialog.Color;
+            }
+        }
+
+        #endregion Fomart text
+
         #endregion button click
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            FontDialog fontDialog = new FontDialog();
+            fontDialog.Font = rtEditConent.SelectionFont;
+
+            if (fontDialog.ShowDialog() == DialogResult.OK)
+            {
+                rtEditConent.SelectionFont = fontDialog.Font;
+            }
+        }
     }
 }
