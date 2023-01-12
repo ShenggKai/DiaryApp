@@ -15,7 +15,15 @@ namespace DiaryApp.Source
         public DiaryItem()
         {
             InitializeComponent();
+            
+            instance = this;
+            TieuDe = lbTitle;
+            NoiDung = rtxtContent;
         }
+
+        public static DiaryItem instance;
+        public Label TieuDe;
+        public RichTextBox NoiDung;
 
         private void DiaryItem_Load(object sender, EventArgs e)
         {

@@ -15,13 +15,14 @@ namespace DiaryApp
             instance = this;
             Username = lbUsername1;
             Email = lbEmail;
-
+            pnItem = fpnItem;
         }
 
         #region Main variable
         public static MainForm instance;
         public Label Username;
         public Label Email;
+        public FlowLayoutPanel pnItem;
 
         string txtusername = LoginForm.instance.tbUserName.Text;
         string txtpassword = LoginForm.instance.tbPassword.Text;
@@ -196,9 +197,6 @@ namespace DiaryApp
         {
             EditDiary content = new EditDiary();
             content.ShowDialog();
-
-            DiaryItem diaryItem = new DiaryItem();
-            fpnItem.Controls.Add(diaryItem);
         }
         #endregion HOME
     }

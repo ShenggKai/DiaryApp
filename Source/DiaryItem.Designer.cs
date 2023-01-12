@@ -55,12 +55,12 @@
             // 
             // rtxtContent
             // 
+            this.rtxtContent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxtContent.Location = new System.Drawing.Point(55, 72);
             this.rtxtContent.Name = "rtxtContent";
-            this.rtxtContent.Size = new System.Drawing.Size(51, 39);
+            this.rtxtContent.Size = new System.Drawing.Size(419, 39);
             this.rtxtContent.TabIndex = 1;
             this.rtxtContent.Text = "";
-            this.rtxtContent.Visible = false;
             // 
             // lbTitle
             // 

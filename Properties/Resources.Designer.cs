@@ -73,6 +73,16 @@ namespace DiaryApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap addphoto {
+            get {
+                object obj = ResourceManager.GetObject("addphoto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap astronaut {
             get {
                 object obj = ResourceManager.GetObject("astronaut", resourceCulture);
@@ -186,6 +196,36 @@ namespace DiaryApp.Properties {
         internal static System.Drawing.Bitmap folder_full {
             get {
                 object obj = ResourceManager.GetObject("folder_full", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap heading1 {
+            get {
+                object obj = ResourceManager.GetObject("heading1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap heading2 {
+            get {
+                object obj = ResourceManager.GetObject("heading2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap heading3 {
+            get {
+                object obj = ResourceManager.GetObject("heading3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
