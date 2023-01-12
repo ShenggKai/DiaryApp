@@ -17,10 +17,6 @@ namespace DiaryApp.Source
             InitializeComponent();
         }
 
-        public event EventHandler Delete;
-        public event EventHandler Share;
-        public event EventHandler Edit;
-
         private void DiaryItem_Load(object sender, EventArgs e)
         {
             string temp = DateTime.Now.ToString("D");
@@ -47,26 +43,25 @@ namespace DiaryApp.Source
         #region custom event
         protected void pDel_Click(object sender, EventArgs e)
         {
-            if (this.Delete != null)
+            const string message = "Xác nhận xóa nhật ký ?";
+            const string caption = "DiaryApp";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+
+            if (result == DialogResult.Yes)
             {
-                Delete.Invoke(this, e);
+                this.Controls.Clear();
+                this.Dispose();
             }
         }
 
         protected void pShare_Click(object sender, EventArgs e)
         {
-            if (this.Share != null)
-            {
-                Share.Invoke(this, e);
-            }
+
         }
 
         private void pEit_Click(object sender, EventArgs e)
         {
-            if (this.Edit != null)
-            {
-                Edit.Invoke(this, e);
-            }
+
         }
         #endregion custom event
     }
