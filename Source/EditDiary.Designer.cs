@@ -52,6 +52,7 @@
             // 
             // txtTitle
             // 
+            this.txtTitle.BackColor = System.Drawing.Color.Gainsboro;
             this.txtTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtTitle.Location = new System.Drawing.Point(12, 12);
