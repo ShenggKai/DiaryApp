@@ -39,6 +39,7 @@
             this.pageMain = new System.Windows.Forms.TabControl();
             this.tabpageHome = new System.Windows.Forms.TabPage();
             this.fpnItem = new System.Windows.Forms.FlowLayoutPanel();
+            this.diaryItem1 = new DiaryApp.Source.DiaryItem();
             this.btnAdd = new Sunny.UI.UIButton();
             this.pBanner = new System.Windows.Forms.PictureBox();
             this.lbUsername = new System.Windows.Forms.Label();
@@ -65,6 +66,7 @@
             this.pnMenu.SuspendLayout();
             this.pageMain.SuspendLayout();
             this.tabpageHome.SuspendLayout();
+            this.fpnItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBanner)).BeginInit();
             this.tabpageCalendar.SuspendLayout();
             this.tabpageUser.SuspendLayout();
@@ -218,11 +220,21 @@
             // 
             // fpnItem
             // 
+            this.fpnItem.Controls.Add(this.diaryItem1);
             this.fpnItem.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.fpnItem.Location = new System.Drawing.Point(0, 366);
             this.fpnItem.Name = "fpnItem";
             this.fpnItem.Size = new System.Drawing.Size(1622, 634);
             this.fpnItem.TabIndex = 3;
+            // 
+            // diaryItem1
+            // 
+            this.diaryItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(160)))), ((int)(((byte)(103)))));
+            this.diaryItem1.Location = new System.Drawing.Point(0, 0);
+            this.diaryItem1.Margin = new System.Windows.Forms.Padding(0);
+            this.diaryItem1.Name = "diaryItem1";
+            this.diaryItem1.Size = new System.Drawing.Size(1622, 126);
+            this.diaryItem1.TabIndex = 0;
             // 
             // btnAdd
             // 
@@ -231,7 +243,7 @@
             this.btnAdd.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(160)))), ((int)(((byte)(103)))));
             this.btnAdd.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.btnAdd.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAdd.Location = new System.Drawing.Point(1326, 264);
+            this.btnAdd.Location = new System.Drawing.Point(1337, 274);
             this.btnAdd.MinimumSize = new System.Drawing.Size(1, 1);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Radius = 30;
@@ -303,7 +315,7 @@
             this.tabpageCalendar.Location = new System.Drawing.Point(4, 4);
             this.tabpageCalendar.Name = "tabpageCalendar";
             this.tabpageCalendar.Padding = new System.Windows.Forms.Padding(3);
-            this.tabpageCalendar.Size = new System.Drawing.Size(1622, 1000);
+            this.tabpageCalendar.Size = new System.Drawing.Size(192, 67);
             this.tabpageCalendar.TabIndex = 1;
             // 
             // label2
@@ -497,6 +509,7 @@
             this.pageMain.ResumeLayout(false);
             this.tabpageHome.ResumeLayout(false);
             this.tabpageHome.PerformLayout();
+            this.fpnItem.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pBanner)).EndInit();
             this.tabpageCalendar.ResumeLayout(false);
             this.tabpageCalendar.PerformLayout();
@@ -544,5 +557,6 @@
         private Label label3;
         private Sunny.UI.UIButton btnAdd;
         private FlowLayoutPanel fpnItem;
+        private Source.DiaryItem diaryItem1;
     }
 }

@@ -16,5 +16,18 @@ namespace DiaryApp.Source
         {
             InitializeComponent();
         }
+
+        private void DiaryItem_Load(object sender, EventArgs e)
+        {
+            string temp = DateTime.Now.ToString("D");
+            lbDate.Text = DateTime.Now.ToString("dddd") + ", " + temp;
+
+            lbTime.Text = DateTime.Now.ToString("t");
+        }
+
+        private void lbDate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
