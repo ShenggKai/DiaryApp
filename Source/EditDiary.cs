@@ -26,13 +26,24 @@ namespace DiaryApp.Source
 
         private void btnPost_Click(object sender, EventArgs e)
         {
-            DiaryItem diaryItem = new DiaryItem();
-            diaryItem.Title = txtTitle.Text;
-            diaryItem.Content = rtEditConent.Text;
-            diaryItem.Pic = pInsertimage.Image;
+            if (txtTitle.Text == "")
+            {
+                MessageBox.Show("Nhập tiêu đề", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (rtEditConent.Text == "")
+            {
+                MessageBox.Show("Nhập nội dung", "DiaryApp", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                DiaryItem diaryItem = new DiaryItem();
+                diaryItem.Title = txtTitle.Text;
+                diaryItem.Content = rtEditConent.Text;
+                diaryItem.Pic = pInsertimage.Image;
 
-            MainForm.instance.pnItem.Controls.Add(diaryItem);
-            this.Close();
+                MainForm.instance.pnItem.Controls.Add(diaryItem);
+                this.Close();
+            }
         }
 
         private void pAddImage_Click(object sender, EventArgs e)

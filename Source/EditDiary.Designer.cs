@@ -62,7 +62,7 @@
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.PlaceholderText = "Nhập tiêu đề";
             this.txtTitle.Size = new System.Drawing.Size(1072, 34);
-            this.txtTitle.TabIndex = 0;
+            this.txtTitle.TabIndex = 3;
             this.txtTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel1
@@ -71,7 +71,7 @@
             this.panel1.Location = new System.Drawing.Point(12, 62);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1072, 2);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 0;
             // 
             // rtEditConent
             // 
@@ -81,7 +81,7 @@
             this.rtEditConent.Location = new System.Drawing.Point(324, 136);
             this.rtEditConent.Name = "rtEditConent";
             this.rtEditConent.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.rtEditConent.Size = new System.Drawing.Size(760, 302);
+            this.rtEditConent.Size = new System.Drawing.Size(760, 323);
             this.rtEditConent.TabIndex = 2;
             this.rtEditConent.Text = "";
             // 
@@ -132,7 +132,7 @@
             this.btnPost.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(160)))), ((int)(((byte)(103)))));
             this.btnPost.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.btnPost.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnPost.Location = new System.Drawing.Point(910, 465);
+            this.btnPost.Location = new System.Drawing.Point(910, 469);
             this.btnPost.MinimumSize = new System.Drawing.Size(1, 1);
             this.btnPost.Name = "btnPost";
             this.btnPost.Radius = 30;
@@ -153,7 +153,7 @@
             this.btnCancel.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(130)))), ((int)(((byte)(95)))));
             this.btnCancel.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCancel.ForeColor = System.Drawing.Color.DimGray;
-            this.btnCancel.Location = new System.Drawing.Point(688, 465);
+            this.btnCancel.Location = new System.Drawing.Point(688, 469);
             this.btnCancel.MinimumSize = new System.Drawing.Size(1, 1);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Radius = 30;
@@ -230,15 +230,15 @@
             this.fpnImg.AutoScroll = true;
             this.fpnImg.Location = new System.Drawing.Point(2, 84);
             this.fpnImg.Name = "fpnImg";
-            this.fpnImg.Size = new System.Drawing.Size(316, 436);
-            this.fpnImg.TabIndex = 6;
+            this.fpnImg.Size = new System.Drawing.Size(316, 440);
+            this.fpnImg.TabIndex = 0;
             this.fpnImg.Visible = false;
             // 
             // EditDiary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1096, 532);
+            this.ClientSize = new System.Drawing.Size(1096, 536);
             this.Controls.Add(this.fpnImg);
             this.Controls.Add(this.pInsertimage);
             this.Controls.Add(this.btnCancel);
