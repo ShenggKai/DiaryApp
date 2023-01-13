@@ -131,7 +131,6 @@
             this.btnCalendar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCalendar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCalendar.UseVisualStyleBackColor = true;
-            this.btnCalendar.Visible = false;
             this.btnCalendar.Click += new System.EventHandler(this.btnCalendar_Click);
             // 
             // btnHome
@@ -196,7 +195,7 @@
             this.pageMain.Controls.Add(this.tabpageCalendar);
             this.pageMain.Controls.Add(this.tabpageUser);
             this.pageMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pageMain.ItemSize = new System.Drawing.Size(60, 1);
+            this.pageMain.ItemSize = new System.Drawing.Size(60, 25);
             this.pageMain.Location = new System.Drawing.Point(272, 0);
             this.pageMain.Name = "pageMain";
             this.pageMain.SelectedIndex = 0;
@@ -324,7 +323,7 @@
             this.tabpageCalendar.Location = new System.Drawing.Point(4, 4);
             this.tabpageCalendar.Name = "tabpageCalendar";
             this.tabpageCalendar.Padding = new System.Windows.Forms.Padding(3);
-            this.tabpageCalendar.Size = new System.Drawing.Size(192, 67);
+            this.tabpageCalendar.Size = new System.Drawing.Size(1622, 1000);
             this.tabpageCalendar.TabIndex = 1;
             // 
             // label2
@@ -354,7 +353,7 @@
             this.tabpageUser.Location = new System.Drawing.Point(4, 4);
             this.tabpageUser.Name = "tabpageUser";
             this.tabpageUser.Padding = new System.Windows.Forms.Padding(3);
-            this.tabpageUser.Size = new System.Drawing.Size(1622, 1024);
+            this.tabpageUser.Size = new System.Drawing.Size(1622, 1000);
             this.tabpageUser.TabIndex = 2;
             // 
             // label3
