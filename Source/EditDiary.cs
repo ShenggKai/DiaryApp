@@ -132,16 +132,18 @@ namespace DiaryApp.Source
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            // Show a input dialog to get the new font size from the user
-            string input = Microsoft.VisualBasic.Interaction.InputBox("Enter the new font size:", "Change Font Size", "12", -1, -1);
-            float newSize;
-            if (float.TryParse(input, out newSize))
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                if (rtEditConent.SelectionFont != null)
-                {
-                    System.Drawing.Font currentFont = rtEditConent.SelectionFont;
-                    rtEditConent.SelectionFont = new Font(currentFont.FontFamily, newSize, currentFont.Style);
-                }
+                Image image = Image.FromFile(openFileDialog.FileName);
+                PictureBox pictureBox = new PictureBox();
+                pictureBox.Size = new Size(302, 302);
+                pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+                pictureBox.Image = image;
+                fpnImg.Visible= true;
+                fpnImg.Controls.Add(pictureBox);
             }
         }
 

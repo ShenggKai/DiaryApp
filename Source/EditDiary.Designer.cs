@@ -33,9 +33,9 @@
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.rtEditConent = new System.Windows.Forms.RichTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pAddImg = new System.Windows.Forms.PictureBox();
+            this.pForeColor = new System.Windows.Forms.PictureBox();
+            this.pFont = new System.Windows.Forms.PictureBox();
             this.btnPost = new Sunny.UI.UIButton();
             this.btnCancel = new Sunny.UI.UIButton();
             this.pInsertimage = new System.Windows.Forms.PictureBox();
@@ -43,9 +43,10 @@
             this.pItalic = new System.Windows.Forms.PictureBox();
             this.pUnderline = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.fpnImg = new System.Windows.Forms.FlowLayoutPanel();
+            ((System.ComponentModel.ISupportInitialize)(this.pAddImg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pForeColor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pFont)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pInsertimage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBold)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pItalic)).BeginInit();
@@ -84,44 +85,44 @@
             this.rtEditConent.TabIndex = 2;
             this.rtEditConent.Text = "";
             // 
-            // pictureBox1
+            // pAddImg
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::DiaryApp.Properties.Resources.fontsize;
-            this.pictureBox1.Location = new System.Drawing.Point(622, 84);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox1, "nhấp để thay đổi kích thước chữ");
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pAddImg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pAddImg.Image = global::DiaryApp.Properties.Resources.addphoto;
+            this.pAddImg.Location = new System.Drawing.Point(622, 84);
+            this.pAddImg.Name = "pAddImg";
+            this.pAddImg.Size = new System.Drawing.Size(35, 35);
+            this.pAddImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pAddImg.TabIndex = 3;
+            this.pAddImg.TabStop = false;
+            this.toolTip1.SetToolTip(this.pAddImg, "nhấp để thêm hình ảnh");
+            this.pAddImg.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox2
+            // pForeColor
             // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::DiaryApp.Properties.Resources.fontcolor;
-            this.pictureBox2.Location = new System.Drawing.Point(704, 84);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox2, "nhấp để thay đổi màu chữ");
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pForeColor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pForeColor.Image = global::DiaryApp.Properties.Resources.fontcolor;
+            this.pForeColor.Location = new System.Drawing.Point(704, 84);
+            this.pForeColor.Name = "pForeColor";
+            this.pForeColor.Size = new System.Drawing.Size(35, 35);
+            this.pForeColor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pForeColor.TabIndex = 3;
+            this.pForeColor.TabStop = false;
+            this.toolTip1.SetToolTip(this.pForeColor, "nhấp để thay đổi màu chữ");
+            this.pForeColor.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // pictureBox3
+            // pFont
             // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::DiaryApp.Properties.Resources.typography;
-            this.pictureBox3.Location = new System.Drawing.Point(783, 84);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox3, "nhấp để thay đổi kiểu chữ");
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pFont.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pFont.Image = global::DiaryApp.Properties.Resources.typography;
+            this.pFont.Location = new System.Drawing.Point(783, 84);
+            this.pFont.Name = "pFont";
+            this.pFont.Size = new System.Drawing.Size(35, 35);
+            this.pFont.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pFont.TabIndex = 3;
+            this.pFont.TabStop = false;
+            this.toolTip1.SetToolTip(this.pFont, "nhấp để thay đổi kiểu chữ");
+            this.pFont.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // btnPost
             // 
@@ -171,13 +172,12 @@
             // pInsertimage
             // 
             this.pInsertimage.Image = global::DiaryApp.Properties.Resources.insertimage;
-            this.pInsertimage.Location = new System.Drawing.Point(11, 136);
+            this.pInsertimage.Location = new System.Drawing.Point(12, 136);
             this.pInsertimage.Name = "pInsertimage";
-            this.pInsertimage.Size = new System.Drawing.Size(302, 302);
+            this.pInsertimage.Size = new System.Drawing.Size(300, 300);
             this.pInsertimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pInsertimage.TabIndex = 5;
             this.pInsertimage.TabStop = false;
-            this.pInsertimage.Click += new System.EventHandler(this.pInsertimage_Click);
             // 
             // pBold
             // 
@@ -224,20 +224,31 @@
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip1.ToolTipTitle = "Thay đổi font";
             // 
+            // fpnImg
+            // 
+            this.fpnImg.AllowDrop = true;
+            this.fpnImg.AutoScroll = true;
+            this.fpnImg.Location = new System.Drawing.Point(2, 84);
+            this.fpnImg.Name = "fpnImg";
+            this.fpnImg.Size = new System.Drawing.Size(316, 436);
+            this.fpnImg.TabIndex = 6;
+            this.fpnImg.Visible = false;
+            // 
             // EditDiary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1096, 532);
+            this.Controls.Add(this.fpnImg);
             this.Controls.Add(this.pInsertimage);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnPost);
             this.Controls.Add(this.pUnderline);
             this.Controls.Add(this.pItalic);
             this.Controls.Add(this.pBold);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pFont);
+            this.Controls.Add(this.pForeColor);
+            this.Controls.Add(this.pAddImg);
             this.Controls.Add(this.rtEditConent);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtTitle);
@@ -248,9 +259,9 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Nội dung nhật ký";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pAddImg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pForeColor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pFont)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pInsertimage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBold)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pItalic)).EndInit();
@@ -265,9 +276,9 @@
         private TextBox txtTitle;
         private Panel panel1;
         private RichTextBox rtEditConent;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
+        private PictureBox pAddImg;
+        private PictureBox pForeColor;
+        private PictureBox pFont;
         private Sunny.UI.UIButton btnPost;
         private Sunny.UI.UIButton btnCancel;
         private PictureBox pInsertimage;
@@ -275,5 +286,6 @@
         private PictureBox pItalic;
         private PictureBox pUnderline;
         private ToolTip toolTip1;
+        private FlowLayoutPanel fpnImg;
     }
 }
