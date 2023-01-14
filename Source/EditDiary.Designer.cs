@@ -44,6 +44,7 @@
             this.pUnderline = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.fpnImg = new System.Windows.Forms.FlowLayoutPanel();
+            this.pTheme = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pAddImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pForeColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pFont)).BeginInit();
@@ -51,6 +52,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pBold)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pItalic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUnderline)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pTheme)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTitle
@@ -96,7 +98,7 @@
             this.pAddImg.TabIndex = 3;
             this.pAddImg.TabStop = false;
             this.toolTip1.SetToolTip(this.pAddImg, "nhấp để thêm hình ảnh");
-            this.pAddImg.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pAddImg.Click += new System.EventHandler(this.pAddImg_Click);
             // 
             // pForeColor
             // 
@@ -109,7 +111,7 @@
             this.pForeColor.TabIndex = 3;
             this.pForeColor.TabStop = false;
             this.toolTip1.SetToolTip(this.pForeColor, "nhấp để thay đổi màu chữ");
-            this.pForeColor.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pForeColor.Click += new System.EventHandler(this.pForeColor_Click);
             // 
             // pFont
             // 
@@ -122,7 +124,7 @@
             this.pFont.TabIndex = 3;
             this.pFont.TabStop = false;
             this.toolTip1.SetToolTip(this.pFont, "nhấp để thay đổi kiểu chữ");
-            this.pFont.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pFont.Click += new System.EventHandler(this.pFont_Click);
             // 
             // btnPost
             // 
@@ -234,6 +236,18 @@
             this.fpnImg.TabIndex = 0;
             this.fpnImg.Visible = false;
             // 
+            // pTheme
+            // 
+            this.pTheme.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pTheme.Image = global::DiaryApp.Properties.Resources.colour;
+            this.pTheme.Location = new System.Drawing.Point(536, 84);
+            this.pTheme.Name = "pTheme";
+            this.pTheme.Size = new System.Drawing.Size(35, 35);
+            this.pTheme.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pTheme.TabIndex = 3;
+            this.pTheme.TabStop = false;
+            this.pTheme.Click += new System.EventHandler(this.pTheme_Click);
+            // 
             // EditDiary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -248,6 +262,7 @@
             this.Controls.Add(this.pBold);
             this.Controls.Add(this.pFont);
             this.Controls.Add(this.pForeColor);
+            this.Controls.Add(this.pTheme);
             this.Controls.Add(this.pAddImg);
             this.Controls.Add(this.rtEditConent);
             this.Controls.Add(this.panel1);
@@ -266,6 +281,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pBold)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pItalic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUnderline)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pTheme)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,5 +303,6 @@
         private PictureBox pUnderline;
         private ToolTip toolTip1;
         private FlowLayoutPanel fpnImg;
+        private PictureBox pTheme;
     }
 }

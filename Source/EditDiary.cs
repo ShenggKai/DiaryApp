@@ -141,7 +141,7 @@ namespace DiaryApp.Source
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pAddImg_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
@@ -158,7 +158,7 @@ namespace DiaryApp.Source
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pForeColor_Click(object sender, EventArgs e)
         {
             ColorDialog colorDialog = new ColorDialog();
             if (colorDialog.ShowDialog() == DialogResult.OK)
@@ -167,11 +167,7 @@ namespace DiaryApp.Source
             }
         }
 
-        #endregion Fomart text
-
-        #endregion button click
-
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void pFont_Click(object sender, EventArgs e)
         {
             FontDialog fontDialog = new FontDialog();
             fontDialog.Font = rtEditConent.SelectionFont;
@@ -181,5 +177,20 @@ namespace DiaryApp.Source
                 rtEditConent.SelectionFont = fontDialog.Font;
             }
         }
+
+        private void pTheme_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorDialog = new ColorDialog();
+            if (colorDialog.ShowDialog() == DialogResult.OK)
+            {
+                this.BackColor = colorDialog.Color;
+            }
+        }
+
+        #endregion Fomart text
+
+        #endregion button click
+
+
     }
 }
