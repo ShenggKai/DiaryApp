@@ -323,7 +323,7 @@
             this.tabpageCalendar.Location = new System.Drawing.Point(4, 4);
             this.tabpageCalendar.Name = "tabpageCalendar";
             this.tabpageCalendar.Padding = new System.Windows.Forms.Padding(3);
-            this.tabpageCalendar.Size = new System.Drawing.Size(1622, 1000);
+            this.tabpageCalendar.Size = new System.Drawing.Size(192, 67);
             this.tabpageCalendar.TabIndex = 1;
             // 
             // label2
@@ -353,7 +353,7 @@
             this.tabpageUser.Location = new System.Drawing.Point(4, 4);
             this.tabpageUser.Name = "tabpageUser";
             this.tabpageUser.Padding = new System.Windows.Forms.Padding(3);
-            this.tabpageUser.Size = new System.Drawing.Size(1622, 1000);
+            this.tabpageUser.Size = new System.Drawing.Size(192, 67);
             this.tabpageUser.TabIndex = 2;
             // 
             // label3

@@ -40,6 +40,7 @@ namespace DiaryApp.Source
                 diaryItem.Title = txtTitle.Text;
                 diaryItem.Content = rtEditConent.Text;
                 diaryItem.Pic = pInsertimage.Image;
+                diaryItem.BackColor = this.BackColor;
 
                 MainForm.instance.pnItem.Controls.Add(diaryItem);
                 this.Close();

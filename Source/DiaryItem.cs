@@ -20,12 +20,14 @@ namespace DiaryApp.Source
             TieuDe = lbTitle;
             NoiDung = rtxtContent;
             Image = pImage;
+            Theme = this.BackColor;
         }
 
         public static DiaryItem instance;
         public Label TieuDe;
         public RichTextBox NoiDung;
         public PictureBox Image;
+        public Color Theme;
 
         private void DiaryItem_Load(object sender, EventArgs e)
         {
@@ -53,6 +55,12 @@ namespace DiaryApp.Source
             get { return pImage.Image; }
             set { pImage.Image = value; }
         }
+
+        //public Color themeColor
+        //{
+        //    get { return this.BackColor; }
+        //    set { this.BackColor = value; }
+        //}
 
         #endregion editable string
 

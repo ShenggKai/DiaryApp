@@ -45,6 +45,7 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.fpnImg = new System.Windows.Forms.FlowLayoutPanel();
             this.pTheme = new System.Windows.Forms.PictureBox();
+            this.pFile = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pAddImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pForeColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pFont)).BeginInit();
@@ -53,6 +54,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pItalic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUnderline)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pTheme)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pFile)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTitle
@@ -91,7 +93,7 @@
             // 
             this.pAddImg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pAddImg.Image = global::DiaryApp.Properties.Resources.addphoto;
-            this.pAddImg.Location = new System.Drawing.Point(622, 84);
+            this.pAddImg.Location = new System.Drawing.Point(528, 84);
             this.pAddImg.Name = "pAddImg";
             this.pAddImg.Size = new System.Drawing.Size(35, 35);
             this.pAddImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -240,13 +242,27 @@
             // 
             this.pTheme.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pTheme.Image = global::DiaryApp.Properties.Resources.colour;
-            this.pTheme.Location = new System.Drawing.Point(536, 84);
+            this.pTheme.Location = new System.Drawing.Point(618, 84);
             this.pTheme.Name = "pTheme";
             this.pTheme.Size = new System.Drawing.Size(35, 35);
             this.pTheme.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pTheme.TabIndex = 3;
             this.pTheme.TabStop = false;
+            this.toolTip1.SetToolTip(this.pTheme, "nhấn để thay đổi màu nền");
             this.pTheme.Click += new System.EventHandler(this.pTheme_Click);
+            // 
+            // pFile
+            // 
+            this.pFile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pFile.Image = global::DiaryApp.Properties.Resources.attachfile;
+            this.pFile.Location = new System.Drawing.Point(437, 84);
+            this.pFile.Name = "pFile";
+            this.pFile.Size = new System.Drawing.Size(35, 35);
+            this.pFile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pFile.TabIndex = 3;
+            this.pFile.TabStop = false;
+            this.toolTip1.SetToolTip(this.pFile, "nhấn để thêm tệp tin");
+            this.pFile.Click += new System.EventHandler(this.pAddImg_Click);
             // 
             // EditDiary
             // 
@@ -263,6 +279,7 @@
             this.Controls.Add(this.pFont);
             this.Controls.Add(this.pForeColor);
             this.Controls.Add(this.pTheme);
+            this.Controls.Add(this.pFile);
             this.Controls.Add(this.pAddImg);
             this.Controls.Add(this.rtEditConent);
             this.Controls.Add(this.panel1);
@@ -282,6 +299,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pItalic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUnderline)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pTheme)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pFile)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,5 +322,6 @@
         private ToolTip toolTip1;
         private FlowLayoutPanel fpnImg;
         private PictureBox pTheme;
+        private PictureBox pFile;
     }
 }
